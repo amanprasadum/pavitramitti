@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenLeaf - Premium Plants in Kolkata | Online Plant Store</title>
+    <title>Pavitra Mitti – Basirhat Nursery Near Barasat & Kolkata</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -79,19 +80,25 @@
             transition: color 0.3s ease;
         }
 
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0; left: 50%;
-            transform: translateX(-50%);
-            width: 0; height: 2px;
-            background: var(--accent-green);
-            transition: width 0.3s ease;
+        .nav-link:hover { color: var(--primary-green) !important; }
+        .navbar-nav .nav-link.active { color: var(--primary-green) !important; }
+
+        /* Clean dropdown arrow */
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: 0.4rem;
+            vertical-align: middle;
+            border: none;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            content: '\f078';
+            font-size: 0.7rem;
+            transition: transform 0.3s ease;
         }
 
-        .nav-link:hover { color: var(--primary-green) !important; }
-        .nav-link:hover::after { width: 80%; }
-        .navbar-nav .nav-link.active { color: var(--primary-green) !important; }
+        .dropdown-toggle.show::after {
+            transform: rotate(180deg);
+        }
 
         /* ---- Dropdown Fix ---- */
         .dropdown-menu {
@@ -141,41 +148,52 @@
             }
         }
 
-        /* Nav Icons */
-        .nav-icons { display: flex; align-items: center; gap: 1.2rem; }
+        /* Nav Icons - Contact Actions */
+        .nav-icons { display: flex; align-items: center; gap: 1rem; }
 
-        .nav-icon {
-            position: relative;
-            color: var(--text-dark);
-            font-size: 1.3rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .nav-icon:hover { color: var(--primary-green); transform: scale(1.1); }
-
-        .cart-badge {
-            position: absolute;
-            top: -8px; right: -8px;
-            background: var(--accent-green);
-            color: white;
-            border-radius: 50%;
-            width: 18px; height: 18px;
-            font-size: 0.7rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .nav-contact-btn {
+            display: flex; align-items: center; gap: 0.5rem;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
             font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
 
-        /* Mobile nav icons spacing */
+        .nav-whatsapp {
+            background: #25D366;
+            color: white !important;
+        }
+
+        .nav-whatsapp:hover {
+            background: #1da851;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37,211,102,0.35);
+            color: white !important;
+        }
+
+        .nav-phone {
+            background: transparent;
+            color: var(--primary-green) !important;
+            border-color: var(--primary-green);
+        }
+
+        .nav-phone:hover {
+            background: var(--primary-green);
+            color: white !important;
+            transform: translateY(-2px);
+        }
+
         @media (max-width: 991px) {
             .nav-icons {
                 padding: 1rem 0;
                 border-top: 1px solid rgba(0,0,0,0.08);
                 margin-top: 0.5rem;
                 justify-content: center;
-                gap: 2rem;
+                gap: 0.8rem;
+                flex-wrap: wrap;
             }
         }
 
@@ -1245,7 +1263,7 @@
         <div class="container">
             <a class="navbar-brand" href="#home">
                 <i class="fas fa-leaf"></i>
-                GreenLeaf
+                Pavitra Mitti
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -1259,44 +1277,39 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Plants</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#shop"><i class="fas fa-seedling"></i> All Plants</a></li>
-                            <li><a class="dropdown-item" href="#shop"><i class="fas fa-star"></i> New Arrivals</a></li>
-                            <li><a class="dropdown-item" href="#shop"><i class="fas fa-fire"></i> Best Sellers</a></li>
+                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-apple-alt"></i> Fruit Plants</a></li>
+                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-spa"></i> Flowering Plants</a></li>
+                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-leaf"></i> Ornamental Plants</a></li>
+                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-mortar-pestle"></i> Medicinal & Herbal</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#shop"><i class="fas fa-tags"></i> Sale & Offers</a></li>
+                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-tree"></i> Farm & Landscape</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-home"></i> Indoor Plants</a></li>
-                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-tree"></i> Outdoor Plants</a></li>
-                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-spa"></i> Succulents & Cacti</a></li>
-                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-icicles"></i> Flowering Plants</a></li>
-                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-leaf"></i> Herbs & Vegetables</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-box"></i> Pots & Planters</a></li>
-                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-tools"></i> Gardening Tools</a></li>
+                            <li><a class="dropdown-item" href="#about"><i class="fas fa-seedling"></i> Nursery Consultation</a></li>
+                            <li><a class="dropdown-item" href="#about"><i class="fas fa-truck"></i> Bulk Orders & Delivery</a></li>
+                            <li><a class="dropdown-item" href="#about"><i class="fas fa-drafting-compass"></i> Landscaping Support</a></li>
+                            <li><a class="dropdown-item" href="#about"><i class="fas fa-hand-holding-heart"></i> Plant Care Guidance</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
 
-                <div class="nav-icons ms-3">
-                    <div class="nav-icon"><i class="fas fa-user"></i></div>
-                    <div class="nav-icon">
-                        <i class="fas fa-heart"></i>
-                        <span class="cart-badge">2</span>
-                    </div>
-                    <div class="nav-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-badge">3</span>
-                    </div>
+                <div class="nav-icons ms-2">
+                    <a href="tel:+919876543210" class="nav-contact-btn nav-phone">
+                        <i class="fas fa-phone-alt"></i> Call Us
+                    </a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="nav-contact-btn nav-whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
@@ -1309,12 +1322,12 @@
                 <div class="swiper-slide slide-1">
                     <i class="fas fa-leaf hero-decoration decoration-1"></i>
                     <div class="hero-content">
-                        <div class="hero-subtitle">Premium Collection</div>
-                        <h1>Bring Nature<br>Home</h1>
-                        <p>Discover our curated selection of indoor & outdoor plants delivered fresh to your doorstep in Kolkata</p>
+                        <div class="hero-subtitle">Basirhat · Barasat · Kolkata</div>
+                        <h1>Pavitra Mitti<br>Nursery</h1>
+                        <p>Healthy plants, expert care, and trusted nursery services across West Bengal — grown with love, delivered with pride.</p>
                         <div>
-                            <a href="#shop" class="hero-btn btn-primary-custom">Shop Now</a>
-                            <a href="#about" class="hero-btn btn-outline-custom">Learn More</a>
+                            <a href="#categories" class="hero-btn btn-primary-custom">Explore Our Plants</a>
+                            <a href="#contact" class="hero-btn btn-outline-custom">Contact Us Today</a>
                         </div>
                     </div>
                 </div>
@@ -1322,12 +1335,12 @@
                 <div class="swiper-slide slide-2">
                     <i class="fas fa-seedling hero-decoration decoration-2"></i>
                     <div class="hero-content">
-                        <div class="hero-subtitle">Garden Essentials</div>
-                        <h1>Perfect for<br>Every Space</h1>
-                        <p>From succulents to flowering plants - everything you need for your perfect garden</p>
+                        <div class="hero-subtitle">Best Nursery in West Bengal</div>
+                        <h1>From Soil<br>to Soul</h1>
+                        <p>Fruit plants, flowering varieties, medicinal herbs and landscape trees — everything a home gardener, farmer or landscaper needs.</p>
                         <div>
-                            <a href="#shop" class="hero-btn btn-primary-custom">Explore</a>
-                            <a href="#categories" class="hero-btn btn-outline-custom">Categories</a>
+                            <a href="#categories" class="hero-btn btn-primary-custom">View All Plants</a>
+                            <a href="https://wa.me/919876543210" class="hero-btn btn-outline-custom"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
                         </div>
                     </div>
                 </div>
@@ -1335,12 +1348,12 @@
                 <div class="swiper-slide slide-3">
                     <i class="fas fa-spa hero-decoration decoration-1"></i>
                     <div class="hero-content">
-                        <div class="hero-subtitle">Green Living</div>
-                        <h1>Grow Your<br>Paradise</h1>
-                        <p>Expert care guides & fast delivery across Kolkata - Start your green journey today</p>
+                        <div class="hero-subtitle">Bulk Orders Welcome</div>
+                        <h1>Grow Your<br>Green World</h1>
+                        <p>Serving home gardens, farms and landscapes across Basirhat, Barasat and all of West Bengal with 200+ plant varieties.</p>
                         <div>
-                            <a href="#shop" class="hero-btn btn-primary-custom">Get Started</a>
-                            <a href="#contact" class="hero-btn btn-outline-custom">Contact</a>
+                            <a href="tel:+919876543210" class="hero-btn btn-primary-custom"><i class="fas fa-phone-alt"></i> Call Now</a>
+                            <a href="#about" class="hero-btn btn-outline-custom">Know More</a>
                         </div>
                     </div>
                 </div>
@@ -1354,21 +1367,21 @@
     <!-- ==================== STATS TICKER ==================== -->
     <div class="stats-ticker">
         <div class="ticker-track" id="tickerTrack">
-            <div class="ticker-item"><i class="fas fa-leaf"></i> 5000+ Happy Customers</div>
-            <div class="ticker-item"><i class="fas fa-truck"></i> Same-Day Delivery in Kolkata</div>
-            <div class="ticker-item"><i class="fas fa-seedling"></i> 200+ Plant Varieties</div>
-            <div class="ticker-item"><i class="fas fa-shield-alt"></i> 100% Healthy Guarantee</div>
-            <div class="ticker-item"><i class="fas fa-star"></i> 4.9/5 Customer Rating</div>
-            <div class="ticker-item"><i class="fas fa-recycle"></i> Eco-Friendly Packaging</div>
-            <div class="ticker-item"><i class="fas fa-phone-alt"></i> Expert Care Support 24/7</div>
-            <!-- Duplicated for seamless loop -->
-            <div class="ticker-item"><i class="fas fa-leaf"></i> 5000+ Happy Customers</div>
-            <div class="ticker-item"><i class="fas fa-truck"></i> Same-Day Delivery in Kolkata</div>
-            <div class="ticker-item"><i class="fas fa-seedling"></i> 200+ Plant Varieties</div>
-            <div class="ticker-item"><i class="fas fa-shield-alt"></i> 100% Healthy Guarantee</div>
-            <div class="ticker-item"><i class="fas fa-star"></i> 4.9/5 Customer Rating</div>
-            <div class="ticker-item"><i class="fas fa-recycle"></i> Eco-Friendly Packaging</div>
-            <div class="ticker-item"><i class="fas fa-phone-alt"></i> Expert Care Support 24/7</div>
+            <div class="ticker-item"><i class="fas fa-map-marker-alt"></i> Located in Basirhat, Near Barasat & Kolkata</div>
+            <div class="ticker-item"><i class="fas fa-seedling"></i> 200+ Plant Varieties Available</div>
+            <div class="ticker-item"><i class="fas fa-truck"></i> Bulk Orders Welcome — Call or WhatsApp</div>
+            <div class="ticker-item"><i class="fas fa-shield-alt"></i> Healthy Plants, Expert Guidance</div>
+            <div class="ticker-item"><i class="fas fa-star"></i> Best Nursery in West Bengal</div>
+            <div class="ticker-item"><i class="fas fa-leaf"></i> Serving Home Gardeners, Farmers & Landscapers</div>
+            <div class="ticker-item"><i class="fas fa-phone-alt"></i> Affordable Pricing · Bulk Discounts Available</div>
+            <!-- Duplicate for seamless loop -->
+            <div class="ticker-item"><i class="fas fa-map-marker-alt"></i> Located in Basirhat, Near Barasat & Kolkata</div>
+            <div class="ticker-item"><i class="fas fa-seedling"></i> 200+ Plant Varieties Available</div>
+            <div class="ticker-item"><i class="fas fa-truck"></i> Bulk Orders Welcome — Call or WhatsApp</div>
+            <div class="ticker-item"><i class="fas fa-shield-alt"></i> Healthy Plants, Expert Guidance</div>
+            <div class="ticker-item"><i class="fas fa-star"></i> Best Nursery in West Bengal</div>
+            <div class="ticker-item"><i class="fas fa-leaf"></i> Serving Home Gardeners, Farmers & Landscapers</div>
+            <div class="ticker-item"><i class="fas fa-phone-alt"></i> Affordable Pricing · Bulk Discounts Available</div>
         </div>
     </div>
 
@@ -1377,11 +1390,11 @@
         <div class="container">
             <div class="offer-content">
                 <div class="offer-icon">
-                    <i class="fas fa-gift"></i>
+                    <i class="fas fa-phone-alt"></i>
                 </div>
                 <div class="offer-text">
-                    <h3>Special Offer!</h3>
-                    <p>Get 20% OFF on your first order + Free Delivery across Kolkata</p>
+                    <h3>Order by Call or WhatsApp!</h3>
+                    <p>Bulk orders, home delivery & expert guidance available — just reach out and we'll take care of the rest</p>
                 </div>
                 <div class="offer-timer">
                     <div class="timer-unit">
@@ -1399,7 +1412,10 @@
                         <span class="lbl">Secs</span>
                     </div>
                 </div>
-                <a href="#shop" class="offer-btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+                <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+                    <a href="tel:+919876543210" class="offer-btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="offer-btn" style="background:#25D366;color:white;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
             </div>
         </div>
     </section>
@@ -1408,9 +1424,9 @@
     <section class="categories-section" id="categories">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
-                <span class="section-label">Browse</span>
-                <h2 class="section-title">Shop by Categories</h2>
-                <p class="section-subtitle">Explore our diverse collection of plants for every space</p>
+                <span class="section-label">Our Collection</span>
+                <h2 class="section-title">Plant Categories</h2>
+                <p class="section-subtitle">From fruit trees to medicinal herbs — we have everything for every green space</p>
             </div>
 
             <div class="category-slider" data-aos="fade-up" data-aos-delay="200">
@@ -1419,46 +1435,46 @@
                         <div class="swiper-slide">
                             <div class="category-card">
                                 <div class="category-image">
-                                    <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?w=400&q=80" alt="Indoor Plants">
-                                    <div class="category-overlay"><a href="#" class="category-btn">View Collection</a></div>
+                                    <img src="https://images.unsplash.com/photo-1571575173700-afb9492d6b9e?w=400&q=80" alt="Fruit Plants">
+                                    <div class="category-overlay"><a href="#contact" class="category-btn">Enquire Now</a></div>
                                 </div>
-                                <div class="category-info"><h4>Indoor Plants</h4><p>50+ Varieties</p></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="category-card">
-                                <div class="category-image">
-                                    <img src="https://images.unsplash.com/photo-1466781783364-36c955e42a7f?w=400&q=80" alt="Outdoor Plants">
-                                    <div class="category-overlay"><a href="#" class="category-btn">View Collection</a></div>
-                                </div>
-                                <div class="category-info"><h4>Outdoor Plants</h4><p>75+ Varieties</p></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="category-card">
-                                <div class="category-image">
-                                    <img src="https://images.unsplash.com/photo-1509937528035-ad76254b0356?w=400&q=80" alt="Succulents">
-                                    <div class="category-overlay"><a href="#" class="category-btn">View Collection</a></div>
-                                </div>
-                                <div class="category-info"><h4>Succulents</h4><p>30+ Varieties</p></div>
+                                <div class="category-info"><h4>Fruit Plants</h4><p>Mango · Guava · Lemon · Papaya · Banana</p></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="category-card">
                                 <div class="category-image">
                                     <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&q=80" alt="Flowering Plants">
-                                    <div class="category-overlay"><a href="#" class="category-btn">View Collection</a></div>
+                                    <div class="category-overlay"><a href="#contact" class="category-btn">Enquire Now</a></div>
                                 </div>
-                                <div class="category-info"><h4>Flowering Plants</h4><p>40+ Varieties</p></div>
+                                <div class="category-info"><h4>Flowering Plants</h4><p>Rose · Hibiscus · Marigold · Jasmine · Bougainvillea</p></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="category-card">
                                 <div class="category-image">
-                                    <img src="https://images.unsplash.com/photo-1558293842-c0fd3db86157?w=400&q=80" alt="Herbs">
-                                    <div class="category-overlay"><a href="#" class="category-btn">View Collection</a></div>
+                                    <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?w=400&q=80" alt="Ornamental Plants">
+                                    <div class="category-overlay"><a href="#contact" class="category-btn">Enquire Now</a></div>
                                 </div>
-                                <div class="category-info"><h4>Herbs & Vegetables</h4><p>25+ Varieties</p></div>
+                                <div class="category-info"><h4>Ornamental Plants</h4><p>Areca Palm · Money Plant · Snake Plant · Bonsai</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-image">
+                                    <img src="https://images.unsplash.com/photo-1558293842-c0fd3db86157?w=400&q=80" alt="Medicinal Plants">
+                                    <div class="category-overlay"><a href="#contact" class="category-btn">Enquire Now</a></div>
+                                </div>
+                                <div class="category-info"><h4>Medicinal & Herbal</h4><p>Tulsi · Neem · Ashwagandha · Aloe Vera · Giloy</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-image">
+                                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&q=80" alt="Farm & Landscape">
+                                    <div class="category-overlay"><a href="#contact" class="category-btn">Enquire Now</a></div>
+                                </div>
+                                <div class="category-info"><h4>Farm & Landscape</h4><p>Coconut · Bamboo · Teak · Shade Trees · Hedges</p></div>
                             </div>
                         </div>
                     </div>
@@ -1469,13 +1485,13 @@
         </div>
     </section>
 
-    <!-- ==================== FEATURED PRODUCTS ==================== -->
+    <!-- ==================== FEATURED PLANTS ==================== -->
     <section class="featured-products" id="shop">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
                 <span class="section-label">Handpicked</span>
-                <h2 class="section-title">Featured Products</h2>
-                <p class="section-subtitle">Handpicked plants that bring life to your home</p>
+                <h2 class="section-title">Popular Plants</h2>
+                <p class="section-subtitle">Some of our most loved plants — call or WhatsApp to enquire about availability</p>
             </div>
 
             <div class="product-slider" data-aos="fade-up" data-aos-delay="200">
@@ -1483,27 +1499,24 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="product-card">
-                                <div class="product-badge">Best Seller</div>
+                                <div class="product-badge">Most Popular</div>
                                 <div class="product-image">
-                                    <img src="https://images.unsplash.com/photo-1545241047-6f2a0f2e2cca?w=400&q=80" alt="Monstera Deliciosa">
+                                    <img src="https://images.unsplash.com/photo-1545241047-6f2a0f2e2cca?w=400&q=80" alt="Areca Palm">
                                     <div class="product-actions">
-                                        <button class="action-btn"><i class="fas fa-heart"></i></button>
-                                        <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="action-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="tel:+919876543210" class="action-btn" title="Call"><i class="fas fa-phone-alt"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-info">
-                                    <h4>Monstera Deliciosa</h4>
+                                    <h4>Areca Palm</h4>
                                     <div class="product-rating">
                                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                                        <span>(4.5)</span>
+                                        <span>Ornamental</span>
                                     </div>
-                                    <p class="product-description">Perfect indoor plant for air purification</p>
+                                    <p class="product-description">Elegant indoor/outdoor palm, perfect for home decor and landscaping</p>
                                     <div class="product-footer">
-                                        <div class="product-price">
-                                            <span class="current-price">₹899</span>
-                                            <span class="old-price">₹1,299</span>
-                                        </div>
-                                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                                        <span style="font-size:0.85rem;color:var(--text-light);"><i class="fas fa-tag"></i> Ornamental</span>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="add-to-cart-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
                                     </div>
                                 </div>
                             </div>
@@ -1511,24 +1524,24 @@
 
                         <div class="swiper-slide">
                             <div class="product-card">
-                                <div class="product-badge new">New</div>
+                                <div class="product-badge new">Seasonal</div>
                                 <div class="product-image">
-                                    <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400&q=80" alt="Snake Plant">
+                                    <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400&q=80" alt="Tulsi">
                                     <div class="product-actions">
-                                        <button class="action-btn"><i class="fas fa-heart"></i></button>
-                                        <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="action-btn"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="tel:+919876543210" class="action-btn"><i class="fas fa-phone-alt"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-info">
-                                    <h4>Snake Plant</h4>
+                                    <h4>Tulsi (Holy Basil)</h4>
                                     <div class="product-rating">
                                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                        <span>(5.0)</span>
+                                        <span>Medicinal</span>
                                     </div>
-                                    <p class="product-description">Low maintenance, perfect for beginners</p>
+                                    <p class="product-description">Sacred and medicinal herb, ideal for every Indian home and garden</p>
                                     <div class="product-footer">
-                                        <div class="product-price"><span class="current-price">₹599</span></div>
-                                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                                        <span style="font-size:0.85rem;color:var(--text-light);"><i class="fas fa-tag"></i> Medicinal & Herbal</span>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="add-to-cart-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
                                     </div>
                                 </div>
                             </div>
@@ -1536,27 +1549,24 @@
 
                         <div class="swiper-slide">
                             <div class="product-card">
-                                <div class="product-badge sale">-30% OFF</div>
+                                <div class="product-badge" style="background:#e67e22;">Fruit Tree</div>
                                 <div class="product-image">
-                                    <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&q=80" alt="Peace Lily">
+                                    <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&q=80" alt="Mango Plant">
                                     <div class="product-actions">
-                                        <button class="action-btn"><i class="fas fa-heart"></i></button>
-                                        <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="action-btn"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="tel:+919876543210" class="action-btn"><i class="fas fa-phone-alt"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-info">
-                                    <h4>Peace Lily</h4>
+                                    <h4>Mango Plant</h4>
                                     <div class="product-rating">
                                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                                        <span>(4.0)</span>
+                                        <span>Fruit</span>
                                     </div>
-                                    <p class="product-description">Beautiful white blooms, air purifier</p>
+                                    <p class="product-description">Premium grafted mango varieties — ideal for farms, gardens and orchards</p>
                                     <div class="product-footer">
-                                        <div class="product-price">
-                                            <span class="current-price">₹699</span>
-                                            <span class="old-price">₹999</span>
-                                        </div>
-                                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                                        <span style="font-size:0.85rem;color:var(--text-light);"><i class="fas fa-tag"></i> Fruit Plants</span>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="add-to-cart-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
                                     </div>
                                 </div>
                             </div>
@@ -1565,22 +1575,22 @@
                         <div class="swiper-slide">
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img src="https://images.unsplash.com/photo-1509937528035-ad76254b0356?w=400&q=80" alt="Succulent Set">
+                                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&q=80" alt="Rose Plant">
                                     <div class="product-actions">
-                                        <button class="action-btn"><i class="fas fa-heart"></i></button>
-                                        <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="action-btn"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="tel:+919876543210" class="action-btn"><i class="fas fa-phone-alt"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-info">
-                                    <h4>Succulent Set (5 pcs)</h4>
+                                    <h4>Rose Plant</h4>
                                     <div class="product-rating">
                                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                                        <span>(4.5)</span>
+                                        <span>Flowering</span>
                                     </div>
-                                    <p class="product-description">Mini succulents for desk decoration</p>
+                                    <p class="product-description">Multiple colour varieties available — perfect for gardens and gifting</p>
                                     <div class="product-footer">
-                                        <div class="product-price"><span class="current-price">₹799</span></div>
-                                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                                        <span style="font-size:0.85rem;color:var(--text-light);"><i class="fas fa-tag"></i> Flowering</span>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="add-to-cart-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
                                     </div>
                                 </div>
                             </div>
@@ -1588,24 +1598,24 @@
 
                         <div class="swiper-slide">
                             <div class="product-card">
-                                <div class="product-badge">Popular</div>
+                                <div class="product-badge">Landscape</div>
                                 <div class="product-image">
-                                    <img src="https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=400&q=80" alt="Pothos">
+                                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&q=80" alt="Bamboo">
                                     <div class="product-actions">
-                                        <button class="action-btn"><i class="fas fa-heart"></i></button>
-                                        <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="action-btn"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="tel:+919876543210" class="action-btn"><i class="fas fa-phone-alt"></i></a>
                                     </div>
                                 </div>
                                 <div class="product-info">
-                                    <h4>Golden Pothos</h4>
+                                    <h4>Bamboo Plant</h4>
                                     <div class="product-rating">
                                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                        <span>(5.0)</span>
+                                        <span>Farm & Landscape</span>
                                     </div>
-                                    <p class="product-description">Easy care trailing plant</p>
+                                    <p class="product-description">Fast-growing, multipurpose bamboo — ideal for farms and green fencing</p>
                                     <div class="product-footer">
-                                        <div class="product-price"><span class="current-price">₹499</span></div>
-                                        <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                                        <span style="font-size:0.85rem;color:var(--text-light);"><i class="fas fa-tag"></i> Farm & Landscape</span>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="add-to-cart-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
                                     </div>
                                 </div>
                             </div>
@@ -1617,7 +1627,7 @@
             </div>
 
             <div class="text-center mt-5" data-aos="fade-up">
-                <a href="#" class="view-all-btn">View All Products <i class="fas fa-arrow-right"></i></a>
+                <a href="https://wa.me/919876543210" target="_blank" class="view-all-btn"><i class="fab fa-whatsapp"></i> &nbsp;WhatsApp for Full Plant List</a>
             </div>
         </div>
     </section>
@@ -1627,37 +1637,37 @@
         <div class="container" style="position:relative;z-index:2;">
             <div class="section-header text-center" data-aos="fade-up">
                 <span class="section-label">Our Promise</span>
-                <h2 class="section-title">Why Choose GreenLeaf?</h2>
-                <p class="section-subtitle">We make plant shopping easy, delightful and reliable</p>
+                <h2 class="section-title">Why Choose Pavitra Mitti?</h2>
+                <p class="section-subtitle">Trusted by home gardeners, landscapers and farmers across West Bengal</p>
             </div>
 
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
-                        <h4>Fast Delivery</h4>
-                        <p>Same-day delivery across Kolkata. Your plants reach you fresh and healthy, wrapped with care.</p>
+                        <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                        <h4>Wide Plant Variety</h4>
+                        <p>200+ varieties of fruit, flowering, ornamental, medicinal and landscape plants — all nurtured with expert care for every customer need.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h4>Quality Guarantee</h4>
-                        <p>100% healthy plants guaranteed or get a free replacement. No questions asked.</p>
+                        <div class="feature-icon"><i class="fas fa-user-tie"></i></div>
+                        <h4>Expert Guidance</h4>
+                        <p>Our experienced horticulturists guide you on plant selection, care techniques and maintenance — for free, every time you visit or call.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-headset"></i></div>
-                        <h4>Expert Support</h4>
-                        <p>Free plant care guidance from our experienced horticulturists available round the clock.</p>
+                        <div class="feature-icon"><i class="fas fa-tags"></i></div>
+                        <h4>Affordable Pricing</h4>
+                        <p>Competitive rates for all customers. Special bulk order discounts available for landscapers, farmers and large garden projects.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
-                        <h4>Eco-Friendly</h4>
-                        <p>Sustainable packaging and organic growing practices for a greener planet.</p>
+                        <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>Easy to Reach</h4>
+                        <p>Conveniently located in Basirhat, easily accessible from Barasat and Kolkata — serving customers across all of West Bengal.</p>
                     </div>
                 </div>
             </div>
@@ -1665,20 +1675,20 @@
             <!-- Stats -->
             <div class="stats-row" data-aos="fade-up" data-aos-delay="200">
                 <div class="stat-item">
-                    <span class="stat-number">5K+</span>
-                    <span class="stat-label">Happy Customers</span>
-                </div>
-                <div class="stat-item">
                     <span class="stat-number">200+</span>
                     <span class="stat-label">Plant Varieties</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">4.9★</span>
-                    <span class="stat-label">Average Rating</span>
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years Experience</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">3Yr</span>
-                    <span class="stat-label">In Business</span>
+                    <span class="stat-number">5K+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Districts Served</span>
                 </div>
             </div>
         </div>
@@ -1690,7 +1700,7 @@
             <div class="section-header text-center" data-aos="fade-up">
                 <span class="section-label">Reviews</span>
                 <h2 class="section-title">What Our Customers Say</h2>
-                <p class="section-subtitle">Join thousands of happy plant parents in Kolkata</p>
+                <p class="section-subtitle">Trusted by home gardeners, farmers and landscapers across West Bengal</p>
             </div>
 
             <div class="row g-4">
@@ -1699,12 +1709,12 @@
                         <div class="testimonial-rating">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="testimonial-text">"Amazing quality plants! The Monstera I ordered arrived in perfect condition. The care guide was very helpful. Highly recommend GreenLeaf!"</p>
+                        <p class="testimonial-text">"Pavitra Mitti is truly the best nursery in West Bengal. I found healthy plants and received great guidance for my garden. The staff was knowledgeable and very helpful throughout."</p>
                         <div class="testimonial-author">
                             <img src="https://i.pravatar.cc/100?img=1" alt="Customer">
                             <div class="author-info">
-                                <h5>Priya Sharma</h5>
-                                <span>Salt Lake, Kolkata</span>
+                                <h5>Subhashree Mondal</h5>
+                                <span>Barasat, North 24 Pgs</span>
                             </div>
                             <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
                         </div>
@@ -1715,12 +1725,12 @@
                         <div class="testimonial-rating">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="testimonial-text">"Best online plant store in Kolkata! Same-day delivery and the plants are always healthy. Customer service is excellent too!"</p>
+                        <p class="testimonial-text">"I ordered bamboo and coconut plants in bulk for my farm project. Pavitra Mitti gave me excellent pricing and the plants arrived in great condition. Will order again without hesitation!"</p>
                         <div class="testimonial-author">
                             <img src="https://i.pravatar.cc/100?img=12" alt="Customer">
                             <div class="author-info">
-                                <h5>Rahul Das</h5>
-                                <span>Park Street, Kolkata</span>
+                                <h5>Kartik Halder</h5>
+                                <span>Basirhat, West Bengal</span>
                             </div>
                             <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
                         </div>
@@ -1731,11 +1741,11 @@
                         <div class="testimonial-rating">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                         </div>
-                        <p class="testimonial-text">"Great variety of plants and very affordable prices. The packaging was eco-friendly. Will definitely order again from GreenLeaf!"</p>
+                        <p class="testimonial-text">"As a landscaper, I rely on Pavitra Mitti for all my project needs. Their Areca Palms, Bougainvillea and ornamental varieties are always healthy and reasonably priced. Highly recommended!"</p>
                         <div class="testimonial-author">
                             <img src="https://i.pravatar.cc/100?img=5" alt="Customer">
                             <div class="author-info">
-                                <h5>Ananya Roy</h5>
+                                <h5>Rupa Ghosh</h5>
                                 <span>New Town, Kolkata</span>
                             </div>
                             <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
@@ -1750,9 +1760,9 @@
     <section class="plant-care-section">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
-                <span class="section-label">Learn</span>
+                <span class="section-label">Expert Advice</span>
                 <h2 class="section-title">Plant Care Tips</h2>
-                <p class="section-subtitle">Expert advice to keep your plants thriving</p>
+                <p class="section-subtitle">Free guidance from our horticulturists at Pavitra Mitti to keep your plants thriving</p>
             </div>
 
             <div class="row g-4">
@@ -1811,21 +1821,129 @@
         </div>
     </section>
 
-    <!-- ==================== NEWSLETTER SECTION ==================== -->
-    <section class="newsletter-section">
+    <!-- ==================== VISIT US / LOCATION SECTION ==================== -->
+    <section class="newsletter-section" id="visit">
         <div class="container">
             <div class="newsletter-content text-center" data-aos="fade-up">
-                <div class="newsletter-icon"><i class="fas fa-envelope-open-text"></i></div>
-                <h2 class="newsletter-title">Stay Green, Stay Updated</h2>
-                <p class="newsletter-sub">Get plant care tips, exclusive offers and new arrivals directly in your inbox</p>
-                <form class="newsletter-form" onsubmit="handleNewsletter(event)">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
-                </form>
+                <div class="newsletter-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h2 class="newsletter-title">Visit Pavitra Mitti Nursery</h2>
+                <p class="newsletter-sub">Conveniently located in Basirhat — easily accessible from Barasat and Kolkata. Come visit us or get in touch today.</p>
+                <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2rem;">
+                    <a href="tel:+919876543210" class="offer-btn" style="background:white;color:var(--primary-green);font-weight:700;padding:1rem 2.2rem;border-radius:50px;text-decoration:none;display:inline-flex;align-items:center;gap:0.6rem;transition:all 0.3s ease;">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="offer-btn" style="background:#25D366;color:white;font-weight:700;padding:1rem 2.2rem;border-radius:50px;text-decoration:none;display:inline-flex;align-items:center;gap:0.6rem;transition:all 0.3s ease;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                    <a href="https://maps.google.com" target="_blank" class="offer-btn" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.4);font-weight:700;padding:1rem 2.2rem;border-radius:50px;text-decoration:none;display:inline-flex;align-items:center;gap:0.6rem;transition:all 0.3s ease;">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
                 <div class="newsletter-perks">
-                    <span class="newsletter-perk"><i class="fas fa-check"></i> No spam, ever</span>
-                    <span class="newsletter-perk"><i class="fas fa-check"></i> Unsubscribe anytime</span>
-                    <span class="newsletter-perk"><i class="fas fa-check"></i> Exclusive deals for subscribers</span>
+                    <span class="newsletter-perk"><i class="fas fa-check"></i> Basirhat, North 24 Parganas</span>
+                    <span class="newsletter-perk"><i class="fas fa-check"></i> Near Barasat & Kolkata</span>
+                    <span class="newsletter-perk"><i class="fas fa-check"></i> Open Mon–Sun, 8AM–8PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ SECTION ==================== -->
+    <section style="background:var(--white);padding:5rem 0;" id="faq">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up" style="margin-bottom:3rem;">
+                <span class="section-label">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle" style="margin:0 auto;">Everything you need to know about Pavitra Mitti Nursery</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion" id="faqAccordion">
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-map-marker-alt me-3" style="color:var(--accent-green);"></i> Where is Pavitra Mitti Nursery located?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    Pavitra Mitti is located in <strong>Basirhat, North 24 Parganas</strong>, West Bengal. We are easily accessible from Barasat and Kolkata. Whether you're searching for a "nursery near Barasat" or a "nursery near Kolkata," we're just a short drive away. Exact directions are available via Google Maps or by calling us directly.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-seedling me-3" style="color:var(--accent-green);"></i> What types of plants do you sell?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    We offer 200+ plant varieties across five major categories: <strong>Fruit Plants</strong> (Mango, Guava, Lemon, Papaya, Banana), <strong>Flowering Plants</strong> (Rose, Hibiscus, Marigold, Jasmine, Bougainvillea), <strong>Ornamental Plants</strong> (Areca Palm, Money Plant, Snake Plant, Bonsai), <strong>Medicinal & Herbal Plants</strong> (Tulsi, Neem, Ashwagandha, Aloe Vera, Giloy), and <strong>Farm & Landscape Plants</strong> (Coconut, Bamboo, Teak, Shade Trees).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-boxes me-3" style="color:var(--accent-green);"></i> Do you offer bulk orders and discounts?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    Yes! We welcome bulk orders from farmers, landscapers, housing societies, and large garden projects. We offer <strong>special pricing for bulk purchases</strong> and can arrange delivery to your location. Contact us via phone or WhatsApp with your requirements and we'll get back to you with a custom quote.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-phone-alt me-3" style="color:var(--accent-green);"></i> How can I order or enquire about a plant?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    You can reach us easily by <strong>phone call or WhatsApp</strong>. Simply call or message us with the plant name, quantity and your location — our team will guide you on availability, pricing and delivery. You can also visit us directly at our nursery in Basirhat during working hours (Mon–Sun, 8AM–8PM).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-truck me-3" style="color:var(--accent-green);"></i> Do you provide home delivery across West Bengal?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    Yes, we provide delivery to customers across West Bengal, including Barasat, Kolkata, and surrounding districts. Delivery availability and charges depend on your location and order size. Please contact us to confirm delivery options for your area before placing a large order.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-hand-holding-heart me-3" style="color:var(--accent-green);"></i> Do you provide plant care advice after purchase?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    Absolutely. Our team of experienced horticulturists is always available to guide you on watering schedules, sunlight requirements, fertilizing, and general plant maintenance — completely free of charge. You can call or WhatsApp us anytime with your plant care questions.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-4" data-aos="fade-up">
+                        <p style="color:var(--text-light);margin-bottom:1rem;">Have more questions? We're happy to help!</p>
+                        <a href="https://wa.me/919876543210" target="_blank" class="view-all-btn"><i class="fab fa-whatsapp"></i> &nbsp;Chat with Us on WhatsApp</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1855,7 +1973,7 @@
                     <i class="fas fa-envelope"></i>
                     <div>
                         <strong>Email Us</strong>
-                        <span>hello@greenleafkolkata.in</span>
+                        <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2dad7dededdf2d5c0d7d7dcded7d3d4d9ddded9d3c6d39cdbdc">[email&#160;protected]</a></span>
                     </div>
                 </div>
                 <div class="footer-top-bar-item">
@@ -1871,14 +1989,13 @@
                 <!-- Brand -->
                 <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
                     <div class="footer-brand">
-                        <div class="footer-brand-name"><i class="fas fa-leaf"></i> GreenLeaf</div>
-                        <p class="footer-desc">Your trusted online plant store in Kolkata. We deliver fresh, healthy plants with care guides to help you grow a beautiful green space.</p>
+                        <div class="footer-brand-name"><i class="fas fa-leaf"></i> Pavitra Mitti</div>
+                        <p class="footer-desc">A leading plant nursery in Basirhat, West Bengal — serving home gardeners, landscapers and farmers with 200+ plant varieties, expert guidance and affordable pricing since over a decade.</p>
                         <div class="social-links">
                             <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                             <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://wa.me/919876543210" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1887,23 +2004,23 @@
                 <div class="col-lg-2 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <h5>Quick Links</h5>
                     <ul class="footer-links">
-                        <li><a href="#shop"><i class="fas fa-chevron-right"></i> Shop All Plants</a></li>
-                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Our Plants</a></li>
+                        <li><a href="#shop"><i class="fas fa-chevron-right"></i> Popular Plants</a></li>
                         <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Plant Care Blog</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
                     </ul>
                 </div>
 
                 <!-- Customer Service -->
                 <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <h5>Customer Service</h5>
+                    <h5>Our Plants</h5>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Track Your Order</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Shipping Info</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Return Policy</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQs</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Plant Care Guide</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Fruit Plants</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Flowering Plants</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Ornamental Plants</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Medicinal & Herbal</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Farm & Landscape</a></li>
                     </ul>
                 </div>
 
@@ -1939,21 +2056,21 @@
                     <i class="fas fa-leaf"></i>
                     <div class="trust-badge-text">
                         <strong>100% Organic</strong>
-                        <span>Eco-Friendly</span>
+                        <span>Naturally Grown</span>
                     </div>
                 </div>
                 <div class="trust-badge">
-                    <i class="fas fa-undo-alt"></i>
+                    <i class="fas fa-boxes"></i>
                     <div class="trust-badge-text">
-                        <strong>Easy Returns</strong>
-                        <span>7-Day Policy</span>
+                        <strong>Bulk Orders</strong>
+                        <span>Special Pricing</span>
                     </div>
                 </div>
                 <div class="trust-badge">
                     <i class="fas fa-phone-alt"></i>
                     <div class="trust-badge-text">
-                        <strong>24/7 Support</strong>
-                        <span>Always Here</span>
+                        <strong>Call / WhatsApp</strong>
+                        <span>Quick Response</span>
                     </div>
                 </div>
             </div>
@@ -1962,7 +2079,7 @@
             <div class="footer-bottom">
                 <div class="footer-bottom-inner">
                     <p class="footer-copyright mb-0">
-                        &copy; 2025 GreenLeaf Kolkata. All Rights Reserved. Made with <i class="fas fa-heart"></i> for Plant Lovers
+                        &copy; 2025 Pavitra Mitti Nursery, Basirhat, West Bengal. All Rights Reserved. Made with <i class="fas fa-heart"></i> for Plant Lovers
                     </p>
                     <div class="footer-bottom-links">
                         <a href="#">Privacy Policy</a>
@@ -1980,7 +2097,7 @@
     </button>
 
     <!-- ==================== SCRIPTS ==================== -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -2042,14 +2159,16 @@
             });
         });
 
-        // ---- Add to cart animation ----
+        // ---- Enquire button feedback ----
         document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const orig = this.innerHTML;
-                this.innerHTML = '<i class="fas fa-check"></i> Added!';
-                this.style.background = '#4caf50';
-                setTimeout(() => { this.innerHTML = orig; this.style.background = ''; }, 2000);
-            });
+            if (btn.tagName === 'BUTTON') {
+                btn.addEventListener('click', function () {
+                    const orig = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check"></i> Noted!';
+                    this.style.background = '#4caf50';
+                    setTimeout(() => { this.innerHTML = orig; this.style.background = ''; }, 2000);
+                });
+            }
         });
 
         // ---- Footer form ----
@@ -2061,16 +2180,6 @@
             btn.style.background = '#4caf50';
             setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; this.reset(); }, 3000);
         });
-
-        // ---- Newsletter ----
-        function handleNewsletter(e) {
-            e.preventDefault();
-            const btn = e.target.querySelector('button');
-            const orig = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-check"></i> Subscribed!';
-            btn.style.background = '#2d5016';
-            setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; e.target.reset(); }, 3000);
-        }
 
         // ---- Countdown Timer ----
         (function () {
