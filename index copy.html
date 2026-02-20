@@ -1,0 +1,2201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavitra Mitti – Basirhat Nursery Near Barasat & Kolkata</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==================== ROOT VARIABLES ==================== */
+        :root {
+            --primary-green: #2d5016;
+            --secondary-green: #4a7c59;
+            --light-green: #8fbc8f;
+            --accent-green: #9ccc65;
+            --dark-brown: #3e2723;
+            --light-cream: #faf8f3;
+            --white: #ffffff;
+            --text-dark: #2c3e50;
+            --text-light: #6c757d;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            background: var(--light-cream);
+        }
+
+        /* ==================== NAVBAR ==================== */
+        .navbar {
+            background: rgba(255,255,255,0.98) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            z-index: 1050;
+        }
+
+        .navbar.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.12);
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-green) !important;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .navbar-brand i { color: var(--accent-green); font-size: 2rem; }
+
+        .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover { color: var(--primary-green) !important; }
+        .navbar-nav .nav-link.active { color: var(--primary-green) !important; }
+
+        /* Clean dropdown arrow */
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: 0.4rem;
+            vertical-align: middle;
+            border: none;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            content: '\f078';
+            font-size: 0.7rem;
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown-toggle.show::after {
+            transform: rotate(180deg);
+        }
+
+        /* ---- Dropdown Fix ---- */
+        .dropdown-menu {
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(10px);
+            border: none;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            border-radius: 12px;
+            padding: 0.8rem 0;
+            min-width: 240px;
+            animation: fadeInDown 0.25s ease;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-8px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .dropdown-item {
+            color: var(--text-dark);
+            padding: 0.7rem 1.5rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: 500;
+        }
+
+        .dropdown-item i { color: var(--accent-green); font-size: 1rem; width: 20px; }
+
+        .dropdown-item:hover {
+            background: linear-gradient(90deg, var(--accent-green), var(--light-green));
+            color: white;
+            padding-left: 2rem;
+        }
+
+        .dropdown-item:hover i { color: white; }
+        .dropdown-divider { border-color: rgba(0,0,0,0.08); margin: 0.5rem 0; }
+
+        /* Mobile dropdown */
+        @media (max-width: 991px) {
+            .dropdown-menu {
+                box-shadow: none;
+                border-radius: 8px;
+                border: 1px solid rgba(0,0,0,0.08);
+                margin: 0.3rem 0;
+            }
+        }
+
+        /* Nav Icons - Contact Actions */
+        .nav-icons { display: flex; align-items: center; gap: 1rem; }
+
+        .nav-contact-btn {
+            display: flex; align-items: center; gap: 0.5rem;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .nav-whatsapp {
+            background: #25D366;
+            color: white !important;
+        }
+
+        .nav-whatsapp:hover {
+            background: #1da851;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37,211,102,0.35);
+            color: white !important;
+        }
+
+        .nav-phone {
+            background: transparent;
+            color: var(--primary-green) !important;
+            border-color: var(--primary-green);
+        }
+
+        .nav-phone:hover {
+            background: var(--primary-green);
+            color: white !important;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 991px) {
+            .nav-icons {
+                padding: 1rem 0;
+                border-top: 1px solid rgba(0,0,0,0.08);
+                margin-top: 0.5rem;
+                justify-content: center;
+                gap: 0.8rem;
+                flex-wrap: wrap;
+            }
+        }
+
+        /* ==================== HERO SECTION (KEPT ORIGINAL) ==================== */
+        .hero-section {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            margin-top: 0;
+        }
+
+        .swiper { width: 100%; height: 100%; }
+
+        .swiper-slide {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide-1 { background: var(--primary-green); position: relative; }
+        .slide-1::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('https://images.unsplash.com/photo-1466781783364-36c955e42a7f?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0 0, 60% 0, 45% 100%, 0 100%);
+            opacity: 0.9;
+        }
+        .slide-1::after {
+            content: '';
+            position: absolute;
+            top: 0; right: 0;
+            width: 50%; height: 100%;
+            background: linear-gradient(135deg, rgba(45,80,22,0.95), rgba(74,124,89,0.85));
+        }
+
+        .slide-2 { background: var(--secondary-green); position: relative; }
+        .slide-2::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('https://images.unsplash.com/photo-1459156212016-c812468e2115?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(40% 0, 100% 0, 100% 100%, 55% 100%);
+            opacity: 0.9;
+        }
+        .slide-2::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 50%; height: 100%;
+            background: linear-gradient(135deg, rgba(74,124,89,0.95), rgba(156,204,101,0.85));
+        }
+
+        .slide-3 { background: var(--primary-green); position: relative; }
+        .slide-3::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            clip-path: circle(50% at 70% 50%);
+            opacity: 0.85;
+        }
+        .slide-3::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(45,80,22,0.7), rgba(143,188,143,0.6));
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 600px;
+            padding: 0 2rem;
+        }
+
+        .slide-1 .hero-content { margin-left: auto; margin-right: 10%; text-align: right; }
+        .slide-2 .hero-content { margin-right: auto; margin-left: 10%; text-align: left; }
+        .slide-3 .hero-content { margin-left: auto; margin-right: auto; text-align: center; }
+
+        .hero-content h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            color: var(--white);
+            text-shadow: 3px 3px 15px rgba(0,0,0,0.4);
+            letter-spacing: -2px;
+        }
+
+        .hero-content .hero-subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: var(--accent-green);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            color: rgba(255,255,255,0.95);
+            line-height: 1.8;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+
+        .hero-btn {
+            padding: 1.2rem 3.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-btn::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: rgba(255,255,255,0.2);
+            transition: left 0.4s ease;
+        }
+
+        .hero-btn:hover::before { left: 100%; }
+
+        .btn-primary-custom { background: var(--accent-green); color: white; }
+        .btn-primary-custom:hover {
+            background: var(--primary-green);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(45,80,22,0.4);
+            color: white;
+        }
+
+        .btn-outline-custom { background: transparent; color: white; border: 2px solid white; }
+        .btn-outline-custom:hover { background: white; color: var(--primary-green); transform: translateY(-3px); }
+
+        .hero-decoration { position: absolute; z-index: 5; opacity: 0.1; }
+        .decoration-1 { top: 10%; left: 5%; font-size: 15rem; color: var(--white); }
+        .decoration-2 { bottom: 10%; right: 5%; font-size: 12rem; color: var(--white); }
+
+        .swiper-pagination { bottom: 40px !important; }
+        .swiper-pagination-bullet {
+            width: 12px; height: 12px;
+            background: rgba(255,255,255,0.5);
+            opacity: 1;
+            transition: all 0.3s ease;
+            border-radius: 0;
+        }
+        .swiper-pagination-bullet-active { background: var(--accent-green); width: 50px; border-radius: 6px; }
+
+        .swiper-button-next, .swiper-button-prev {
+            color: white;
+            background: rgba(255,255,255,0.1);
+            width: 70px; height: 70px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 0;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .swiper-button-next:hover, .swiper-button-prev:hover {
+            background: var(--accent-green);
+            border-color: var(--accent-green);
+        }
+
+        .swiper-button-next::after, .swiper-button-prev::after { font-size: 1.5rem; font-weight: 700; }
+
+        /* ==================== STATS TICKER STRIP ==================== */
+        .stats-ticker {
+            background: var(--primary-green);
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .ticker-track {
+            display: flex;
+            gap: 0;
+            white-space: nowrap;
+            animation: ticker 30s linear infinite;
+        }
+
+        @keyframes ticker {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        .ticker-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.9rem 3rem;
+            color: rgba(255,255,255,0.9);
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-right: 1px solid rgba(255,255,255,0.15);
+            flex-shrink: 0;
+        }
+
+        .ticker-item i { color: var(--accent-green); font-size: 1rem; }
+
+        /* ==================== SPECIAL OFFER BANNER ==================== */
+        .special-offer-banner {
+            background: linear-gradient(135deg, var(--accent-green), var(--secondary-green));
+            padding: 2rem 0;
+        }
+
+        .offer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .offer-icon {
+            width: 70px; height: 70px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2rem; color: white;
+            flex-shrink: 0;
+        }
+
+        .offer-text { flex: 1; color: white; min-width: 200px; }
+        .offer-text h3 { font-size: 1.8rem; margin-bottom: 0.3rem; font-weight: 700; }
+        .offer-text p { margin: 0; font-size: 1.1rem; }
+
+        .offer-timer {
+            display: flex;
+            gap: 0.8rem;
+            align-items: center;
+        }
+
+        .timer-unit {
+            text-align: center;
+            background: rgba(255,255,255,0.15);
+            border-radius: 10px;
+            padding: 0.5rem 0.8rem;
+            min-width: 55px;
+        }
+
+        .timer-unit .num {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
+        }
+
+        .timer-unit .lbl {
+            display: block;
+            font-size: 0.65rem;
+            color: rgba(255,255,255,0.8);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.2rem;
+        }
+
+        .timer-sep { color: white; font-size: 1.4rem; font-weight: 700; align-self: flex-start; padding-top: 0.5rem; }
+
+        .offer-btn {
+            padding: 1rem 2.5rem;
+            background: white;
+            color: var(--primary-green);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        .offer-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); color: var(--primary-green); }
+
+        /* ==================== SECTION COMMON ==================== */
+        section { padding: 5rem 0; }
+
+        .section-label {
+            display: inline-block;
+            background: rgba(156,204,101,0.15);
+            color: var(--secondary-green);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(156,204,101,0.3);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--primary-green);
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .section-subtitle { font-size: 1.05rem; color: var(--text-light); max-width: 500px; }
+        .section-header.text-center .section-subtitle { margin: 0 auto; }
+
+        /* ==================== CATEGORIES SECTION ==================== */
+        .categories-section { background: var(--white); }
+
+        .category-slider { position: relative; padding: 0 50px; }
+
+        .category-card {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            cursor: pointer;
+            height: 100%;
+        }
+
+        .category-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.15); }
+
+        .category-image { position: relative; overflow: hidden; height: 280px; }
+        .category-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+        .category-card:hover .category-image img { transform: scale(1.1); }
+
+        .category-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to bottom, transparent, rgba(45,80,22,0.9));
+            display: flex; align-items: flex-end; justify-content: center;
+            padding: 2rem;
+            opacity: 0; transition: opacity 0.4s ease;
+        }
+
+        .category-card:hover .category-overlay { opacity: 1; }
+
+        .category-btn {
+            padding: 0.8rem 2rem;
+            background: var(--accent-green);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .category-btn:hover { background: white; color: var(--primary-green); }
+
+        .category-info { padding: 1.5rem; text-align: center; background: white; }
+        .category-info h4 { font-size: 1.3rem; color: var(--text-dark); margin-bottom: 0.3rem; font-weight: 600; }
+        .category-info p { color: var(--text-light); margin: 0; }
+
+        .slider-nav {
+            position: absolute; top: 50%; transform: translateY(-50%);
+            width: 45px; height: 45px;
+            background: var(--accent-green); color: white;
+            border: none; border-radius: 50%;
+            cursor: pointer; display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem; transition: all 0.3s ease; z-index: 10;
+        }
+
+        .slider-nav:hover { background: var(--primary-green); transform: translateY(-50%) scale(1.1); }
+        .slider-nav.prev { left: 0; }
+        .slider-nav.next { right: 0; }
+
+        /* ==================== FEATURED PRODUCTS ==================== */
+        .featured-products { background: var(--light-cream); }
+
+        .product-slider { position: relative; padding: 0 50px; }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            position: relative; height: 100%;
+        }
+
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.15); }
+
+        .product-badge {
+            position: absolute; top: 15px; left: 15px;
+            padding: 0.5rem 1rem;
+            background: var(--accent-green);
+            color: white; border-radius: 50px;
+            font-size: 0.85rem; font-weight: 600; z-index: 10;
+        }
+
+        .product-badge.new { background: #2196F3; }
+        .product-badge.sale { background: #f44336; }
+
+        .product-image { position: relative; overflow: hidden; height: 280px; }
+        .product-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+        .product-card:hover .product-image img { transform: scale(1.1); }
+
+        .product-actions {
+            position: absolute; top: 15px; right: 15px;
+            display: flex; flex-direction: column; gap: 0.5rem;
+            opacity: 0; transform: translateX(20px);
+            transition: all 0.4s ease;
+        }
+
+        .product-card:hover .product-actions { opacity: 1; transform: translateX(0); }
+
+        .action-btn {
+            width: 40px; height: 40px;
+            background: white; border: none; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .action-btn:hover { background: var(--accent-green); color: white; transform: scale(1.1); }
+
+        .product-info { padding: 1.5rem; }
+        .product-info h4 { font-size: 1.2rem; color: var(--text-dark); margin-bottom: 0.5rem; font-weight: 600; }
+
+        .product-rating { display: flex; align-items: center; gap: 0.2rem; margin-bottom: 0.8rem; }
+        .product-rating i { color: #FFC107; font-size: 0.9rem; }
+        .product-rating span { margin-left: 0.5rem; color: var(--text-light); font-size: 0.9rem; }
+
+        .product-description { color: var(--text-light); font-size: 0.95rem; margin-bottom: 1rem; }
+
+        .product-footer {
+            display: flex; align-items: center; justify-content: space-between;
+            padding-top: 1rem; border-top: 1px solid #f0f0f0;
+        }
+
+        .product-price { display: flex; align-items: center; gap: 0.5rem; }
+        .current-price { font-size: 1.5rem; font-weight: 700; color: var(--primary-green); }
+        .old-price { font-size: 1rem; color: var(--text-light); text-decoration: line-through; }
+
+        .add-to-cart-btn {
+            padding: 0.7rem 1.5rem;
+            background: var(--accent-green); color: white;
+            border: none; border-radius: 50px;
+            font-weight: 600; cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+
+        .add-to-cart-btn:hover { background: var(--primary-green); transform: scale(1.05); }
+
+        .view-all-btn {
+            padding: 1rem 3rem;
+            background: var(--primary-green); color: white;
+            border-radius: 50px; text-decoration: none;
+            font-weight: 600;
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .view-all-btn:hover { background: var(--accent-green); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(45,80,22,0.3); color: white; }
+
+        /* ==================== ENHANCED WHY CHOOSE US ==================== */
+        .why-choose-us { background: var(--primary-green); position: relative; overflow: hidden; }
+
+        .why-choose-us::before {
+            content: '';
+            position: absolute;
+            top: -100px; right: -100px;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(156,204,101,0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .why-choose-us::after {
+            content: '';
+            position: absolute;
+            bottom: -100px; left: -100px;
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, rgba(143,188,143,0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .why-choose-us .section-title { color: white; }
+        .why-choose-us .section-subtitle { color: rgba(255,255,255,0.7); }
+        .why-choose-us .section-label { background: rgba(255,255,255,0.1); color: var(--accent-green); border-color: rgba(255,255,255,0.2); }
+
+        .feature-box {
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .feature-box::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-green), var(--light-green));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .feature-box:hover { background: rgba(255,255,255,0.1); transform: translateY(-8px); border-color: rgba(156,204,101,0.3); }
+        .feature-box:hover::before { transform: scaleX(1); }
+
+        .feature-icon {
+            width: 80px; height: 80px;
+            background: linear-gradient(135deg, var(--accent-green), var(--secondary-green));
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem; color: white;
+            transition: all 0.4s ease;
+        }
+
+        .feature-box:hover .feature-icon { border-radius: 50%; transform: scale(1.1); }
+
+        .feature-box h4 { font-size: 1.2rem; color: white; margin-bottom: 0.8rem; font-weight: 600; }
+        .feature-box p { color: rgba(255,255,255,0.7); line-height: 1.7; font-size: 0.95rem; }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem 3rem;
+            border-right: 1px solid rgba(255,255,255,0.1);
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .stat-item:last-child { border-right: none; }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-green);
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-top: 0.5rem; display: block; }
+
+        /* ==================== ENHANCED TESTIMONIALS ==================== */
+        .testimonials-section { background: var(--light-cream); }
+
+        .testimonial-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.07);
+            transition: all 0.4s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-card::before {
+            content: '\201C';
+            font-family: 'Playfair Display', serif;
+            font-size: 8rem;
+            color: var(--accent-green);
+            opacity: 0.1;
+            position: absolute;
+            top: -1rem; left: 1.5rem;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .testimonial-card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
+
+        .testimonial-rating { display: flex; gap: 0.3rem; margin-bottom: 1.2rem; }
+        .testimonial-rating i { color: #FFC107; font-size: 1rem; }
+
+        .testimonial-text {
+            color: var(--text-dark);
+            font-style: italic;
+            line-height: 1.9;
+            margin-bottom: 1.8rem;
+            font-size: 1rem;
+        }
+
+        .testimonial-author {
+            display: flex; align-items: center; gap: 1rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .testimonial-author img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-green); }
+        .author-info h5 { font-size: 1rem; color: var(--text-dark); margin-bottom: 0.2rem; font-weight: 600; }
+        .author-info span { font-size: 0.85rem; color: var(--text-light); }
+
+        .verified-badge {
+            margin-left: auto;
+            background: rgba(156,204,101,0.1);
+            color: var(--secondary-green);
+            font-size: 0.75rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: flex; align-items: center; gap: 0.4rem;
+            border: 1px solid rgba(156,204,101,0.3);
+        }
+
+        /* ==================== ENHANCED PLANT CARE TIPS ==================== */
+        .plant-care-section { background: white; }
+
+        .care-tip-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+        }
+
+        .care-tip-card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
+
+        .care-tip-image { height: 220px; overflow: hidden; }
+        .care-tip-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+        .care-tip-card:hover .care-tip-image img { transform: scale(1.1); }
+
+        .care-tip-content { padding: 2rem; position: relative; }
+
+        .tip-icon {
+            width: 60px; height: 60px;
+            background: linear-gradient(135deg, var(--accent-green), var(--secondary-green));
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; color: white;
+            position: absolute; top: -30px; left: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .care-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        .care-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .care-meta-item i { color: var(--accent-green); }
+
+        .care-tip-content h4 { font-size: 1.3rem; color: var(--text-dark); margin-bottom: 0.8rem; font-weight: 600; }
+        .care-tip-content p { color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem; font-size: 0.95rem; }
+
+        .read-more {
+            color: var(--accent-green); text-decoration: none;
+            font-weight: 600;
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover { color: var(--primary-green); gap: 1rem; }
+
+        /* ==================== NEWSLETTER SECTION ==================== */
+        .newsletter-section {
+            background: linear-gradient(135deg, var(--secondary-green) 0%, var(--primary-green) 100%);
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .newsletter-section::before {
+            content: '';
+            position: absolute;
+            top: -50%; right: -10%;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(156,204,101,0.2) 0%, transparent 65%);
+            pointer-events: none;
+        }
+
+        .newsletter-content { position: relative; z-index: 2; }
+
+        .newsletter-icon {
+            width: 90px; height: 90px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.5rem; color: white;
+            margin: 0 auto 2rem;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .newsletter-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: white; margin-bottom: 1rem; }
+        .newsletter-sub { color: rgba(255,255,255,0.8); font-size: 1.1rem; margin-bottom: 2.5rem; }
+
+        .newsletter-form { display: flex; gap: 0; max-width: 520px; margin: 0 auto; border-radius: 50px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
+
+        .newsletter-form input {
+            flex: 1;
+            border: none; outline: none;
+            padding: 1.1rem 1.8rem;
+            font-size: 1rem; font-family: 'Poppins', sans-serif;
+            background: white; color: var(--text-dark);
+        }
+
+        .newsletter-form input::placeholder { color: var(--text-light); }
+
+        .newsletter-form button {
+            padding: 1.1rem 2.5rem;
+            background: var(--accent-green); color: white;
+            border: none; cursor: pointer;
+            font-weight: 600; font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: background 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .newsletter-form button:hover { background: var(--dark-brown); }
+
+        .newsletter-perks {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-perk {
+            display: flex; align-items: center; gap: 0.5rem;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+        }
+
+        .newsletter-perk i { color: var(--accent-green); }
+
+        /* ==================== ENHANCED FOOTER ==================== */
+        .footer {
+            background: linear-gradient(160deg, #1a0f0a 0%, var(--dark-brown) 35%, var(--primary-green) 100%);
+            color: white;
+            padding: 5rem 0 0;
+            position: relative;
+        }
+
+        /* Leaf pattern background */
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(156,204,101,0.06) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(74,124,89,0.08) 0%, transparent 40%);
+            pointer-events: none;
+        }
+
+        .footer-top-bar {
+            background: rgba(156,204,101,0.12);
+            border: 1px solid rgba(156,204,101,0.2);
+            border-radius: 20px;
+            padding: 1.5rem 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .footer-top-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-top-bar-item i {
+            font-size: 1.6rem;
+            color: var(--accent-green);
+            flex-shrink: 0;
+        }
+
+        .footer-top-bar-item strong { display: block; color: white; font-size: 0.95rem; }
+        .footer-top-bar-item span { color: rgba(255,255,255,0.6); font-size: 0.82rem; }
+
+        .footer-brand { margin-bottom: 1.5rem; }
+
+        .footer-brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand-name i { color: var(--accent-green); }
+
+        .footer-desc {
+            color: rgba(255,255,255,0.7);
+            line-height: 1.9;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links { display: flex; gap: 0.8rem; }
+
+        .social-icon {
+            width: 42px; height: 42px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.08);
+            display: flex; align-items: center; justify-content: center;
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+            font-size: 1rem;
+        }
+
+        .social-icon:hover { background: var(--accent-green); color: white; transform: translateY(-4px); border-color: var(--accent-green); }
+
+        .footer h5 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-green);
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+
+        .footer h5::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 35px; height: 2px;
+            background: var(--accent-green);
+            border-radius: 2px;
+        }
+
+        .footer-links { list-style: none; padding: 0; }
+
+        .footer-links li { margin-bottom: 0.75rem; }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.93rem;
+        }
+
+        .footer-links a i { font-size: 0.65rem; color: var(--accent-green); transition: transform 0.3s; }
+        .footer-links a:hover { color: var(--accent-green); }
+        .footer-links a:hover i { transform: translateX(4px); }
+
+        /* Contact Form */
+        .footer-contact-form {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-contact-form .form-control {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: white;
+            padding: 0.8rem 1rem;
+            border-radius: 10px;
+            margin-bottom: 0.8rem;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .footer-contact-form .form-control::placeholder { color: rgba(255,255,255,0.4); }
+        .footer-contact-form .form-control:focus {
+            background: rgba(255,255,255,0.12);
+            border-color: var(--accent-green);
+            color: white;
+            box-shadow: 0 0 0 3px rgba(156,204,101,0.15);
+        }
+
+        .footer-contact-form textarea { resize: none; min-height: 90px; }
+
+        .footer-contact-form .btn-submit {
+            width: 100%; padding: 0.9rem;
+            background: linear-gradient(135deg, var(--accent-green), var(--secondary-green));
+            color: white; border: none; border-radius: 10px;
+            font-weight: 600; cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95rem;
+            display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+        }
+
+        .footer-contact-form .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(156,204,101,0.35); }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            margin-top: 4rem;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .footer-bottom-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-copyright { color: rgba(255,255,255,0.55); font-size: 0.88rem; }
+        .footer-copyright i { color: var(--accent-green); }
+
+        .footer-bottom-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+
+        .footer-bottom-links a {
+            color: rgba(255,255,255,0.55);
+            text-decoration: none;
+            font-size: 0.88rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom-links a:hover { color: var(--accent-green); }
+
+        .trust-badges {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .trust-badge {
+            display: flex; align-items: center; gap: 0.8rem;
+            padding: 0.8rem 1.4rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .trust-badge:hover { background: rgba(255,255,255,0.1); transform: translateY(-3px); }
+        .trust-badge i { font-size: 1.4rem; color: var(--accent-green); }
+
+        .trust-badge-text strong { display: block; font-size: 0.85rem; color: white; }
+        .trust-badge-text span { font-size: 0.73rem; color: rgba(255,255,255,0.55); }
+
+        /* ==================== BACK TO TOP ==================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px; right: 30px;
+            width: 48px; height: 48px;
+            background: var(--accent-green);
+            color: white; border: none; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; font-size: 1.2rem;
+            opacity: 0; transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 4px 20px rgba(156,204,101,0.4);
+        }
+
+        .back-to-top.visible { opacity: 1; transform: translateY(0); }
+        .back-to-top:hover { background: var(--primary-green); transform: translateY(-4px); }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 991px) {
+            .category-slider, .product-slider { padding: 0 30px; }
+            .slider-nav { width: 40px; height: 40px; font-size: 1rem; }
+            .footer-top-bar { justify-content: center; }
+            .footer-top-bar-item { min-width: 45%; }
+            .stat-item { padding: 1rem 1.5rem; }
+        }
+
+        @media (max-width: 768px) {
+            .hero-section { height: 85vh; }
+            .hero-content h1 { font-size: 3rem; }
+            .hero-content p { font-size: 1rem; }
+            .hero-btn { padding: 0.9rem 2rem; font-size: 0.9rem; }
+            .navbar-brand { font-size: 1.5rem; }
+
+            .slide-1 .hero-content,
+            .slide-2 .hero-content,
+            .slide-3 .hero-content {
+                margin-left: auto; margin-right: auto; text-align: center;
+            }
+
+            .swiper-button-next, .swiper-button-prev { width: 50px; height: 50px; }
+            .swiper-button-next::after, .swiper-button-prev::after { font-size: 1.2rem; }
+
+            section { padding: 3.5rem 0; }
+            .section-title { font-size: 2.1rem; }
+
+            .offer-content { justify-content: center; text-align: center; }
+            .offer-text h3 { font-size: 1.4rem; }
+            .offer-timer { justify-content: center; }
+
+            .category-image, .product-image { height: 220px; }
+            .feature-icon { width: 70px; height: 70px; font-size: 1.8rem; }
+
+            .stats-row { gap: 0; }
+            .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 1.2rem; }
+            .stat-item:last-child { border-bottom: none; }
+
+            .footer-top-bar { flex-direction: column; align-items: flex-start; }
+            .footer-bottom-inner { flex-direction: column; text-align: center; }
+            .newsletter-form { flex-direction: column; border-radius: 16px; }
+            .newsletter-form input, .newsletter-form button { border-radius: 12px; }
+
+            .category-slider, .product-slider { padding: 0 40px; }
+        }
+
+        @media (max-width: 576px) {
+            .hero-content h1 { font-size: 2.2rem; }
+            .hero-btn { display: block; margin: 0.5rem auto; width: 90%; text-align: center; }
+            .offer-btn { width: 100%; justify-content: center; }
+            section { padding: 2.5rem 0; }
+            .section-title { font-size: 1.8rem; }
+            .current-price { font-size: 1.3rem; }
+            .add-to-cart-btn { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+            .slider-nav { width: 35px; height: 35px; font-size: 0.9rem; }
+            .category-slider, .product-slider { padding: 0 42px; }
+            .timer-unit { min-width: 45px; padding: 0.4rem 0.5rem; }
+            .timer-unit .num { font-size: 1.3rem; }
+            .offer-icon { display: none; }
+            .stat-number { font-size: 2.2rem; }
+            .footer-top-bar-item { min-width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-leaf"></i>
+                Pavitra Mitti
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Plants</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-apple-alt"></i> Fruit Plants</a></li>
+                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-spa"></i> Flowering Plants</a></li>
+                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-leaf"></i> Ornamental Plants</a></li>
+                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-mortar-pestle"></i> Medicinal & Herbal</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#categories"><i class="fas fa-tree"></i> Farm & Landscape</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#about"><i class="fas fa-seedling"></i> Nursery Consultation</a></li>
+                            <li><a class="dropdown-item" href="#about"><i class="fas fa-truck"></i> Bulk Orders & Delivery</a></li>
+                            <li><a class="dropdown-item" href="#about"><i class="fas fa-drafting-compass"></i> Landscaping Support</a></li>
+                            <li><a class="dropdown-item" href="#about"><i class="fas fa-hand-holding-heart"></i> Plant Care Guidance</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-icons ms-2">
+                    <a href="tel:+919876543210" class="nav-contact-btn nav-phone">
+                        <i class="fas fa-phone-alt"></i> Call Us
+                    </a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="nav-contact-btn nav-whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION (ORIGINAL - PRESERVED) ==================== -->
+    <section class="hero-section" id="home">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-1">
+                    <i class="fas fa-leaf hero-decoration decoration-1"></i>
+                    <div class="hero-content">
+                        <div class="hero-subtitle">Basirhat · Barasat · Kolkata</div>
+                        <h1>Pavitra Mitti<br>Nursery</h1>
+                        <p>Healthy plants, expert care, and trusted nursery services across West Bengal — grown with love, delivered with pride.</p>
+                        <div>
+                            <a href="#categories" class="hero-btn btn-primary-custom">Explore Our Plants</a>
+                            <a href="#contact" class="hero-btn btn-outline-custom">Contact Us Today</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide-2">
+                    <i class="fas fa-seedling hero-decoration decoration-2"></i>
+                    <div class="hero-content">
+                        <div class="hero-subtitle">Best Nursery in West Bengal</div>
+                        <h1>From Soil<br>to Soul</h1>
+                        <p>Fruit plants, flowering varieties, medicinal herbs and landscape trees — everything a home gardener, farmer or landscaper needs.</p>
+                        <div>
+                            <a href="#categories" class="hero-btn btn-primary-custom">View All Plants</a>
+                            <a href="https://wa.me/919876543210" class="hero-btn btn-outline-custom"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide-3">
+                    <i class="fas fa-spa hero-decoration decoration-1"></i>
+                    <div class="hero-content">
+                        <div class="hero-subtitle">Bulk Orders Welcome</div>
+                        <h1>Grow Your<br>Green World</h1>
+                        <p>Serving home gardens, farms and landscapes across Basirhat, Barasat and all of West Bengal with 200+ plant varieties.</p>
+                        <div>
+                            <a href="tel:+919876543210" class="hero-btn btn-primary-custom"><i class="fas fa-phone-alt"></i> Call Now</a>
+                            <a href="#about" class="hero-btn btn-outline-custom">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- ==================== STATS TICKER ==================== -->
+    <div class="stats-ticker">
+        <div class="ticker-track" id="tickerTrack">
+            <div class="ticker-item"><i class="fas fa-map-marker-alt"></i> Located in Basirhat, Near Barasat & Kolkata</div>
+            <div class="ticker-item"><i class="fas fa-seedling"></i> 200+ Plant Varieties Available</div>
+            <div class="ticker-item"><i class="fas fa-truck"></i> Bulk Orders Welcome — Call or WhatsApp</div>
+            <div class="ticker-item"><i class="fas fa-shield-alt"></i> Healthy Plants, Expert Guidance</div>
+            <div class="ticker-item"><i class="fas fa-star"></i> Best Nursery in West Bengal</div>
+            <div class="ticker-item"><i class="fas fa-leaf"></i> Serving Home Gardeners, Farmers & Landscapers</div>
+            <div class="ticker-item"><i class="fas fa-phone-alt"></i> Affordable Pricing · Bulk Discounts Available</div>
+            <!-- Duplicate for seamless loop -->
+            <div class="ticker-item"><i class="fas fa-map-marker-alt"></i> Located in Basirhat, Near Barasat & Kolkata</div>
+            <div class="ticker-item"><i class="fas fa-seedling"></i> 200+ Plant Varieties Available</div>
+            <div class="ticker-item"><i class="fas fa-truck"></i> Bulk Orders Welcome — Call or WhatsApp</div>
+            <div class="ticker-item"><i class="fas fa-shield-alt"></i> Healthy Plants, Expert Guidance</div>
+            <div class="ticker-item"><i class="fas fa-star"></i> Best Nursery in West Bengal</div>
+            <div class="ticker-item"><i class="fas fa-leaf"></i> Serving Home Gardeners, Farmers & Landscapers</div>
+            <div class="ticker-item"><i class="fas fa-phone-alt"></i> Affordable Pricing · Bulk Discounts Available</div>
+        </div>
+    </div>
+
+    <!-- ==================== SPECIAL OFFER BANNER ==================== -->
+    <section class="special-offer-banner">
+        <div class="container">
+            <div class="offer-content">
+                <div class="offer-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="offer-text">
+                    <h3>Order by Call or WhatsApp!</h3>
+                    <p>Bulk orders, home delivery & expert guidance available — just reach out and we'll take care of the rest</p>
+                </div>
+                <div class="offer-timer">
+                    <div class="timer-unit">
+                        <span class="num" id="timer-h">12</span>
+                        <span class="lbl">Hours</span>
+                    </div>
+                    <span class="timer-sep">:</span>
+                    <div class="timer-unit">
+                        <span class="num" id="timer-m">45</span>
+                        <span class="lbl">Mins</span>
+                    </div>
+                    <span class="timer-sep">:</span>
+                    <div class="timer-unit">
+                        <span class="num" id="timer-s">30</span>
+                        <span class="lbl">Secs</span>
+                    </div>
+                </div>
+                <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+                    <a href="tel:+919876543210" class="offer-btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="offer-btn" style="background:#25D366;color:white;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORIES ==================== -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-label">Our Collection</span>
+                <h2 class="section-title">Plant Categories</h2>
+                <p class="section-subtitle">From fruit trees to medicinal herbs — we have everything for every green space</p>
+            </div>
+
+            <div class="category-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper categorySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-image">
+                                    <img src="https://images.unsplash.com/photo-1571575173700-afb9492d6b9e?w=400&q=80" alt="Fruit Plants">
+                                    <div class="category-overlay"><a href="#contact" class="category-btn">Enquire Now</a></div>
+                                </div>
+                                <div class="category-info"><h4>Fruit Plants</h4><p>Mango · Guava · Lemon · Papaya · Banana</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-image">
+                                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&q=80" alt="Flowering Plants">
+                                    <div class="category-overlay"><a href="#contact" class="category-btn">Enquire Now</a></div>
+                                </div>
+                                <div class="category-info"><h4>Flowering Plants</h4><p>Rose · Hibiscus · Marigold · Jasmine · Bougainvillea</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-image">
+                                    <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?w=400&q=80" alt="Ornamental Plants">
+                                    <div class="category-overlay"><a href="#contact" class="category-btn">Enquire Now</a></div>
+                                </div>
+                                <div class="category-info"><h4>Ornamental Plants</h4><p>Areca Palm · Money Plant · Snake Plant · Bonsai</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-image">
+                                    <img src="https://images.unsplash.com/photo-1558293842-c0fd3db86157?w=400&q=80" alt="Medicinal Plants">
+                                    <div class="category-overlay"><a href="#contact" class="category-btn">Enquire Now</a></div>
+                                </div>
+                                <div class="category-info"><h4>Medicinal & Herbal</h4><p>Tulsi · Neem · Ashwagandha · Aloe Vera · Giloy</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category-card">
+                                <div class="category-image">
+                                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&q=80" alt="Farm & Landscape">
+                                    <div class="category-overlay"><a href="#contact" class="category-btn">Enquire Now</a></div>
+                                </div>
+                                <div class="category-info"><h4>Farm & Landscape</h4><p>Coconut · Bamboo · Teak · Shade Trees · Hedges</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-nav prev" id="categoryPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-nav next" id="categoryNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURED PLANTS ==================== -->
+    <section class="featured-products" id="shop">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-label">Handpicked</span>
+                <h2 class="section-title">Popular Plants</h2>
+                <p class="section-subtitle">Some of our most loved plants — call or WhatsApp to enquire about availability</p>
+            </div>
+
+            <div class="product-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper productSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-badge">Most Popular</div>
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1545241047-6f2a0f2e2cca?w=400&q=80" alt="Areca Palm">
+                                    <div class="product-actions">
+                                        <a href="https://wa.me/919876543210" target="_blank" class="action-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="tel:+919876543210" class="action-btn" title="Call"><i class="fas fa-phone-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h4>Areca Palm</h4>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                        <span>Ornamental</span>
+                                    </div>
+                                    <p class="product-description">Elegant indoor/outdoor palm, perfect for home decor and landscaping</p>
+                                    <div class="product-footer">
+                                        <span style="font-size:0.85rem;color:var(--text-light);"><i class="fas fa-tag"></i> Ornamental</span>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="add-to-cart-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-badge new">Seasonal</div>
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400&q=80" alt="Tulsi">
+                                    <div class="product-actions">
+                                        <a href="https://wa.me/919876543210" target="_blank" class="action-btn"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="tel:+919876543210" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h4>Tulsi (Holy Basil)</h4>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        <span>Medicinal</span>
+                                    </div>
+                                    <p class="product-description">Sacred and medicinal herb, ideal for every Indian home and garden</p>
+                                    <div class="product-footer">
+                                        <span style="font-size:0.85rem;color:var(--text-light);"><i class="fas fa-tag"></i> Medicinal & Herbal</span>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="add-to-cart-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-badge" style="background:#e67e22;">Fruit Tree</div>
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&q=80" alt="Mango Plant">
+                                    <div class="product-actions">
+                                        <a href="https://wa.me/919876543210" target="_blank" class="action-btn"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="tel:+919876543210" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h4>Mango Plant</h4>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                        <span>Fruit</span>
+                                    </div>
+                                    <p class="product-description">Premium grafted mango varieties — ideal for farms, gardens and orchards</p>
+                                    <div class="product-footer">
+                                        <span style="font-size:0.85rem;color:var(--text-light);"><i class="fas fa-tag"></i> Fruit Plants</span>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="add-to-cart-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&q=80" alt="Rose Plant">
+                                    <div class="product-actions">
+                                        <a href="https://wa.me/919876543210" target="_blank" class="action-btn"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="tel:+919876543210" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h4>Rose Plant</h4>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                        <span>Flowering</span>
+                                    </div>
+                                    <p class="product-description">Multiple colour varieties available — perfect for gardens and gifting</p>
+                                    <div class="product-footer">
+                                        <span style="font-size:0.85rem;color:var(--text-light);"><i class="fas fa-tag"></i> Flowering</span>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="add-to-cart-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product-card">
+                                <div class="product-badge">Landscape</div>
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&q=80" alt="Bamboo">
+                                    <div class="product-actions">
+                                        <a href="https://wa.me/919876543210" target="_blank" class="action-btn"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="tel:+919876543210" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h4>Bamboo Plant</h4>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        <span>Farm & Landscape</span>
+                                    </div>
+                                    <p class="product-description">Fast-growing, multipurpose bamboo — ideal for farms and green fencing</p>
+                                    <div class="product-footer">
+                                        <span style="font-size:0.85rem;color:var(--text-light);"><i class="fas fa-tag"></i> Farm & Landscape</span>
+                                        <a href="https://wa.me/919876543210" target="_blank" class="add-to-cart-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-nav prev" id="productPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-nav next" id="productNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="https://wa.me/919876543210" target="_blank" class="view-all-btn"><i class="fab fa-whatsapp"></i> &nbsp;WhatsApp for Full Plant List</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ENHANCED WHY CHOOSE US ==================== -->
+    <section class="why-choose-us" id="about">
+        <div class="container" style="position:relative;z-index:2;">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-label">Our Promise</span>
+                <h2 class="section-title">Why Choose Pavitra Mitti?</h2>
+                <p class="section-subtitle">Trusted by home gardeners, landscapers and farmers across West Bengal</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                        <h4>Wide Plant Variety</h4>
+                        <p>200+ varieties of fruit, flowering, ornamental, medicinal and landscape plants — all nurtured with expert care for every customer need.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-user-tie"></i></div>
+                        <h4>Expert Guidance</h4>
+                        <p>Our experienced horticulturists guide you on plant selection, care techniques and maintenance — for free, every time you visit or call.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-tags"></i></div>
+                        <h4>Affordable Pricing</h4>
+                        <p>Competitive rates for all customers. Special bulk order discounts available for landscapers, farmers and large garden projects.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>Easy to Reach</h4>
+                        <p>Conveniently located in Basirhat, easily accessible from Barasat and Kolkata — serving customers across all of West Bengal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-row" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-item">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Plant Varieties</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5K+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Districts Served</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-label">Reviews</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Trusted by home gardeners, farmers and landscapers across West Bengal</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Pavitra Mitti is truly the best nursery in West Bengal. I found healthy plants and received great guidance for my garden. The staff was knowledgeable and very helpful throughout."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=1" alt="Customer">
+                            <div class="author-info">
+                                <h5>Subhashree Mondal</h5>
+                                <span>Barasat, North 24 Pgs</span>
+                            </div>
+                            <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I ordered bamboo and coconut plants in bulk for my farm project. Pavitra Mitti gave me excellent pricing and the plants arrived in great condition. Will order again without hesitation!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="Customer">
+                            <div class="author-info">
+                                <h5>Kartik Halder</h5>
+                                <span>Basirhat, West Bengal</span>
+                            </div>
+                            <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"As a landscaper, I rely on Pavitra Mitti for all my project needs. Their Areca Palms, Bougainvillea and ornamental varieties are always healthy and reasonably priced. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=5" alt="Customer">
+                            <div class="author-info">
+                                <h5>Rupa Ghosh</h5>
+                                <span>New Town, Kolkata</span>
+                            </div>
+                            <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PLANT CARE TIPS ==================== -->
+    <section class="plant-care-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-label">Expert Advice</span>
+                <h2 class="section-title">Plant Care Tips</h2>
+                <p class="section-subtitle">Free guidance from our horticulturists at Pavitra Mitti to keep your plants thriving</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="care-tip-card">
+                        <div class="care-tip-image">
+                            <img src="https://images.unsplash.com/photo-1558293842-c0fd3db86157?w=600&q=80" alt="Watering Guide">
+                        </div>
+                        <div class="care-tip-content">
+                            <div class="tip-icon"><i class="fas fa-tint"></i></div>
+                            <div class="care-meta">
+                                <span class="care-meta-item"><i class="fas fa-clock"></i> 5 min read</span>
+                                <span class="care-meta-item"><i class="fas fa-tag"></i> Basics</span>
+                            </div>
+                            <h4>Watering Guide</h4>
+                            <p>Learn the perfect watering schedule for different plant types. Overwatering is the #1 cause of plant problems!</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="care-tip-card">
+                        <div class="care-tip-image">
+                            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80" alt="Sunlight Tips">
+                        </div>
+                        <div class="care-tip-content">
+                            <div class="tip-icon"><i class="fas fa-sun"></i></div>
+                            <div class="care-meta">
+                                <span class="care-meta-item"><i class="fas fa-clock"></i> 4 min read</span>
+                                <span class="care-meta-item"><i class="fas fa-tag"></i> Light</span>
+                            </div>
+                            <h4>Sunlight Requirements</h4>
+                            <p>Discover which plants need direct sunlight and which prefer shade. Find the perfect spot for your plants!</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="care-tip-card">
+                        <div class="care-tip-image">
+                            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=600&q=80" alt="Fertilizing">
+                        </div>
+                        <div class="care-tip-content">
+                            <div class="tip-icon"><i class="fas fa-seedling"></i></div>
+                            <div class="care-meta">
+                                <span class="care-meta-item"><i class="fas fa-clock"></i> 6 min read</span>
+                                <span class="care-meta-item"><i class="fas fa-tag"></i> Nutrition</span>
+                            </div>
+                            <h4>Fertilizing Tips</h4>
+                            <p>When and how to fertilize your plants for optimal growth. Boost your plant's health naturally!</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VISIT US / LOCATION SECTION ==================== -->
+    <section class="newsletter-section" id="visit">
+        <div class="container">
+            <div class="newsletter-content text-center" data-aos="fade-up">
+                <div class="newsletter-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h2 class="newsletter-title">Visit Pavitra Mitti Nursery</h2>
+                <p class="newsletter-sub">Conveniently located in Basirhat — easily accessible from Barasat and Kolkata. Come visit us or get in touch today.</p>
+                <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2rem;">
+                    <a href="tel:+919876543210" class="offer-btn" style="background:white;color:var(--primary-green);font-weight:700;padding:1rem 2.2rem;border-radius:50px;text-decoration:none;display:inline-flex;align-items:center;gap:0.6rem;transition:all 0.3s ease;">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                    <a href="https://wa.me/919876543210" target="_blank" class="offer-btn" style="background:#25D366;color:white;font-weight:700;padding:1rem 2.2rem;border-radius:50px;text-decoration:none;display:inline-flex;align-items:center;gap:0.6rem;transition:all 0.3s ease;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                    <a href="https://maps.google.com" target="_blank" class="offer-btn" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.4);font-weight:700;padding:1rem 2.2rem;border-radius:50px;text-decoration:none;display:inline-flex;align-items:center;gap:0.6rem;transition:all 0.3s ease;">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+                <div class="newsletter-perks">
+                    <span class="newsletter-perk"><i class="fas fa-check"></i> Basirhat, North 24 Parganas</span>
+                    <span class="newsletter-perk"><i class="fas fa-check"></i> Near Barasat & Kolkata</span>
+                    <span class="newsletter-perk"><i class="fas fa-check"></i> Open Mon–Sun, 8AM–8PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ SECTION ==================== -->
+    <section style="background:var(--white);padding:5rem 0;" id="faq">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up" style="margin-bottom:3rem;">
+                <span class="section-label">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle" style="margin:0 auto;">Everything you need to know about Pavitra Mitti Nursery</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion" id="faqAccordion">
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-map-marker-alt me-3" style="color:var(--accent-green);"></i> Where is Pavitra Mitti Nursery located?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    Pavitra Mitti is located in <strong>Basirhat, North 24 Parganas</strong>, West Bengal. We are easily accessible from Barasat and Kolkata. Whether you're searching for a "nursery near Barasat" or a "nursery near Kolkata," we're just a short drive away. Exact directions are available via Google Maps or by calling us directly.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-seedling me-3" style="color:var(--accent-green);"></i> What types of plants do you sell?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    We offer 200+ plant varieties across five major categories: <strong>Fruit Plants</strong> (Mango, Guava, Lemon, Papaya, Banana), <strong>Flowering Plants</strong> (Rose, Hibiscus, Marigold, Jasmine, Bougainvillea), <strong>Ornamental Plants</strong> (Areca Palm, Money Plant, Snake Plant, Bonsai), <strong>Medicinal & Herbal Plants</strong> (Tulsi, Neem, Ashwagandha, Aloe Vera, Giloy), and <strong>Farm & Landscape Plants</strong> (Coconut, Bamboo, Teak, Shade Trees).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-boxes me-3" style="color:var(--accent-green);"></i> Do you offer bulk orders and discounts?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    Yes! We welcome bulk orders from farmers, landscapers, housing societies, and large garden projects. We offer <strong>special pricing for bulk purchases</strong> and can arrange delivery to your location. Contact us via phone or WhatsApp with your requirements and we'll get back to you with a custom quote.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-phone-alt me-3" style="color:var(--accent-green);"></i> How can I order or enquire about a plant?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    You can reach us easily by <strong>phone call or WhatsApp</strong>. Simply call or message us with the plant name, quantity and your location — our team will guide you on availability, pricing and delivery. You can also visit us directly at our nursery in Basirhat during working hours (Mon–Sun, 8AM–8PM).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-truck me-3" style="color:var(--accent-green);"></i> Do you provide home delivery across West Bengal?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    Yes, we provide delivery to customers across West Bengal, including Barasat, Kolkata, and surrounding districts. Delivery availability and charges depend on your location and order size. Please contact us to confirm delivery options for your area before placing a large order.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" style="border:none;border-radius:16px;margin-bottom:1rem;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" style="font-weight:600;color:var(--primary-green);background:var(--light-cream);border-radius:16px;font-size:1rem;">
+                                    <i class="fas fa-hand-holding-heart me-3" style="color:var(--accent-green);"></i> Do you provide plant care advice after purchase?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:var(--text-light);line-height:1.9;background:white;">
+                                    Absolutely. Our team of experienced horticulturists is always available to guide you on watering schedules, sunlight requirements, fertilizing, and general plant maintenance — completely free of charge. You can call or WhatsApp us anytime with your plant care questions.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-4" data-aos="fade-up">
+                        <p style="color:var(--text-light);margin-bottom:1rem;">Have more questions? We're happy to help!</p>
+                        <a href="https://wa.me/919876543210" target="_blank" class="view-all-btn"><i class="fab fa-whatsapp"></i> &nbsp;Chat with Us on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ENHANCED FOOTER ==================== -->
+    <footer class="footer" id="contact">
+        <div class="container" style="position:relative;z-index:2;">
+
+            <!-- Top Bar -->
+            <div class="footer-top-bar" data-aos="fade-up">
+                <div class="footer-top-bar-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Our Store</strong>
+                        <span>Salt Lake, Kolkata - 700064</span>
+                    </div>
+                </div>
+                <div class="footer-top-bar-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong>Call Us</strong>
+                        <span>+91 98765 43210</span>
+                    </div>
+                </div>
+                <div class="footer-top-bar-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email Us</strong>
+                        <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2dad7dededdf2d5c0d7d7dcded7d3d4d9ddded9d3c6d39cdbdc">[email&#160;protected]</a></span>
+                    </div>
+                </div>
+                <div class="footer-top-bar-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Working Hours</strong>
+                        <span>Mon–Sun: 8AM – 8PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Brand -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="footer-brand">
+                        <div class="footer-brand-name"><i class="fas fa-leaf"></i> Pavitra Mitti</div>
+                        <p class="footer-desc">A leading plant nursery in Basirhat, West Bengal — serving home gardeners, landscapers and farmers with 200+ plant varieties, expert guidance and affordable pricing since over a decade.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="https://wa.me/919876543210" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Our Plants</a></li>
+                        <li><a href="#shop"><i class="fas fa-chevron-right"></i> Popular Plants</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <h5>Our Plants</h5>
+                    <ul class="footer-links">
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Fruit Plants</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Flowering Plants</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Ornamental Plants</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Medicinal & Herbal</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Farm & Landscape</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <h5>Get In Touch</h5>
+                    <form class="footer-contact-form" id="footerForm">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                        <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="trust-badges" data-aos="fade-up">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="trust-badge-text">
+                        <strong>Secure Payment</strong>
+                        <span>SSL Protected</span>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-truck"></i>
+                    <div class="trust-badge-text">
+                        <strong>Fast Delivery</strong>
+                        <span>Same Day Kolkata</span>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-leaf"></i>
+                    <div class="trust-badge-text">
+                        <strong>100% Organic</strong>
+                        <span>Naturally Grown</span>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-boxes"></i>
+                    <div class="trust-badge-text">
+                        <strong>Bulk Orders</strong>
+                        <span>Special Pricing</span>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="trust-badge-text">
+                        <strong>Call / WhatsApp</strong>
+                        <span>Quick Response</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-inner">
+                    <p class="footer-copyright mb-0">
+                        &copy; 2025 Pavitra Mitti Nursery, Basirhat, West Bengal. All Rights Reserved. Made with <i class="fas fa-heart"></i> for Plant Lovers
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // AOS
+        AOS.init({ duration: 800, once: true, offset: 100 });
+
+        // ---- Swipers ----
+        document.addEventListener('DOMContentLoaded', function () {
+            const heroSwiper = new Swiper('.heroSwiper', {
+                loop: true,
+                speed: 1000,
+                autoplay: { delay: 5000, disableOnInteraction: false },
+                pagination: { el: '.swiper-pagination', clickable: true },
+                navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                effect: 'fade',
+                fadeEffect: { crossFade: true },
+            });
+
+            const categorySwiper = new Swiper('.categorySwiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: false,
+                breakpoints: { 576: { slidesPerView: 2 }, 768: { slidesPerView: 3 }, 992: { slidesPerView: 4 } }
+            });
+
+            document.getElementById('categoryPrev').addEventListener('click', () => categorySwiper.slidePrev());
+            document.getElementById('categoryNext').addEventListener('click', () => categorySwiper.slideNext());
+
+            const productSwiper = new Swiper('.productSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: false,
+                breakpoints: { 576: { slidesPerView: 2 }, 768: { slidesPerView: 3 }, 992: { slidesPerView: 4 } }
+            });
+
+            document.getElementById('productPrev').addEventListener('click', () => productSwiper.slidePrev());
+            document.getElementById('productNext').addEventListener('click', () => productSwiper.slideNext());
+        });
+
+        // ---- Navbar scroll ----
+        window.addEventListener('scroll', function () {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+            document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 400);
+        });
+
+        // ---- Smooth scroll ----
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        bootstrap.Collapse.getInstance(navbarCollapse)?.hide();
+                    }
+                    window.scrollTo({ top: document.querySelector(href).offsetTop - 80, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ---- Enquire button feedback ----
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            if (btn.tagName === 'BUTTON') {
+                btn.addEventListener('click', function () {
+                    const orig = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check"></i> Noted!';
+                    this.style.background = '#4caf50';
+                    setTimeout(() => { this.innerHTML = orig; this.style.background = ''; }, 2000);
+                });
+            }
+        });
+
+        // ---- Footer form ----
+        document.getElementById('footerForm')?.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = this.querySelector('.btn-submit');
+            const orig = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+            btn.style.background = '#4caf50';
+            setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; this.reset(); }, 3000);
+        });
+
+        // ---- Countdown Timer ----
+        (function () {
+            let totalSeconds = 12 * 3600 + 45 * 60 + 30;
+            function tick() {
+                if (totalSeconds <= 0) return;
+                totalSeconds--;
+                const h = Math.floor(totalSeconds / 3600);
+                const m = Math.floor((totalSeconds % 3600) / 60);
+                const s = totalSeconds % 60;
+                document.getElementById('timer-h').textContent = String(h).padStart(2, '0');
+                document.getElementById('timer-m').textContent = String(m).padStart(2, '0');
+                document.getElementById('timer-s').textContent = String(s).padStart(2, '0');
+            }
+            setInterval(tick, 1000);
+        })();
+    </script>
+</body>
+</html>
