@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Allamanda (Alokananda) Live Flower Plant</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="../assets/css/product-details.css">
+</head>
+<body>
+<div class="product-page">
+
+  <img src="https://placehold.co/900x420/e9ecef/adb5bd?text=Product+Image" alt="Allamanda Alokananda Live Flower Plant" class="product-img"/>
+
+  <h1 class="product-title">Allamanda (Alokananda) Live Flower Plant – Bright Yellow Flowering Ornamental Plant for Home, Balcony & Garden</h1>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Product Overview</div>
+  <p>Enhance your garden with the vibrant beauty of our Allamanda (Alokananda) Live Flower Plant, a stunning tropical flowering plant known for its large, bright yellow trumpet-shaped blooms. This attractive ornamental plant is widely admired for its fast growth, long flowering season, and ability to create a cheerful, eye-catching display in outdoor spaces.</p>
+  <p>Allamanda is an excellent choice for balconies, terraces, garden borders, and landscaping projects. Its lush green foliage combined with bright flowers makes it a perfect decorative plant for homes and gardens, especially in warm Indian climates.</p>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Why This Allamanda (Alokananda) Plant is Special</div>
+  <ul class="check-list">
+    <li><i class="bi bi-check-circle-fill"></i> Bright Yellow Flowers – Produces large, eye-catching trumpet-shaped blooms</li>
+    <li><i class="bi bi-check-circle-fill"></i> Fast Growing Plant – Quickly develops into a beautiful flowering shrub or climber</li>
+    <li><i class="bi bi-check-circle-fill"></i> Long Flowering Season – Blooms for extended periods in warm climates</li>
+    <li><i class="bi bi-check-circle-fill"></i> Perfect for Outdoor Decoration – Ideal for gardens, balconies, and terraces</li>
+    <li><i class="bi bi-check-circle-fill"></i> Climate Adapted – Thrives well in Indian tropical and subtropical weather</li>
+    <li><i class="bi bi-check-circle-fill"></i> Low Maintenance – Easy to grow with basic care</li>
+    <li><i class="bi bi-check-circle-fill"></i> Excellent Landscaping Choice – Popular for decorative garden design</li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Product Specifications</div>
+  <table class="spec-table">
+    <tbody>
+      <tr><td>Botanical Name</td><td>Allamanda cathartica</td></tr>
+      <tr><td>Common Name</td><td>Allamanda / Alokananda / Golden Trumpet</td></tr>
+      <tr><td>Plant Type</td><td>Flowering Shrub / Climber</td></tr>
+      <tr><td>Flower Color</td><td>Bright Yellow</td></tr>
+      <tr><td>Plant Height</td><td>Approx. 1–2 feet (may vary naturally)</td></tr>
+      <tr><td>Pot Size</td><td>4–6 inch nursery pot (if included)</td></tr>
+      <tr><td>Bloom Size</td><td>Medium to Large trumpet-shaped flowers</td></tr>
+      <tr><td>Fragrance</td><td>Mild</td></tr>
+      <tr><td>Growth Speed</td><td>Fast</td></tr>
+      <tr><td>Lifespan</td><td>Long-lasting perennial plant</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Plant Benefits</div>
+  <ul class="check-list">
+    <li><i class="bi bi-check-circle-fill"></i> Produces bright and attractive yellow flowers</li>
+    <li><i class="bi bi-check-circle-fill"></i> Enhances garden beauty and visual appeal</li>
+    <li><i class="bi bi-check-circle-fill"></i> Fast-growing plant suitable for landscaping</li>
+    <li><i class="bi bi-check-circle-fill"></i> Easy to maintain and beginner-friendly</li>
+    <li><i class="bi bi-check-circle-fill"></i> Adds vibrant color to outdoor spaces</li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Detailed Care Guide</div>
+  <div class="care-row">
+    <div class="care-label"><i class="bi bi-brightness-high"></i> Sunlight Requirement</div>
+    <ul>
+      <li>Requires full sunlight for healthy growth and flowering</li>
+      <li>Needs at least 5–7 hours of direct sunlight daily</li>
+    </ul>
+  </div>
+  <div class="care-row">
+    <div class="care-label"><i class="bi bi-droplet"></i> Watering</div>
+    <ul>
+      <li>Water 2–3 times per week depending on climate</li>
+      <li>Keep soil slightly moist but well-drained</li>
+      <li>Avoid waterlogging</li>
+    </ul>
+  </div>
+  <div class="care-row">
+    <div class="care-label"><i class="bi bi-layers"></i> Soil Type</div>
+    <ul>
+      <li>Use well-drained, nutrient-rich soil</li>
+      <li>Ideal mix: Garden soil + compost + sand or cocopeat</li>
+    </ul>
+  </div>
+  <div class="care-row">
+    <div class="care-label"><i class="bi bi-flower1"></i> Fertilization</div>
+    <ul>
+      <li>Feed every 2–3 weeks with balanced fertilizer</li>
+      <li>Supports better flowering and plant growth</li>
+    </ul>
+  </div>
+  <div class="care-row">
+    <div class="care-label"><i class="bi bi-scissors"></i> Pruning</div>
+    <ul>
+      <li>Regular pruning helps maintain shape and encourage more blooms</li>
+      <li>Remove dead or weak branches</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Ideal Usage</div>
+  <ul class="check-list">
+    <li><i class="bi bi-check-circle-fill"></i> Balcony Decoration</li>
+    <li><i class="bi bi-check-circle-fill"></i> Terrace Gardening</li>
+    <li><i class="bi bi-check-circle-fill"></i> Garden Landscaping</li>
+    <li><i class="bi bi-check-circle-fill"></i> Outdoor Decoration</li>
+    <li><i class="bi bi-check-circle-fill"></i> Boundary &amp; Hedge Planting</li>
+    <li><i class="bi bi-check-circle-fill"></i> Gifting Purpose</li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Packaging &amp; Delivery</div>
+  <div class="delivery-box">
+    <ul>
+      <li>Packed securely using plant-safe protective materials</li>
+      <li>Delivered as a healthy live Allamanda (Alokananda) plant</li>
+      <li>Designed for safe and damage-free transit</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Important Notes</div>
+  <div class="note-box">
+    <ul>
+      <li>Plant size and structure may vary naturally</li>
+      <li>Flowers may not be present at delivery due to blooming cycle</li>
+      <li>Minor soil disturbance during shipping is normal</li>
+      <li>Decorative pot (if shown) may not be included</li>
+    </ul>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

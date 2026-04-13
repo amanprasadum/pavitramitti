@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aloe Vera Live Plant</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="../assets/css/product-details.css">
+</head>
+<body>
+<div class="product-page">
+
+  <img src="https://placehold.co/900x420/e9ecef/adb5bd?text=Product+Image" alt="Aloe Vera Live Plant" class="product-img"/>
+
+  <h1 class="product-title">Aloe Vera Live Plant – Medicinal Succulent Plant for Home, Balcony & Indoor Garden</h1>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Product Overview</div>
+  <p>Bring home the natural goodness of our Aloe Vera Live Plant, a highly popular medicinal and ornamental plant known for its healing properties and easy maintenance. This hardy succulent is widely valued for its soothing gel, air-purifying qualities, and long-lasting growth, making it a perfect addition to homes, balconies, offices, and gardens.</p>
+  <p>Aloe vera is one of the most beginner-friendly plants, requiring minimal care while offering multiple health and decorative benefits. Its compact size and adaptability make it ideal for indoor and outdoor gardening, especially in Indian climates.</p>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Why This Aloe Vera Plant is Special</div>
+  <ul class="check-list">
+    <li><i class="bi bi-check-circle-fill"></i> Medicinal &amp; Herbal Plant – Known for natural healing and skincare benefits</li>
+    <li><i class="bi bi-check-circle-fill"></i> Low Maintenance – Requires minimal watering and care</li>
+    <li><i class="bi bi-check-circle-fill"></i> Air-Purifying Plant – Helps improve indoor air quality</li>
+    <li><i class="bi bi-check-circle-fill"></i> Perfect for Indoor &amp; Outdoor Use – Ideal for balcony, kitchen, or office</li>
+    <li><i class="bi bi-check-circle-fill"></i> Climate Friendly – Thrives well in Indian weather conditions</li>
+    <li><i class="bi bi-check-circle-fill"></i> Long-Lasting Growth – Durable succulent with strong survival ability</li>
+    <li><i class="bi bi-check-circle-fill"></i> Multi-Purpose Plant – Useful for home remedies, beauty, and décor</li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Product Specifications</div>
+  <table class="spec-table">
+    <tbody>
+      <tr><td>Botanical Name</td><td>Aloe barbadensis Miller</td></tr>
+      <tr><td>Common Name</td><td>Aloe Vera / Ghritkumari</td></tr>
+      <tr><td>Plant Type</td><td>Succulent Medicinal Plant</td></tr>
+      <tr><td>Plant Height</td><td>Approx. 6–12 inches (may vary naturally)</td></tr>
+      <tr><td>Pot Size</td><td>4–6 inch nursery pot (if included)</td></tr>
+      <tr><td>Leaf Color</td><td>Green, thick fleshy leaves</td></tr>
+      <tr><td>Fragrance</td><td>None</td></tr>
+      <tr><td>Growth Speed</td><td>Moderate</td></tr>
+      <tr><td>Lifespan</td><td>Long-lasting perennial plant</td></tr>
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Plant Benefits</div>
+  <ul class="check-list">
+    <li><i class="bi bi-check-circle-fill"></i> Natural medicinal plant with multiple health benefits</li>
+    <li><i class="bi bi-check-circle-fill"></i> Helps soothe skin burns, cuts, and irritation</li>
+    <li><i class="bi bi-check-circle-fill"></i> Improves indoor air quality and environment</li>
+    <li><i class="bi bi-check-circle-fill"></i> Easy to maintain and suitable for beginners</li>
+    <li><i class="bi bi-check-circle-fill"></i> Enhances home décor with a fresh green look</li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Detailed Care Guide</div>
+  <div class="care-row">
+    <div class="care-label"><i class="bi bi-brightness-high"></i> Sunlight Requirement</div>
+    <ul>
+      <li>Requires bright indirect sunlight or partial direct sunlight</li>
+      <li>Can grow well indoors near windows or balconies</li>
+    </ul>
+  </div>
+  <div class="care-row">
+    <div class="care-label"><i class="bi bi-droplet"></i> Watering</div>
+    <ul>
+      <li>Water once every 7–10 days depending on climate</li>
+      <li>Allow soil to dry between watering</li>
+      <li>Avoid overwatering to prevent root rot</li>
+    </ul>
+  </div>
+  <div class="care-row">
+    <div class="care-label"><i class="bi bi-layers"></i> Soil Type</div>
+    <ul>
+      <li>Use well-drained sandy or succulent soil mix</li>
+      <li>Ideal mix: Garden soil + sand + compost or cactus mix</li>
+    </ul>
+  </div>
+  <div class="care-row">
+    <div class="care-label"><i class="bi bi-flower1"></i> Fertilization</div>
+    <ul>
+      <li>Feed once every 4–6 weeks with mild organic fertilizer</li>
+      <li>Over-fertilizing is not necessary</li>
+    </ul>
+  </div>
+  <div class="care-row">
+    <div class="care-label"><i class="bi bi-scissors"></i> Pruning</div>
+    <ul>
+      <li>Remove dry or damaged leaves regularly</li>
+      <li>Helps maintain healthy plant growth</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Ideal Usage</div>
+  <ul class="check-list">
+    <li><i class="bi bi-check-circle-fill"></i> Indoor Plant Decoration</li>
+    <li><i class="bi bi-check-circle-fill"></i> Balcony &amp; Terrace Gardening</li>
+    <li><i class="bi bi-check-circle-fill"></i> Kitchen Herbal Garden</li>
+    <li><i class="bi bi-check-circle-fill"></i> Office Desk Plant</li>
+    <li><i class="bi bi-check-circle-fill"></i> Home Remedies &amp; Skincare Use</li>
+    <li><i class="bi bi-check-circle-fill"></i> Gifting Purpose</li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Packaging &amp; Delivery</div>
+  <div class="delivery-box">
+    <ul>
+      <li>Packed securely using plant-safe protective materials</li>
+      <li>Delivered as a healthy live aloe vera plant</li>
+      <li>Designed for safe and damage-free transit</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-title">Important Notes</div>
+  <div class="note-box">
+    <ul>
+      <li>Plant size and shape may vary naturally</li>
+      <li>Minor soil disturbance during shipping is normal</li>
+      <li>Keep away from extreme cold temperatures</li>
+      <li>Decorative pot (if shown) may not be included</li>
+    </ul>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
