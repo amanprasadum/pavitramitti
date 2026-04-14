@@ -1327,7 +1327,7 @@
         </div>
     </section>
 
-    
+    <?php include 'common/footer.php'; ?>
 
     <!-- Back to Top -->
     <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
