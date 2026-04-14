@@ -150,11 +150,11 @@ $tags    = decode_tags($p['ideal_usage']);
 <!-- ─── HERO ──────────────────────────────────────────────────────── -->
 <div class="pd-hero">
     <div class="container">
-        <div class="d-flex gap-2 align-items-center">
+        <!-- <div class="d-flex gap-2 align-items-center">
             <a href="/">Home</a><span>/</span>
             <a href="/#categories"><?= htmlspecialchars($p['category']) ?></a><span>/</span>
             <span style="color:rgba(255,255,255,0.85);font-size:0.82rem;"><?= htmlspecialchars($p['name']) ?></span>
-        </div>
+        </div> -->
         <h1><?= htmlspecialchars($p['name']) ?></h1>
         <?php if (!empty($p['hero_subtitle'])): ?>
             <p><?= htmlspecialchars($p['hero_subtitle']) ?></p>
