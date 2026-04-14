@@ -148,10 +148,10 @@ $tags    = decode_tags($p['ideal_usage']);
 <body>
 
 <!-- ─── HERO ──────────────────────────────────────────────────────── -->
-<div class="pd-hero">
+<div class="pd-hero aman">
     <div class="container">
 
-    
+
 
         <!-- <div class="d-flex gap-2 align-items-center">
             <a href="/">Home</a><span>/</span>
