@@ -151,6 +151,7 @@ $tags    = decode_tags($p['ideal_usage']);
 <div class="pd-hero">
     <div class="container">
         
+
         <!-- <div class="d-flex gap-2 align-items-center">
             <a href="/">Home</a><span>/</span>
             <a href="/#categories"><?= htmlspecialchars($p['category']) ?></a><span>/</span>
