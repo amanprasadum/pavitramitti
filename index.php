@@ -26,7 +26,7 @@
 
 <body>
 <!-- include header from common folder -->
- <?php include '../common/header.php'; ?>
+ <?php include 'common/header.php'; ?>
 
     <!-- ==================== HERO ==================== -->
     <section class="hero-section" id="home">
