@@ -2,9 +2,11 @@
     <!-- ==================== NAVBAR ==================== -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <div class="brand-leaf"><i class="fas fa-leaf"></i></div>
-                Pavitra Mitti
+            <a class="navbar-brand-" href="/">
+                <!-- <div class="brand-leaf"><i class="fas fa-leaf"></i></div>
+                Pavitra Mitti -->
+                <!-- add the logo  -->
+                <img src="../assets/images/logo.jpeg" alt="Pavitra Mitti Logo" class="brand-logo-">
             </a>
 
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
