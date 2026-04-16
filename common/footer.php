@@ -15,7 +15,7 @@
                     <i class="fas fa-phone-alt"></i>
                     <div>
                         <strong>Call Us</strong>
-                        <span>+91 98765 43210</span>
+                        <span>+91 82501 58613</span>
                     </div>
                 </div>
                 <div class="ftb-item">

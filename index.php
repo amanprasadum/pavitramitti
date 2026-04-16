@@ -7,24 +7,20 @@
     <title>Pavitra Mitti – Best Nursery Near Barasat & Kolkata | Basirhat, West Bengal</title>
     <meta name="description"
         content="Pavitra Mitti Nursery – 200+ plant varieties in Basirhat, near Barasat & Kolkata. Fruit plants, flowering plants, medicinal herbs, ornamental & landscape plants. Bulk orders welcome.">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&family=Caveat:wght@600&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B3ZBD6B');</script>
+ <?php include 'common/header-script.php'; ?>
+   
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B3ZBD6B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <!-- include header from common folder -->
  <?php include 'common/header.php'; ?>
 
@@ -77,7 +73,7 @@
                                 <a href="#categories" class="hbtn hbtn-primary">
                                     <i class="fas fa-leaf"></i> View All Plants
                                 </a>
-                                <a href="https://wa.me/919876543210" target="_blank" class="hbtn hbtn-outline">
+                                <a href="https://wa.me/918250158613" target="_blank" class="hbtn hbtn-outline">
                                     <i class="fab fa-whatsapp"></i> WhatsApp Us
                                 </a>
                             </div>
@@ -100,7 +96,7 @@
                             <p class="hero-desc" style="margin:0 auto 2.5rem;">Serving home gardens, farms and
                                 landscapes across West Bengal with 200+ plant varieties and expert guidance.</p>
                             <div class="hero-actions" style="justify-content:center;">
-                                <a href="tel:+919876543210" class="hbtn hbtn-primary">
+                                <a href="tel:+918250158613" class="hbtn hbtn-primary">
                                     <i class="fas fa-phone-alt"></i> Call Now
                                 </a>
                                 <a href="#about" class="hbtn hbtn-outline">
@@ -190,10 +186,10 @@
                     </div>
                 </div>
                 <div class="offer-btns">
-                    <a href="tel:+919876543210" class="offer-cta offer-cta-primary">
+                    <a href="tel:+918250158613" class="offer-cta offer-cta-primary">
                         <i class="fas fa-phone-alt"></i> Call Now
                     </a>
-                    <a href="https://wa.me/919876543210" target="_blank" class="offer-cta offer-cta-wa">
+                    <a href="https://wa.me/918250158613" target="_blank" class="offer-cta offer-cta-wa">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                 </div>
@@ -255,10 +251,10 @@
                     </div>
 
                     <div class="about-ctas">
-                        <a href="tel:+919876543210" class="hbtn hbtn-green">
+                        <a href="tel:+918250158613" class="hbtn hbtn-green">
                             <i class="fas fa-phone-alt"></i> Call Us Now
                         </a>
-                        <a href="https://wa.me/919876543210" target="_blank" class="hbtn hbtn-wa">
+                        <a href="https://wa.me/918250158613" target="_blank" class="hbtn hbtn-wa">
                             <i class="fab fa-whatsapp"></i> WhatsApp
                         </a>
                     </div>
@@ -390,9 +386,9 @@
                                     <img src="https://images.unsplash.com/photo-1545241047-6f2a0f2e2cca?w=500&q=80"
                                         alt="Areca Palm" loading="lazy">
                                     <div class="prod-actions">
-                                        <a href="https://wa.me/919876543210" target="_blank" class="prod-action-btn"
+                                        <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"
                                             title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                                        <a href="tel:+919876543210" class="prod-action-btn" title="Call"><i
+                                        <a href="tel:+918250158613" class="prod-action-btn" title="Call"><i
                                                 class="fas fa-phone-alt"></i></a>
                                     </div>
                                 </div>
@@ -408,7 +404,7 @@
                                         landscaping projects.</p>
                                     <div class="prod-foot">
                                         <span class="prod-cat"><i class="fas fa-tag"></i> Ornamental</span>
-                                        <a href="https://wa.me/919876543210" target="_blank" class="enq-btn"><i
+                                        <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i
                                                 class="fab fa-whatsapp"></i> Enquire</a>
                                     </div>
                                 </div>
@@ -422,9 +418,9 @@
                                     <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=500&q=80"
                                         alt="Tulsi" loading="lazy">
                                     <div class="prod-actions">
-                                        <a href="https://wa.me/919876543210" target="_blank" class="prod-action-btn"><i
+                                        <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"><i
                                                 class="fab fa-whatsapp"></i></a>
-                                        <a href="tel:+919876543210" class="prod-action-btn"><i
+                                        <a href="tel:+918250158613" class="prod-action-btn"><i
                                                 class="fas fa-phone-alt"></i></a>
                                     </div>
                                 </div>
@@ -440,7 +436,7 @@
                                         kitchen garden.</p>
                                     <div class="prod-foot">
                                         <span class="prod-cat"><i class="fas fa-tag"></i> Medicinal & Herbal</span>
-                                        <a href="https://wa.me/919876543210" target="_blank" class="enq-btn"><i
+                                        <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i
                                                 class="fab fa-whatsapp"></i> Enquire</a>
                                     </div>
                                 </div>
@@ -454,9 +450,9 @@
                                     <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500&q=80"
                                         alt="Mango Plant" loading="lazy">
                                     <div class="prod-actions">
-                                        <a href="https://wa.me/919876543210" target="_blank" class="prod-action-btn"><i
+                                        <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"><i
                                                 class="fab fa-whatsapp"></i></a>
-                                        <a href="tel:+919876543210" class="prod-action-btn"><i
+                                        <a href="tel:+918250158613" class="prod-action-btn"><i
                                                 class="fas fa-phone-alt"></i></a>
                                     </div>
                                 </div>
@@ -472,7 +468,7 @@
                                         orchards.</p>
                                     <div class="prod-foot">
                                         <span class="prod-cat"><i class="fas fa-tag"></i> Fruit Plants</span>
-                                        <a href="https://wa.me/919876543210" target="_blank" class="enq-btn"><i
+                                        <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i
                                                 class="fab fa-whatsapp"></i> Enquire</a>
                                     </div>
                                 </div>
@@ -485,9 +481,9 @@
                                     <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500&q=80"
                                         alt="Rose Plant" loading="lazy">
                                     <div class="prod-actions">
-                                        <a href="https://wa.me/919876543210" target="_blank" class="prod-action-btn"><i
+                                        <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"><i
                                                 class="fab fa-whatsapp"></i></a>
-                                        <a href="tel:+919876543210" class="prod-action-btn"><i
+                                        <a href="tel:+918250158613" class="prod-action-btn"><i
                                                 class="fas fa-phone-alt"></i></a>
                                     </div>
                                 </div>
@@ -503,7 +499,7 @@
                                         gifting occasions.</p>
                                     <div class="prod-foot">
                                         <span class="prod-cat"><i class="fas fa-tag"></i> Flowering</span>
-                                        <a href="https://wa.me/919876543210" target="_blank" class="enq-btn"><i
+                                        <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i
                                                 class="fab fa-whatsapp"></i> Enquire</a>
                                     </div>
                                 </div>
@@ -517,9 +513,9 @@
                                     <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&q=80"
                                         alt="Bamboo Plant" loading="lazy">
                                     <div class="prod-actions">
-                                        <a href="https://wa.me/919876543210" target="_blank" class="prod-action-btn"><i
+                                        <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"><i
                                                 class="fab fa-whatsapp"></i></a>
-                                        <a href="tel:+919876543210" class="prod-action-btn"><i
+                                        <a href="tel:+918250158613" class="prod-action-btn"><i
                                                 class="fas fa-phone-alt"></i></a>
                                     </div>
                                 </div>
@@ -535,7 +531,7 @@
                                         fencing.</p>
                                     <div class="prod-foot">
                                         <span class="prod-cat"><i class="fas fa-tag"></i> Farm & Landscape</span>
-                                        <a href="https://wa.me/919876543210" target="_blank" class="enq-btn"><i
+                                        <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i
                                                 class="fab fa-whatsapp"></i> Enquire</a>
                                     </div>
                                 </div>
@@ -551,7 +547,7 @@
             </div>
 
             <div class="text-center mt-5" data-aos="fade-up">
-                <a href="https://wa.me/919876543210" target="_blank" class="view-all">
+                <a href="https://wa.me/918250158613" target="_blank" class="view-all">
                     <i class="fab fa-whatsapp"></i> WhatsApp for Full Plant List
                 </a>
             </div>
@@ -781,10 +777,10 @@
                 <p class="visit-sub">Conveniently located in Basirhat — easily accessible from Barasat and Kolkata. Come
                     visit us or get in touch today.</p>
                 <div class="visit-btns">
-                    <a href="tel:+919876543210" class="v-btn v-btn-white">
+                    <a href="tel:+918250158613" class="v-btn v-btn-white">
                         <i class="fas fa-phone-alt"></i> Call Now
                     </a>
-                    <a href="https://wa.me/919876543210" target="_blank" class="v-btn v-btn-wa">
+                    <a href="https://wa.me/918250158613" target="_blank" class="v-btn v-btn-wa">
                         <i class="fab fa-whatsapp"></i> WhatsApp Us
                     </a>
                     <a href="https://maps.google.com" target="_blank" class="v-btn v-btn-ghost">
@@ -868,10 +864,10 @@
                         beyond.</p>
                 </div>
                 <div class="how-cta-btns">
-                    <a href="tel:+919876543210" class="how-cta-btn how-cta-btn-white">
+                    <a href="tel:+918250158613" class="how-cta-btn how-cta-btn-white">
                         <i class="fas fa-phone-alt"></i> Call Now
                     </a>
-                    <a href="https://wa.me/919876543210" target="_blank" class="how-cta-btn how-cta-btn-wa">
+                    <a href="https://wa.me/918250158613" target="_blank" class="how-cta-btn how-cta-btn-wa">
                         <i class="fab fa-whatsapp"></i> WhatsApp Us
                     </a>
                 </div>
@@ -1006,7 +1002,7 @@
 
                     <div class="text-center mt-4" data-aos="fade-up">
                         <p style="color:var(--text2);margin-bottom:1rem;">Have more questions? We're happy to help!</p>
-                        <a href="https://wa.me/919876543210" target="_blank" class="faq-cta">
+                        <a href="https://wa.me/918250158613" target="_blank" class="faq-cta">
                             <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
                         </a>
                     </div>
@@ -1051,14 +1047,14 @@
                             </div>
                         </div>
                         <div class="pm-faq-side-btns">
-                            <a href="tel:+919876543210" class="pm-faq-side-btn pm-faq-btn-call">
+                            <a href="tel:+918250158613" class="pm-faq-side-btn pm-faq-btn-call">
                                 <i class="fas fa-phone-alt"></i>
                                 <div>
                                     <span>Call Us Directly</span>
                                     <strong>+91 98765 43210</strong>
                                 </div>
                             </a>
-                            <a href="https://wa.me/919876543210" target="_blank" class="pm-faq-side-btn pm-faq-btn-wa">
+                            <a href="https://wa.me/918250158613" target="_blank" class="pm-faq-side-btn pm-faq-btn-wa">
                                 <i class="fab fa-whatsapp"></i>
                                 <div>
                                     <span>Chat on WhatsApp</span>
@@ -1178,7 +1174,7 @@
                                             societies</strong> and large garden projects. We offer special pricing for
                                         bulk purchases and can arrange delivery. Contact us via phone or WhatsApp with
                                         your requirements for a custom quote.</p>
-                                    <a href="https://wa.me/919876543210" target="_blank" class="pm-faq-ans-link">
+                                    <a href="https://wa.me/918250158613" target="_blank" class="pm-faq-ans-link">
                                         <i class="fab fa-whatsapp"></i> WhatsApp for Bulk Enquiry
                                     </a>
                                 </div>
@@ -1333,156 +1329,8 @@
     <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
-
-    <!-- ==================== SCRIPTS ==================== -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        // AOS
-        AOS.init({ duration: 750, once: true, offset: 80 });
-
-        document.addEventListener('DOMContentLoaded', function () {
-
-            // ---- Hero Swiper ----
-            new Swiper('.swiper-hero', {
-                loop: true,
-                speed: 1000,
-                autoplay: { delay: 5500, disableOnInteraction: false },
-                pagination: { el: '.swiper-pagination', clickable: true },
-                navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-                effect: 'fade',
-                fadeEffect: { crossFade: true },
-            });
-
-            // ---- Category Swiper ----
-            const catSw = new Swiper('.catSwiper', {
-                slidesPerView: 1.15,
-                spaceBetween: 16,
-                centeredSlides: false,
-                breakpoints: {
-                    480: { slidesPerView: 1.6, spaceBetween: 18 },
-                    640: { slidesPerView: 2.2, spaceBetween: 18 },
-                    768: { slidesPerView: 2.6, spaceBetween: 20 },
-                    992: { slidesPerView: 3.2, spaceBetween: 22 },
-                    1200: { slidesPerView: 4, spaceBetween: 24 }
-                }
-            });
-
-            document.getElementById('catPrev').addEventListener('click', () => catSw.slidePrev());
-            document.getElementById('catNext').addEventListener('click', () => catSw.slideNext());
-
-            // ---- Product Swiper ----
-            const prodSw = new Swiper('.prodSwiper', {
-                slidesPerView: 1.15,
-                spaceBetween: 16,
-                breakpoints: {
-                    480: { slidesPerView: 1.6, spaceBetween: 18 },
-                    640: { slidesPerView: 2.1, spaceBetween: 18 },
-                    768: { slidesPerView: 2.5, spaceBetween: 20 },
-                    992: { slidesPerView: 3.2, spaceBetween: 22 },
-                    1200: { slidesPerView: 4, spaceBetween: 24 }
-                }
-            });
-
-            document.getElementById('prodPrev').addEventListener('click', () => prodSw.slidePrev());
-            document.getElementById('prodNext').addEventListener('click', () => prodSw.slideNext());
-        });
-
-        // ---- Scroll events ----
-        window.addEventListener('scroll', function () {
-            const s = window.scrollY;
-            document.querySelector('.navbar').classList.toggle('scrolled', s > 50);
-            document.getElementById('btt').classList.toggle('show', s > 400);
-        });
-
-        // ---- Smooth scroll with navbar offset ----
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href && href.length > 1 && document.querySelector(href)) {
-                    e.preventDefault();
-                    // Close mobile nav if open
-                    const colEl = document.getElementById('navMain');
-                    if (colEl && colEl.classList.contains('show')) {
-                        bootstrap.Collapse.getInstance(colEl)?.hide();
-                    }
-                    const offset = document.querySelector('.navbar').offsetHeight + 12;
-                    const top = document.querySelector(href).getBoundingClientRect().top + window.scrollY - offset;
-                    window.scrollTo({ top, behavior: 'smooth' });
-                }
-            });
-        });
-
-        // ---- Countdown timer ----
-        (function () {
-            let total = 12 * 3600 + 45 * 60 + 30;
-            const hEl = document.getElementById('t-h');
-            const mEl = document.getElementById('t-m');
-            const sEl = document.getElementById('t-s');
-            function tick() {
-                if (total <= 0) return;
-                total--;
-                hEl.textContent = String(Math.floor(total / 3600)).padStart(2, '0');
-                mEl.textContent = String(Math.floor((total % 3600) / 60)).padStart(2, '0');
-                sEl.textContent = String(total % 60).padStart(2, '0');
-            }
-            setInterval(tick, 1000);
-        })();
-
-        // ---- Footer form ----
-        document.getElementById('footerForm')?.addEventListener('submit', function (e) {
-            e.preventDefault();
-            const btn = this.querySelector('.foot-submit');
-            const orig = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-check"></i> Sent Successfully!';
-            btn.style.background = '#2d6a4f';
-            setTimeout(() => {
-                btn.innerHTML = orig;
-                btn.style.background = '';
-                this.reset();
-            }, 3000);
-        });
-
-        // ---- Active nav on scroll ----
-        const sections = document.querySelectorAll('section[id], footer[id]');
-        const navLinks = document.querySelectorAll('.nav-link');
-        const navH = document.querySelector('.navbar').offsetHeight;
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const id = entry.target.id;
-                    navLinks.forEach(l => {
-                        l.classList.remove('active');
-                        if (l.getAttribute('href') === '#' + id) l.classList.add('active');
-                    });
-                }
-            });
-        }, { rootMargin: `-${navH + 10}px 0px -60% 0px` });
-
-        sections.forEach(s => observer.observe(s));
-
-    </script>
-    <script>
-        // PM FAQ Filter Tags
-        document.querySelectorAll('.pm-faq-tag').forEach(tag => {
-            tag.addEventListener('click', function () {
-                document.querySelectorAll('.pm-faq-tag').forEach(t => t.classList.remove('active'));
-                this.classList.add('active');
-                const filter = this.getAttribute('data-filter');
-                document.querySelectorAll('.pm-faq-item').forEach(item => {
-                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                        item.classList.remove('pm-faq-hidden');
-                    } else {
-                        item.classList.add('pm-faq-hidden');
-                    }
-                });
-            });
-        });
-    </script>
+ <?php include 'common/footer-script.php'; ?>
+    
 </body>
 
 </html>

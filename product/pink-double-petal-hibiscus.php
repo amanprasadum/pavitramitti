@@ -3,37 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Exotic Peach-Yellow Hybrid Hibiscus Plant (Live)</title>
+  <title>Rare Pink Double-Petal Hibiscus Plant (Live)</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"/>
   <link rel="stylesheet" href="../assets/css/product-details.css">
    <?php include '../common/header-script.php'; ?>
 </head>
 <body>
+      <?php include '../common/header.php'; ?>
 <div class="product-page">
- <?php include '../common/header.php'; ?>
-  <img src="https://placehold.co/900x420/e9ecef/adb5bd?text=Product+Image" alt="Exotic Peach-Yellow Hybrid Hibiscus Plant" class="product-img"/>
 
-  <h1 class="product-title">Exotic Peach-Yellow Hybrid Hibiscus Plant (Live) – Rare Dual-Tone Flowering Ornamental Plant for Home, Balcony & Garden</h1>
+  <img src="https://placehold.co/900x420/e9ecef/adb5bd?text=Product+Image" alt="Rare Pink Double-Petal Hibiscus Plant" class="product-img"/>
+
+  <h1 class="product-title">Rare Pink Double-Petal Hibiscus Plant (Live) – Exotic Layered Flowering Ornamental Plant for Home, Balcony & Garden</h1>
 
   <div class="divider"></div>
 
   <div class="section-title">Product Overview</div>
-  <p>Enhance your space with the vibrant beauty of our Exotic Peach-Yellow Hybrid Hibiscus Plant, featuring striking dual-tone blooms that blend soft peach and bright yellow shades. This rare hybrid variety stands out for its unique color contrast and tropical appeal, making it a premium choice for decorative gardening.</p>
-  <p>Carefully cultivated under controlled nursery conditions, this hibiscus plant is selected for high bloom performance, color vibrancy, and strong adaptability, ensuring it thrives well in Indian climates. Perfect for adding a fresh and lively look to any indoor or outdoor setting.</p>
+  <p>Add elegance and richness to your garden with our Rare Pink Double-Petal Hibiscus Plant, a premium flowering variety admired for its multi-layered, rose-like blooms in a stunning pink shade. Unlike standard hibiscus flowers, this double-petal variety features dense, layered petals that create a fuller and more luxurious appearance.</p>
+  <p>Carefully cultivated for high bloom performance, strong root health, and vibrant color, this plant is perfect for both beginners and experienced gardeners. It enhances any space with its ornamental beauty and long-lasting flowering potential.</p>
 
   <div class="divider"></div>
 
   <div class="section-title">Why This Hibiscus is Special</div>
   <ul class="check-list">
-    <li><i class="bi bi-check-circle-fill"></i> Rare Dual-Color Blooms – Unique peach &amp; yellow combination</li>
-    <li><i class="bi bi-check-circle-fill"></i> Exotic Hybrid Variety – Enhanced color quality and visual appeal</li>
-    <li><i class="bi bi-check-circle-fill"></i> High Flowering Potential – Produces multiple blooms with proper care</li>
-    <li><i class="bi bi-check-circle-fill"></i> Perfect Decorative Plant – Ideal for balcony, terrace, garden &amp; indoor near sunlight</li>
+    <li><i class="bi bi-check-circle-fill"></i> Rare Double-Petal Variety – Unique layered flowers not commonly found</li>
+    <li><i class="bi bi-check-circle-fill"></i> Rich Pink Blooms – Dense, full flowers with premium visual appeal</li>
+    <li><i class="bi bi-check-circle-fill"></i> High Flowering Capacity – Produces multiple blooms with proper care</li>
+    <li><i class="bi bi-check-circle-fill"></i> Perfect for Any Space – Balcony, terrace, garden, or indoor near sunlight</li>
     <li><i class="bi bi-check-circle-fill"></i> Healthy Nursery-Grown Plant – Strong roots for better growth &amp; survival</li>
     <li><i class="bi bi-check-circle-fill"></i> Climate Friendly – Suitable for Indian tropical &amp; subtropical conditions</li>
-    <li><i class="bi bi-check-circle-fill"></i> Low Maintenance – Easy to grow and beginner-friendly</li>
-    <li><i class="bi bi-check-circle-fill"></i> Premium Gifting Option – Ideal for plant lovers and special occasions</li>
+    <li><i class="bi bi-check-circle-fill"></i> Premium Gift Choice – Ideal for plant lovers and special occasions</li>
   </ul>
 
   <div class="divider"></div>
@@ -41,14 +41,15 @@
   <div class="section-title">Product Specifications</div>
   <table class="spec-table">
     <tbody>
-      <tr><td>Botanical Name</td><td>Hibiscus rosa-sinensis (Hybrid)</td></tr>
-      <tr><td>Common Name</td><td>Peach-Yellow Hibiscus / Hybrid Hibiscus</td></tr>
+      <tr><td>Botanical Name</td><td>Hibiscus rosa-sinensis (Double-Petal Hybrid)</td></tr>
+      <tr><td>Common Name</td><td>Double-Petal Hibiscus / Layered Hibiscus</td></tr>
       <tr><td>Plant Type</td><td>Perennial Flowering Shrub</td></tr>
-      <tr><td>Flower Color</td><td>Peach-Yellow Dual Tone</td></tr>
+      <tr><td>Flower Color</td><td>Rich Pink</td></tr>
+      <tr><td>Petal Type</td><td>Double Layer (Multi-Petal)</td></tr>
       <tr><td>Plant Height</td><td>Approx. 1–2 feet (may vary naturally)</td></tr>
       <tr><td>Pot Size</td><td>4–6 inch nursery pot (if included)</td></tr>
-      <tr><td>Bloom Size</td><td>Medium to Large (depending on care &amp; maturity)</td></tr>
-      <tr><td>Fragrance</td><td>Mild to none (visual beauty focused)</td></tr>
+      <tr><td>Bloom Size</td><td>Medium to Large (based on care &amp; maturity)</td></tr>
+      <tr><td>Fragrance</td><td>Mild to none (visual appeal focused)</td></tr>
       <tr><td>Growth Speed</td><td>Moderate to Fast</td></tr>
       <tr><td>Lifespan</td><td>Long-lasting with proper care</td></tr>
     </tbody>
@@ -58,10 +59,10 @@
 
   <div class="section-title">Plant Benefits</div>
   <ul class="check-list">
-    <li><i class="bi bi-check-circle-fill"></i> Adds a vibrant and exotic look to your home or garden</li>
-    <li><i class="bi bi-check-circle-fill"></i> Enhances overall décor with unique color combinations</li>
-    <li><i class="bi bi-check-circle-fill"></i> Attracts butterflies and supports a healthy garden ecosystem</li>
-    <li><i class="bi bi-check-circle-fill"></i> Creates a refreshing and lively natural environment</li>
+    <li><i class="bi bi-check-circle-fill"></i> Enhances home décor with premium layered blooms</li>
+    <li><i class="bi bi-check-circle-fill"></i> Creates a vibrant and refreshing green environment</li>
+    <li><i class="bi bi-check-circle-fill"></i> Attracts butterflies and supports garden biodiversity</li>
+    <li><i class="bi bi-check-circle-fill"></i> Helps reduce stress and improves mood naturally</li>
   </ul>
 
   <div class="divider"></div>
@@ -70,22 +71,22 @@
   <div class="care-row">
     <div class="care-label"><i class="bi bi-brightness-high"></i> Sunlight Requirement</div>
     <ul>
-      <li>Requires 4–6 hours of direct sunlight daily</li>
-      <li>Suitable for balcony, terrace, or bright indoor placement</li>
+      <li>Needs 4–6 hours of direct sunlight daily</li>
+      <li>Best placed in balcony, terrace, or near a sunny window</li>
     </ul>
   </div>
   <div class="care-row">
     <div class="care-label"><i class="bi bi-droplet"></i> Watering</div>
     <ul>
-      <li>Water 2–3 times per week depending on climate</li>
+      <li>Water 2–3 times per week depending on weather</li>
       <li>Keep soil moist but well-drained</li>
-      <li>Avoid overwatering</li>
+      <li>Avoid waterlogging</li>
     </ul>
   </div>
   <div class="care-row">
     <div class="care-label"><i class="bi bi-layers"></i> Soil Type</div>
     <ul>
-      <li>Use well-drained, nutrient-rich soil mix</li>
+      <li>Use well-drained, fertile soil mix</li>
       <li>Ideal mix: Garden soil + compost + sand/cocopeat</li>
     </ul>
   </div>
@@ -93,14 +94,14 @@
     <div class="care-label"><i class="bi bi-flower1"></i> Fertilization</div>
     <ul>
       <li>Feed every 2–3 weeks with organic fertilizer</li>
-      <li>Promotes better growth and frequent flowering</li>
+      <li>Encourages more blooms and healthier growth</li>
     </ul>
   </div>
   <div class="care-row">
     <div class="care-label"><i class="bi bi-scissors"></i> Pruning</div>
     <ul>
-      <li>Regular pruning encourages bushy growth and more blooms</li>
-      <li>Remove dry or old branches</li>
+      <li>Prune regularly for bushy growth and continuous flowering</li>
+      <li>Remove dried leaves and old stems</li>
     </ul>
   </div>
 
@@ -112,8 +113,8 @@
     <li><i class="bi bi-check-circle-fill"></i> Terrace Gardening</li>
     <li><i class="bi bi-check-circle-fill"></i> Home Garden Landscaping</li>
     <li><i class="bi bi-check-circle-fill"></i> Indoor Decorative Plant (with sunlight)</li>
-    <li><i class="bi bi-check-circle-fill"></i> Office &amp; Outdoor Décor</li>
-    <li><i class="bi bi-check-circle-fill"></i> Gifting Purpose</li>
+    <li><i class="bi bi-check-circle-fill"></i> Office Green Setup</li>
+    <li><i class="bi bi-check-circle-fill"></i> Gifting for Special Occasions</li>
   </ul>
 
   <div class="divider"></div>
@@ -121,9 +122,9 @@
   <div class="section-title">Packaging &amp; Delivery</div>
   <div class="delivery-box">
     <ul>
-      <li>Secure packaging using plant-safe protective materials</li>
+      <li>Secure packaging with plant-safe materials</li>
       <li>Delivered as a healthy live plant</li>
-      <li>Designed to ensure safe transit</li>
+      <li>Designed to minimize transit damage</li>
     </ul>
   </div>
 
@@ -132,8 +133,8 @@
   <div class="section-title">Important Notes</div>
   <div class="note-box">
     <ul>
-      <li>Plant size and appearance may vary naturally</li>
-      <li>Flowers may not be present at delivery due to blooming cycle</li>
+      <li>Plant size and shape may vary due to natural growth</li>
+      <li>Flowers may not be present at delivery (depends on blooming cycle)</li>
       <li>Minor soil disturbance during shipping is normal</li>
     </ul>
   </div>

@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"/>
   <link rel="stylesheet" href="../assets/css/product-details.css">
+   <?php include '../common/header-script.php'; ?>
 </head>
 <body>
+     <?php include '../common/header.php'; ?>
 <div class="product-page">
 
   <img src="https://placehold.co/900x420/e9ecef/adb5bd?text=Product+Image" alt="Dragon Mulberry Live Fruit Plant" class="product-img"/>
@@ -139,6 +141,8 @@
   </div>
 
 </div>
+ <?php include '../common/footer.php'; ?>
+ <?php include '../common/footer-script.php'; ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

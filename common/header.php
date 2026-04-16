@@ -36,6 +36,31 @@
                                     Landscape</a></li>
                         </ul>
                     </li>
+<!--                    <li class="nav-item dropdown">-->
+<!--    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"-->
+<!--        aria-expanded="false">Plants</a>-->
+<!--    <ul class="dropdown-menu mega-plants w-100">-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/aglaonema-snow-white"><i class="fas fa-leaf"></i> Aglaonema Snow White</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/aglaonema"><i class="fas fa-leaf"></i> Aglaonema</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/allamanda"><i class="fas fa-sun"></i> Allamanda</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/aloe-vera"><i class="fas fa-mortar-pestle"></i> Aloe Vera</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/bougainvillea"><i class="fas fa-spa"></i> Bougainvillea</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/dragon-fruit"><i class="fas fa-apple-alt"></i> Dragon Fruit</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/dragon-mulberry"><i class="fas fa-apple-alt"></i> Dragon Mulberry</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/exotic-peach-yellow-hibiscus"><i class="fas fa-spa"></i> Exotic Peach Yellow Hibiscus</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/frangipani"><i class="fas fa-spa"></i> Frangipani</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/grafted-hibiscus"><i class="fas fa-spa"></i> Grafted Hibiscus</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/hot-pink-hibiscus"><i class="fas fa-spa"></i> Hot Pink Hibiscus</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/jade-plant"><i class="fas fa-seedling"></i> Jade Plant</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/light-peach-hibiscus"><i class="fas fa-spa"></i> Light Peach Hibiscus</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/money-plant"><i class="fas fa-seedling"></i> Money Plant</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/orange-hibiscus"><i class="fas fa-spa"></i> Orange Hibiscus</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/peach-yellow-hibiscus"><i class="fas fa-spa"></i> Peach Yellow Hibiscus</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/philodendron-birkin"><i class="fas fa-leaf"></i> Philodendron Birkin</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/pink-double-petal-hibiscus"><i class="fas fa-spa"></i> Pink Double Petal Hibiscus</a></li>-->
+<!--        <li><a class="dropdown-item" href="https://pavitramitti.co.in/product/snake-plant"><i class="fas fa-seedling"></i> Snake Plant</a></li>-->
+<!--    </ul>-->
+<!--</li>-->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Services</a>
