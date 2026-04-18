@@ -13,6 +13,11 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-5B3ZBD6B');
     </script>
+        <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pavitramitti.co.in/">
     <?php include 'common/header-script.php'; ?>
 </head>
 <body>
