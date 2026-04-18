@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pavitra Mitti Plant Nursery in Basirhat | Best Nursery Near Barasat & Kolkata</title>
-    <meta name="description"
-        content="Pavitra Mitti Nursery – 200+ plant varieties in Basirhat, near Barasat & Kolkata. Fruit plants, flowering plants, medicinal herbs, ornamental & landscape plants. Bulk orders welcome.">
+    <meta name="description" content="Pavitra Mitti is a leading plant nursery in Basirhat near Barasat and Kolkata, offering a wide variety of healthy indoor and outdoor plants, fruit plants, flowering plants, and garden essentials at affordable prices.">
     <script>
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
