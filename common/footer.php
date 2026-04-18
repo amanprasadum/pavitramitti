@@ -166,7 +166,7 @@
                     <div class="foot-bottom-links">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Use</a>
-                        <a href="#">Sitemap</a>
+                        <a href="#">Sitemap </a>
                     </div>
                 </div>
             </div>
