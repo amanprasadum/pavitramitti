@@ -160,6 +160,9 @@
                     <p class="foot-copy mb-0">
                         &copy; 2026 Pavitra Mitti Nursery, All Rights Reserved.
                     </p>
+                    <!-- add design and maintain by -->
+                    <p class="foot-design mb-0">
+                        Designed & Maintained by <a href="https://webeasyexperts.com" target="_blank">Web Easy Experts</a>
                     <div class="foot-bottom-links">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Use</a>
