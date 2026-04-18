@@ -13,11 +13,8 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-5B3ZBD6B');
     </script>
-
- <?php include 'common/header-script.php'; ?>
-   
+    <?php include 'common/header-script.php'; ?>
 </head>
-
 <body>
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B3ZBD6B"
