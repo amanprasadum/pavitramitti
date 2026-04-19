@@ -42,7 +42,7 @@
                         <!-- <div class="brand-leaf"><i class="fas fa-leaf"></i></div> -->
                         <!-- Pavitra Mitti -->
                         <!-- add the logo -->
-                        <img src="../assets/images/logo.png" alt="Pavitra Mitti Logo" class="brand-logo-" style=""> 
+                        <img src="../assets/images/logo.png" alt="Pavitra Mitti Logo" class="brand-logo-" style="width: 107px;"> 
                     </div>
                     <p class="foot-desc">A leading plant nursery in Basirhat, West Bengal — serving home gardeners,
                         landscapers and farmers with 200+ plant varieties, expert guidance and affordable pricing for
