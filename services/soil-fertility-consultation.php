@@ -25,7 +25,7 @@
 <body>
 
     <!-- ==================== NAVBAR ==================== -->
-      <?php include '../common/header-script.php'; ?>
+      <?php include '../common/header.php'; ?>
 
 
 
