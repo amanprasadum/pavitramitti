@@ -22,7 +22,7 @@
                     <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
         aria-expanded="false">Plants</a>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu plants-menu">
         <li><a class="dropdown-item" href="/product/aglaonema-snow-white.php"><i class="fas fa-leaf"></i> Aglaonema Snow White</a></li>
         <li><a class="dropdown-item" href="/product/aglaonema.php"><i class="fas fa-leaf"></i> Aglaonema</a></li>
         <li><a class="dropdown-item" href="/product/allamanda.php"><i class="fas fa-sun"></i> Allamanda</a></li>
