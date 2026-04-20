@@ -20,6 +20,31 @@
                         <a class="nav-link active" href="/">Home</a>
                     </li>
                     <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">Plants</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/product/aglaonema-snow-white.php"><i class="fas fa-leaf"></i> Aglaonema Snow White</a></li>
+        <li><a class="dropdown-item" href="/product/aglaonema.php"><i class="fas fa-leaf"></i> Aglaonema</a></li>
+        <li><a class="dropdown-item" href="/product/allamanda.php"><i class="fas fa-sun"></i> Allamanda</a></li>
+        <li><a class="dropdown-item" href="/product/aloe-vera.php"><i class="fas fa-mortar-pestle"></i> Aloe Vera</a></li>
+        <li><a class="dropdown-item" href="/product/bougainvillea.php"><i class="fas fa-spa"></i> Bougainvillea</a></li>
+        <li><a class="dropdown-item" href="/product/dragon-fruit.php"><i class="fas fa-apple-alt"></i> Dragon Fruit</a></li>
+        <li><a class="dropdown-item" href="/product/dragon-mulberry.php"><i class="fas fa-apple-alt"></i> Dragon Mulberry</a></li>
+        <li><a class="dropdown-item" href="/product/exotic-peach-yellow-hibiscus.php"><i class="fas fa-spa"></i> Exotic Peach Yellow Hibiscus</a></li>
+        <li><a class="dropdown-item" href="/product/frangipani.php"><i class="fas fa-spa"></i> Frangipani</a></li>
+        <li><a class="dropdown-item" href="/product/grafted-hibiscus.php"><i class="fas fa-spa"></i> Grafted Hibiscus</a></li>
+        <li><a class="dropdown-item" href="/product/hot-pink-hibiscus.php"><i class="fas fa-spa"></i> Hot Pink Hibiscus</a></li>
+        <li><a class="dropdown-item" href="/product/jade-plant.php"><i class="fas fa-seedling"></i> Jade Plant</a></li>
+        <li><a class="dropdown-item" href="/product/light-peach-hibiscus.php"><i class="fas fa-spa"></i> Light Peach Hibiscus</a></li>
+        <li><a class="dropdown-item" href="/product/money-plant.php"><i class="fas fa-seedling"></i> Money Plant</a></li>
+        <li><a class="dropdown-item" href="/product/orange-hibiscus.php"><i class="fas fa-spa"></i> Orange Hibiscus</a></li>
+        <li><a class="dropdown-item" href="/product/peach-yellow-hibiscus.php"><i class="fas fa-spa"></i> Peach Yellow Hibiscus</a></li>
+        <li><a class="dropdown-item" href="/product/philodendron-birkin.php"><i class="fas fa-leaf"></i> Philodendron Birkin</a></li>
+        <li><a class="dropdown-item" href="/product/pink-double-petal-hibiscus.php"><i class="fas fa-spa"></i> Pink Double Petal Hibiscus</a></li>
+        <li><a class="dropdown-item" href="/product/snake-plant.php"><i class="fas fa-seedling"></i> Snake Plant</a></li>
+    </ul>
+</li>
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Plants</a>
                         <ul class="dropdown-menu">

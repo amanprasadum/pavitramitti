@@ -273,6 +273,11 @@ body {
         min-width: 120px;
     }
 }
+/* Scrollable plants dropdown */
+.navbar .dropdown-menu {
+    max-height: 70vh;
+    overflow-y: auto;
+}
 
 /* ===================== HERO ===================== */
 .hero-section {
