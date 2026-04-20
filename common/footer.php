@@ -83,11 +83,11 @@
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                 <h5 class="foot-h">Our Plants</h5>
                 <ul class="foot-links">
-                    <li><a href="/product/dragon-fruit.php"><i class="fas fa-chevron-right"></i> Fruit Plants</a></li>
-                    <li><a href="/product/bougainvillea.php"><i class="fas fa-chevron-right"></i> Flowering Plants</a></li>
-                    <li><a href="/product/aglaonema.php"><i class="fas fa-chevron-right"></i> Ornamental Plants</a></li>
-                    <li><a href="/product/aloe-vera.php"><i class="fas fa-chevron-right"></i> Medicinal & Herbal</a></li>
-                    <li><a href="/product/index.php"><i class="fas fa-chevron-right"></i> Farm & Landscape</a></li>
+                    <li><a href="/product/dragon-fruit"><i class="fas fa-chevron-right"></i> Fruit Plants</a></li>
+                    <li><a href="/product/bougainvillea"><i class="fas fa-chevron-right"></i> Flowering Plants</a></li>
+                    <li><a href="/product/aglaonema"><i class="fas fa-chevron-right"></i> Ornamental Plants</a></li>
+                    <li><a href="/product/aloe-vera"><i class="fas fa-chevron-right"></i> Medicinal & Herbal</a></li>
+                    <li><a href="/product/index"><i class="fas fa-chevron-right"></i> Farm & Landscape</a></li>
                 </ul>
             </div>
 
