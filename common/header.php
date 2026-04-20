@@ -51,9 +51,9 @@
                         <li><a class="dropdown-item" href="/services/soil-fertility-consultation"><i class="fas fa-hand-holding-heart"></i> Soil Fertility Consultation</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
             </ul>
 
             <div class="nav-ctas ms-lg-2">
