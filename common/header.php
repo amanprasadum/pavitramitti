@@ -15,6 +15,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="/">Home</a>
                 </li>
+                <li class="nav-item"><a class="nav-link" href="../about-us">About</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">Plants</a>
@@ -51,8 +52,6 @@
                         <li><a class="dropdown-item" href="/services/soil-fertility-consultation"><i class="fas fa-hand-holding-heart"></i> Soil Fertility Consultation</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="../about-us">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="/#faq">FAQ</a></li>
                 <li class="nav-item"><a class="nav-link" href="../contact-us">Contact</a></li>
             </ul>
 
