@@ -73,9 +73,9 @@
                 <ul class="foot-links">
                     <li><a href="#categories"><i class="fas fa-chevron-right"></i> Our Plants</a></li>
                     <li><a href="#shop"><i class="fas fa-chevron-right"></i> Popular Plants</a></li>
-                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                    <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQ</a></li>
-                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    <li><a href="/#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="/#faq"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                    <li><a href="/#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
                 </ul>
             </div>
 
