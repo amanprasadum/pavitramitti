@@ -15,7 +15,8 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="/">Home</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="../about-us">About</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="../about-us">About</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">Plants</a>
