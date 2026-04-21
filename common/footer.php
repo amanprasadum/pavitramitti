@@ -22,8 +22,10 @@
                 <i class="fas fa-envelope"></i>
                 <div>
                     <strong>Email Us</strong>
-                    <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                            data-cfemail="1e777078715e6e7f68776a6c7f73776a6a77307770">[email&#160;protected]</a></span>
+                    <span>info@pavitramitti.com
+</span>
+                    <!-- <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                            data-cfemail="1e777078715e6e7f68776a6c7f73776a6a77307770">[email&#160;protected]</a></span> -->
                 </div>
             </div>
             <div class="ftb-item">
