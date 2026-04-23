@@ -267,7 +267,7 @@
 
   <!-- ═══════════════════════════════════════
        STICKY BOTTOM BAR (mobile only)
-  ════════════════════════════════════════ -->
+  ════════════════════════════════════════ --> 
   <div class="sticky-cta">
     <a
       href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20am%20interested%20in%20the%20Aloe%20Vera%20Live%20Plant."
