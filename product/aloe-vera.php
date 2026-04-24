@@ -85,6 +85,7 @@
 
           <div class="pv-stock-row">
             <span class="pv-in-stock"><i class="bi bi-check-circle-fill"></i> In Stock</span>
+            <span class="pv-divider-pipe"></span>
             <span class="pv-delivery-tag"><i class="bi bi-truck"></i> Delivery in 3–5 Days</span>
           </div>
 
