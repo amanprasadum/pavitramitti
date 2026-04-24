@@ -1,0 +1,655 @@
+/* ===========================
+   product-details.css  (redesigned – Pavitra Nursery modern style)
+   =========================== */
+
+/* ── Root Tokens ── */
+:root {
+  --green:        #2e7d32;
+  --green-dark:   #1b5e20;
+  --green-light:  #e8f5e9;
+  --green-mid:    #c8e6c9;
+  --green-accent: #43a047;
+  --green-tag:    #4caf50;
+  --whatsapp:     #25d366;
+  --yellow:       #f9a825;
+  --text-dark:    #1a1a1a;
+  --text-body:    #3d3d3d;
+  --text-muted:   #6c757d;
+  --border:       #e0e0e0;
+  --bg-light:     #f8fdf8;
+  --radius:       10px;
+  --shadow:       0 2px 12px rgba(0,0,0,.08);
+  --shadow-hover: 0 6px 24px rgba(46,125,50,.15);
+}
+
+body {
+  background: #fff;
+  color: var(--text-body);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 15px;
+}
+
+/* ── Breadcrumb ── */
+.pv-breadcrumb {
+  background: var(--bg-light);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+.pv-breadcrumb .breadcrumb-item a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.pv-breadcrumb .breadcrumb-item.active {
+  color: var(--text-muted);
+}
+
+.pv-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--text-muted);
+}
+
+/* ── Product Hero ── */
+.pv-product-hero {
+  padding: 32px 0 28px;
+  background: #fff;
+}
+
+.pv-product-hero .row {
+  align-items: flex-start;
+}
+
+/* Sticky info panel on scroll */
+@media (min-width: 992px) {
+  .pv-product-hero .col-lg-7 {
+    position: sticky;
+    top: 80px;
+  }
+}
+
+/* Gallery */
+.pv-gallery-wrap {
+  position: relative;
+}
+
+.pv-badge-bestseller {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  background: var(--green);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 4px;
+  letter-spacing: .4px;
+}
+
+.pv-main-img-wrap {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-light);
+}
+
+.pv-main-img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s ease;
+}
+
+.pv-main-img:hover {
+  transform: scale(1.03);
+}
+
+.pv-thumbs-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.pv-thumb-btn {
+  flex: 1;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+  background: #fff;
+  transition: border-color .2s;
+}
+
+.pv-thumb-btn img {
+  width: 100%;
+  height: 68px;
+  object-fit: cover;
+  display: block;
+}
+
+.pv-thumb-btn.active,
+.pv-thumb-btn:hover {
+  border-color: var(--green);
+}
+
+/* Product Info */
+.pv-category-badge {
+  display: inline-block;
+  background: var(--green-light);
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.pv-product-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.pv-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.pv-stars {
+  color: var(--yellow);
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.pv-rating-val {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-dark);
+}
+
+.pv-rating-count {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.pv-short-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 16px;
+}
+
+.pv-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.pv-price {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.pv-price-note {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.pv-feature-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.pv-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #fff;
+  color: var(--green-dark);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 13px;
+  border-radius: 20px;
+  border: 1.5px solid var(--green-mid);
+}
+
+.pv-pill i {
+  font-size: 13px;
+  color: var(--green);
+}
+
+.pv-stock-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 16px;
+  font-size: 13px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 14px;
+  background: var(--bg-light);
+  width: fit-content;
+}
+
+.pv-stock-row .pv-divider-pipe {
+  width: 1px;
+  height: 16px;
+  background: var(--border);
+  margin: 0 14px;
+}
+
+.pv-in-stock {
+  color: var(--green);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pv-delivery-tag {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Qty */
+.pv-qty-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.pv-qty-label {
+  font-size: 14px;
+  color: var(--text-body);
+}
+
+.pv-qty-ctrl {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pv-qty-btn {
+  background: #f5f5f5;
+  border: none;
+  padding: 6px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--text-dark);
+  transition: background .2s;
+}
+
+.pv-qty-btn:hover {
+  background: var(--green-mid);
+}
+
+.pv-qty-val {
+  padding: 6px 18px;
+  font-weight: 600;
+  font-size: 15px;
+  min-width: 40px;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+/* Action buttons */
+.pv-action-btns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.pv-btn-cart {
+  flex: 1;
+  background: var(--green);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background .2s, transform .15s;
+}
+
+.pv-btn-cart:hover {
+  background: var(--green-dark);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.pv-btn-whatsapp {
+  flex: 1;
+  background: #fff;
+  color: var(--whatsapp);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid var(--whatsapp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background .2s, color .2s, transform .15s;
+}
+
+.pv-btn-whatsapp:hover {
+  background: var(--whatsapp);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.pv-btn-call {
+  background: #fff;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background .2s, border-color .2s;
+}
+
+.pv-btn-call:hover {
+  background: #f5f5f5;
+  border-color: #bbb;
+}
+
+/* ── Feature Strip ── */
+.pv-feature-strip {
+  background: #fff;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0;
+  margin-bottom: 0;
+}
+
+.pv-feat-item {
+  padding: 6px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pv-feat-item > i {
+  font-size: 22px;
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: var(--green-light);
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.pv-feat-title {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+
+.pv-feat-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+/* ── Shared Card ── */
+.pv-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+/* ── Section Headings ── */
+.pv-section-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  border-bottom: 2px solid var(--green-light);
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.pv-sub-heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+/* ── About Section ── */
+.pv-about-section {
+  padding: 40px 0 24px;
+  background: #fff;
+}
+
+.pv-about-section p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Check List */
+.pv-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pv-check-list li {
+  font-size: 14px;
+  padding: 5px 0;
+  color: #3d3d3d;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.pv-check-list li i {
+  color: var(--green-tag);
+  font-size: 15px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Spec Table */
+.pv-spec-table {
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.pv-spec-table td {
+  padding: 9px 12px;
+  border: 1px solid #eee;
+  vertical-align: top;
+}
+
+.pv-spec-table tr:nth-child(odd) td {
+  background: var(--bg-light);
+}
+
+.pv-spec-label {
+  font-weight: 600;
+  color: #495057;
+  width: 38%;
+}
+
+/* ── Care Section ── */
+.pv-care-section {
+  background: var(--bg-light);
+  padding: 40px 0;
+}
+
+.pv-care-section .pv-section-heading {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 24px;
+}
+
+.pv-care-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  height: 100%;
+  box-shadow: var(--shadow);
+  transition: box-shadow .25s, transform .25s;
+}
+
+.pv-care-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.pv-care-icon {
+  width: 46px;
+  height: 46px;
+  background: var(--green-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.pv-care-icon i {
+  font-size: 22px;
+  color: var(--green);
+}
+
+.pv-care-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.pv-care-card ul {
+  padding-left: 16px;
+  margin: 0;
+  font-size: 13px;
+  color: #444;
+}
+
+.pv-care-card li {
+  margin-bottom: 4px;
+  line-height: 1.6;
+}
+
+/* ── 3-col section ── */
+.pv-three-col-section {
+  padding: 40px 0;
+  background: #fff;
+}
+
+/* Usage List */
+.pv-usage-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pv-usage-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #3d3d3d;
+  padding: 7px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pv-usage-list li:last-child {
+  border-bottom: none;
+}
+
+.pv-usage-list li i {
+  width: 28px;
+  height: 28px;
+  background: var(--green-light);
+  color: var(--green);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Delivery visual */
+.pv-delivery-visual {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.pv-box-icon {
+  font-size: 56px;
+  color: var(--green-mid);
+}
+
+/* ── Notes Section ── */
+.pv-notes-section {
+  padding: 0 0 48px;
+  background: #fff;
+}
+
+.pv-note-box {
+  background: #fffde7;
+  border: 1px solid #ffe082;
+  border-left: 4px solid #f9a825;
+  border-radius: var(--radius);
+  padding: 22px 24px;
+}
+
+.pv-note-list {
+  padding-left: 18px;
+  margin: 0;
+  font-size: 14px;
+  color: #5a4500;
+}
+
+.pv-note-list li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+/* ── Responsive ── */
+@media (max-width: 575px) {
+  .pv-product-title { font-size: 18px; }
+  .pv-price          { font-size: 26px; }
+  .pv-action-btns    { flex-direction: column; }
+  .pv-main-img       { height: 280px; }
+}
