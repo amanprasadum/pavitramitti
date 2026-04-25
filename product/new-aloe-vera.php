@@ -12,7 +12,7 @@
 <body>
   <?php include '../common/header.php'; ?>
   <!-- ── Product Hero ── -->
-  <section class="pv-product-hero mt-5">
+  <section class="pv-product-hero ">
     <div class="container">
       <div class="row g-4 align-items-start">
  
