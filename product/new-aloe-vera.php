@@ -564,22 +564,22 @@
   <?php include '../common/footer.php'; ?>
   <?php include '../common/footer-script.php'; ?>
   <script>
-    /* ===========================
-   You May Also Like – Slider JS
+  /* ===========================
+   You May Also Like – Infinite Loop Slider JS
    Add this to: assets/js/product-details.js
    OR paste inside <script> before </body>
    =========================== */
 
 (function () {
-  const track   = document.getElementById('relSliderTrack');
-  const prevBtn = document.getElementById('relPrev');
-  const nextBtn = document.getElementById('relNext');
+  const track    = document.getElementById('relSliderTrack');
+  const prevBtn  = document.getElementById('relPrev');
+  const nextBtn  = document.getElementById('relNext');
   const dotsWrap = document.getElementById('relDots');
 
   if (!track || !prevBtn || !nextBtn) return;
 
-  const cards = track.querySelectorAll('.pv-rel-card');
-  let current = 0;
+  const originalCards = Array.from(track.querySelectorAll('.pv-rel-card'));
+  const total = originalCards.length;
 
   /* ── How many cards visible based on viewport ── */
   function visibleCount() {
@@ -590,72 +590,126 @@
     return 1;
   }
 
-  /* ── Total slide steps ── */
-  function totalSteps() {
-    return Math.ceil(cards.length / visibleCount());
+  /* ── Clone cards and prepend/append for infinite effect ── */
+  function buildClones() {
+    // Remove any existing clones first
+    track.querySelectorAll('.pv-rel-clone').forEach(c => c.remove());
+
+    const visible = visibleCount();
+
+    // Append clones at end (first N original cards)
+    for (let i = 0; i < visible; i++) {
+      const clone = originalCards[i % total].cloneNode(true);
+      clone.classList.add('pv-rel-clone');
+      track.appendChild(clone);
+    }
+
+    // Prepend clones at start (last N original cards)
+    for (let i = visible - 1; i >= 0; i--) {
+      const clone = originalCards[(total - visible + i) % total].cloneNode(true);
+      clone.classList.add('pv-rel-clone');
+      track.insertBefore(clone, track.firstChild);
+    }
   }
 
-  /* ── Build dots ── */
+  /* ── Card width including gap ── */
+  function cardWidth() {
+    const card = track.querySelector('.pv-rel-card');
+    if (!card) return 0;
+    return card.getBoundingClientRect().width + 20; // 20px gap
+  }
+
+  /* ── Current real index (starts at 0 for first original card) ── */
+  let realIndex = 0;
+
+  /* ── Move to position instantly (no animation) ── */
+  function jumpTo(index) {
+    const visible = visibleCount();
+    const offset = (index + visible) * cardWidth(); // +visible accounts for prepended clones
+    track.style.transition = 'none';
+    track.style.transform  = `translateX(-${offset}px)`;
+  }
+
+  /* ── Animate to position ── */
+  function slideTo(index) {
+    const visible = visibleCount();
+    const offset  = (index + visible) * cardWidth();
+    track.style.transition = 'transform .45s cubic-bezier(.4, 0, .2, 1)';
+    track.style.transform  = `translateX(-${offset}px)`;
+    realIndex = index;
+    updateDots();
+  }
+
+  /* ── After transition ends, silently jump if we're on a clone ── */
+  track.addEventListener('transitionend', () => {
+    if (realIndex >= total) {
+      realIndex = realIndex - total;
+      jumpTo(realIndex);
+    } else if (realIndex < 0) {
+      realIndex = realIndex + total;
+      jumpTo(realIndex);
+    }
+    updateDots();
+  });
+
+  /* ── Build dots (one per original card) ── */
   function buildDots() {
     dotsWrap.innerHTML = '';
-    const steps = totalSteps();
-    for (let i = 0; i < steps; i++) {
+    for (let i = 0; i < total; i++) {
       const dot = document.createElement('button');
-      dot.className = 'pv-dot' + (i === current ? ' active' : '');
-      dot.setAttribute('aria-label', 'Slide ' + (i + 1));
-      dot.addEventListener('click', () => goTo(i));
+      dot.className = 'pv-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      dot.addEventListener('click', () => {
+        realIndex = i;
+        slideTo(realIndex);
+      });
       dotsWrap.appendChild(dot);
     }
   }
 
-  /* ── Update dots active state ── */
   function updateDots() {
+    const normalized = ((realIndex % total) + total) % total;
     dotsWrap.querySelectorAll('.pv-dot').forEach((d, i) => {
-      d.classList.toggle('active', i === current);
+      d.classList.toggle('active', i === normalized);
     });
   }
 
-  /* ── Calculate card width including gap ── */
-  function cardWidth() {
-    if (!cards.length) return 0;
-    const gap = 20; // matches CSS gap: 20px
-    return cards[0].getBoundingClientRect().width + gap;
-  }
-
-  /* ── Move track ── */
-  function goTo(index) {
-    const steps = totalSteps();
-    current = Math.max(0, Math.min(index, steps - 1));
-    const offset = current * visibleCount() * cardWidth();
-    track.style.transform = `translateX(-${offset}px)`;
-    prevBtn.disabled = current === 0;
-    nextBtn.disabled = current >= steps - 1;
-    updateDots();
-  }
-
   /* ── Arrow clicks ── */
-  prevBtn.addEventListener('click', () => goTo(current - 1));
-  nextBtn.addEventListener('click', () => goTo(current + 1));
+  prevBtn.addEventListener('click', () => slideTo(realIndex - 1));
+  nextBtn.addEventListener('click', () => slideTo(realIndex + 1));
 
   /* ── Touch / Swipe support ── */
   let touchStartX = 0;
-  track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+
   track.addEventListener('touchend', e => {
     const diff = touchStartX - e.changedTouches[0].clientX;
     if (Math.abs(diff) > 50) {
-      diff > 0 ? goTo(current + 1) : goTo(current - 1);
+      diff > 0 ? slideTo(realIndex + 1) : slideTo(realIndex - 1);
     }
   }, { passive: true });
 
-  /* ── Init & resize ── */
+  /* ── Auto play every 4 seconds, pauses on hover ── */
+  let autoPlay = setInterval(() => slideTo(realIndex + 1), 4000);
+
+  track.addEventListener('mouseenter', () => clearInterval(autoPlay));
+  track.addEventListener('mouseleave', () => {
+    autoPlay = setInterval(() => slideTo(realIndex + 1), 4000);
+  });
+
+  /* ── Init ── */
   function init() {
-    current = 0;
+    realIndex = 0;
+    buildClones();
     buildDots();
-    goTo(0);
+    jumpTo(0);
   }
 
   init();
 
+  /* ── Rebuild on resize ── */
   let resizeTimer;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
