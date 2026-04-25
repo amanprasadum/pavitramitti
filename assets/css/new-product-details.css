@@ -363,7 +363,12 @@ body {
    
    =========================== */
 
-/* ── Section Wrapper ── */
+/* ===========================
+   You May Also Like – Swiper Slider CSS
+   Append to: assets/css/new-product-details.css
+   =========================== */
+
+/* ── Section ── */
 .pv-related-section {
   padding: 48px 0 56px;
   background: var(--bg-light);
@@ -385,8 +390,6 @@ body {
   font-weight: 800;
   color: var(--text-dark);
   margin: 0 0 4px;
-  position: relative;
-  display: inline-block;
 }
 
 .pv-related-title::after {
@@ -405,11 +408,8 @@ body {
   margin: 0;
 }
 
-/* ── Arrow Buttons ── */
-.pv-slider-arrows {
-  display: flex;
-  gap: 8px;
-}
+/* ── Custom Arrow Buttons ── */
+.pv-slider-arrows { display: flex; gap: 8px; }
 
 .pv-arrow-btn {
   width: 40px;
@@ -424,7 +424,6 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: background .2s, color .2s, transform .15s;
-  flex-shrink: 0;
 }
 
 .pv-arrow-btn:hover {
@@ -433,35 +432,34 @@ body {
   transform: scale(1.08);
 }
 
-.pv-arrow-btn:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
-  transform: none;
+/* ── Swiper Overrides ── */
+.relatedSwiper {
+  padding-bottom: 40px !important; /* space for dots */
 }
 
-/* ── Slider Outer (clip) ── */
-.pv-slider-outer {
-  overflow: hidden;
-  border-radius: var(--radius);
+/* Pagination dots style */
+.relatedSwiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: var(--green-mid);
+  opacity: 1;
+  transition: background .2s, transform .2s;
 }
 
-/* ── Slider Track ── */
-.pv-slider-track {
-  display: flex;
-  gap: 20px;
-  transition: transform .45s cubic-bezier(.4, 0, .2, 1);
-  will-change: transform;
+.relatedSwiper .swiper-pagination-bullet-active {
+  background: var(--green);
+  transform: scale(1.35);
 }
 
-/* ── Individual Card ── */
+/* ── Card ── */
 .pv-rel-card {
-  flex: 0 0 calc(25% - 15px);   /* 4 cards visible on desktop */
   background: #fff;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   overflow: hidden;
   transition: box-shadow .25s, transform .25s;
+  height: 100%;
 }
 
 .pv-rel-card:hover {
@@ -475,11 +473,8 @@ body {
   display: block;
 }
 
-/* ── Card Image ── */
-.pv-rel-img-wrap {
-  position: relative;
-  overflow: hidden;
-}
+/* ── Image ── */
+.pv-rel-img-wrap { position: relative; overflow: hidden; }
 
 .pv-rel-img {
   width: 100%;
@@ -489,9 +484,7 @@ body {
   transition: transform .4s ease;
 }
 
-.pv-rel-card:hover .pv-rel-img {
-  transform: scale(1.06);
-}
+.pv-rel-card:hover .pv-rel-img { transform: scale(1.06); }
 
 /* ── Badges ── */
 .pv-rel-badge {
@@ -508,25 +501,12 @@ body {
   text-transform: uppercase;
 }
 
-.pv-rel-badge.pv-badge-yellow {
-  background: #f9a825;
-  color: #fff;
-}
-
-.pv-rel-badge.pv-badge-pink {
-  background: #e91e63;
-  color: #fff;
-}
-
-.pv-rel-badge.pv-badge-purple {
-  background: #7b1fa2;
-  color: #fff;
-}
+.pv-rel-badge.pv-badge-yellow  { background: #f9a825; }
+.pv-rel-badge.pv-badge-pink    { background: #e91e63; }
+.pv-rel-badge.pv-badge-purple  { background: #7b1fa2; }
 
 /* ── Card Body ── */
-.pv-rel-body {
-  padding: 14px 16px 16px;
-}
+.pv-rel-body { padding: 14px 16px 16px; }
 
 .pv-rel-category {
   font-size: 11px;
@@ -563,11 +543,7 @@ body {
   padding-top: 10px;
 }
 
-.pv-rel-price {
-  font-size: 17px;
-  font-weight: 800;
-  color: var(--text-dark);
-}
+.pv-rel-price { font-size: 17px; font-weight: 800; color: var(--text-dark); }
 
 .pv-rel-enquire {
   font-size: 12px;
@@ -579,54 +555,5 @@ body {
   transition: gap .2s;
 }
 
-.pv-rel-card:hover .pv-rel-enquire {
-  gap: 6px;
-}
-
-.pv-rel-enquire i {
-  font-size: 16px;
-}
-
-/* ── Dots ── */
-.pv-slider-dots {
-  display: flex;
-  justify-content: center;
-  gap: 7px;
-  margin-top: 24px;
-}
-
-.pv-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--green-mid);
-  border: none;
-  cursor: pointer;
-  transition: background .2s, transform .2s;
-  padding: 0;
-}
-
-.pv-dot.active {
-  background: var(--green);
-  transform: scale(1.3);
-}
-
-/* ── Responsive ── */
-@media (max-width: 1199px) {
-  .pv-rel-card {
-    flex: 0 0 calc(33.333% - 14px);  /* 3 cards */
-  }
-}
-
-@media (max-width: 767px) {
-  .pv-rel-card {
-    flex: 0 0 calc(50% - 10px);      /* 2 cards */
-  }
-  .pv-related-title { font-size: 20px; }
-}
-
-@media (max-width: 479px) {
-  .pv-rel-card {
-    flex: 0 0 calc(100% - 0px);      /* 1 card */
-  }
-}
+.pv-rel-card:hover .pv-rel-enquire { gap: 6px; }
+.pv-rel-enquire i { font-size: 16px; }
