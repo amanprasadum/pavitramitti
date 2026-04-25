@@ -11,21 +11,8 @@
 </head>
 <body>
   <?php include '../common/header.php'; ?>
-  <!-- ── Breadcrumb ── -->
-  <div class="pv-breadcrumb">
-    <div class="container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Plants</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Aloe Vera Live Plant</li>
-        </ol>
-      </nav>
-    </div>
-  </div>
- 
   <!-- ── Product Hero ── -->
-  <section class="pv-product-hero">
+  <section class="pv-product-hero mt-5">
     <div class="container">
       <div class="row g-4 align-items-start">
  
