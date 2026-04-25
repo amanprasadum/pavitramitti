@@ -555,7 +555,5 @@
   <?php include '../common/footer-script.php'; ?>
   <script src="../assets/js/you-may-also-like.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
 </body>
 </html>
