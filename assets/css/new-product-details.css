@@ -347,7 +347,7 @@ body {
 .pv-notes-section { padding: 0 0 48px; background: #fff; }
 .pv-note-box {
   background: #fffde7; border: 1px solid #ffe082;
-  border-left: 4px solid #f9a825; border-radius: var(--radius); padding: 22px 24px;
+  border-left: 4px solid #f9a825; padding: 22px 24px;
 }
 .pv-note-list { padding-left: 18px; margin: 0; font-size: 14px; color: #5a4500; }
 .pv-note-list li { margin-bottom: 6px; line-height: 1.6; }
