@@ -12,7 +12,7 @@
 <body>
   <?php include '../common/header.php'; ?>
 
-  <!-- ── Breadcrumb ── -->
+ <!-- ── Breadcrumb ── -->
   <div class="pv-breadcrumb">
     <div class="container">
       <nav aria-label="breadcrumb">
@@ -24,13 +24,13 @@
       </nav>
     </div>
   </div>
-
+ 
   <!-- ── Product Hero ── -->
   <section class="pv-product-hero">
     <div class="container">
       <div class="row g-4 align-items-start">
-
-        <!-- Left: Gallery -->
+ 
+        <!-- Left: Single Main Image (no thumbnails) -->
         <div class="col-lg-5">
           <div class="pv-gallery-wrap">
             <div class="pv-badge-bestseller">Best Seller</div>
@@ -40,28 +40,14 @@
                    alt="Aloe Vera Live Plant"
                    class="pv-main-img"/>
             </div>
-            <div class="pv-thumbs-row">
-              <button class="pv-thumb-btn active" onclick="switchImg(this,'https://placehold.co/540x480/e8f5e9/388e3c?text=Aloe+Vera+Plant')">
-                <img src="https://placehold.co/90x80/e8f5e9/388e3c?text=1" alt="View 1"/>
-              </button>
-              <button class="pv-thumb-btn" onclick="switchImg(this,'https://placehold.co/540x480/f1f8e9/558b2f?text=View+2')">
-                <img src="https://placehold.co/90x80/f1f8e9/558b2f?text=2" alt="View 2"/>
-              </button>
-              <button class="pv-thumb-btn" onclick="switchImg(this,'https://placehold.co/540x480/e0f2f1/00695c?text=View+3')">
-                <img src="https://placehold.co/90x80/e0f2f1/00695c?text=3" alt="View 3"/>
-              </button>
-              <button class="pv-thumb-btn" onclick="switchImg(this,'https://placehold.co/540x480/fafafa/aaa?text=View+4')">
-                <img src="https://placehold.co/90x80/fafafa/aaa?text=4" alt="View 4"/>
-              </button>
-            </div>
           </div>
         </div>
-
+ 
         <!-- Right: Info -->
         <div class="col-lg-7">
           <span class="pv-category-badge">MEDICINAL PLANT</span>
           <h1 class="pv-product-title">Aloe Vera Live Plant – Medicinal Succulent Plant for Home, Balcony &amp; Indoor Garden</h1>
-
+ 
           <div class="pv-rating-row">
             <span class="pv-stars">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
@@ -69,47 +55,36 @@
             <span class="pv-rating-val">4.5</span>
             <span class="pv-rating-count">(128 Reviews)</span>
           </div>
-
+ 
           <p class="pv-short-desc">Bring home the natural goodness of our Aloe Vera Live Plant, a highly popular medicinal and ornamental plant known for its healing properties and easy maintenance. This hardy succulent is widely valued for its soothing gel, air-purifying qualities, and long-lasting growth, making it a perfect addition to homes, balconies, offices, and gardens.</p>
-
+ 
           <div class="pv-price-row">
             <span class="pv-price">₹199</span>
             <span class="pv-price-note">(Inclusive of all taxes)</span>
           </div>
-
+ 
           <div class="pv-feature-pills">
             <span class="pv-pill"><i class="bi bi-wind"></i> Air Purifying</span>
             <span class="pv-pill"><i class="bi bi-shield-check"></i> Low Maintenance</span>
             <span class="pv-pill"><i class="bi bi-house-heart"></i> Indoor Friendly</span>
           </div>
-
+ 
           <div class="pv-stock-row">
             <span class="pv-in-stock"><i class="bi bi-check-circle-fill"></i> In Stock</span>
             <span class="pv-divider-pipe"></span>
             <span class="pv-delivery-tag"><i class="bi bi-truck"></i> Delivery in 3–5 Days</span>
           </div>
-
-          <div class="pv-qty-row">
-            <span class="pv-qty-label">Quantity:</span>
-            <div class="pv-qty-ctrl">
-              <button class="pv-qty-btn" onclick="changeQty(-1)"><i class="bi bi-dash"></i></button>
-              <span class="pv-qty-val" id="qtyVal">1</span>
-              <button class="pv-qty-btn" onclick="changeQty(1)"><i class="bi bi-plus"></i></button>
-            </div>
-          </div>
-
+ 
+          <!-- Enquiry Buttons Only (no cart, no qty) -->
           <div class="pv-action-btns">
-            <button class="btn pv-btn-cart"><i class="bi bi-cart3"></i> Add to Cart</button>
-            <button class="btn pv-btn-whatsapp"><i class="bi bi-whatsapp"></i> WhatsApp Enquiry</button>
-          </div>
-          <div class="mt-2">
-            <button class="btn pv-btn-call w-100"><i class="bi bi-telephone-fill"></i> Call Now</button>
+            <button class="pv-btn-whatsapp"><i class="bi bi-whatsapp"></i> WhatsApp Enquiry</button>
+            <button class="pv-btn-call"><i class="bi bi-telephone-fill"></i> Call Now</button>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+ 
   <!-- ── Feature Strip ── -->
   <section class="pv-feature-strip">
     <div class="container">
@@ -159,19 +134,19 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- ── About + Specs ── -->
   <section class="pv-about-section">
     <div class="container">
       <div class="row g-4">
-
+ 
         <!-- About -->
         <div class="col-lg-6">
           <div class="pv-card h-100">
             <h2 class="pv-section-heading">About This Plant</h2>
             <p>Aloe Vera is one of the most popular medicinal and ornamental plants, widely known for its healing properties and easy care. This hardy succulent thrives in Indian climates and is valued for its soothing gel, air-purifying qualities, and long-lasting growth.</p>
             <p>Aloe vera is one of the most beginner-friendly plants, requiring minimal care while offering multiple health and decorative benefits. Its compact size and adaptability make it ideal for indoor and outdoor gardening, especially in Indian climates.</p>
-
+ 
             <h3 class="pv-sub-heading mt-4">Why This Plant is Special</h3>
             <ul class="pv-check-list">
               <li><i class="bi bi-check-circle-fill"></i> Medicinal &amp; Herbal Plant – Known for natural healing and skincare benefits</li>
@@ -184,7 +159,7 @@
             </ul>
           </div>
         </div>
-
+ 
         <!-- Specs -->
         <div class="col-lg-6">
           <div class="pv-card h-100">
@@ -204,17 +179,17 @@
             </table>
           </div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- ── Detailed Care Guide ── -->
   <section class="pv-care-section">
     <div class="container">
       <h2 class="pv-section-heading">Detailed Care Guide</h2>
       <div class="row g-3 mt-1">
-
+ 
         <div class="col-sm-6 col-lg-4">
           <div class="pv-care-card">
             <div class="pv-care-icon"><i class="bi bi-brightness-high-fill"></i></div>
@@ -225,7 +200,7 @@
             </ul>
           </div>
         </div>
-
+ 
         <div class="col-sm-6 col-lg-4">
           <div class="pv-care-card">
             <div class="pv-care-icon"><i class="bi bi-droplet-fill"></i></div>
@@ -237,7 +212,7 @@
             </ul>
           </div>
         </div>
-
+ 
         <div class="col-sm-6 col-lg-4">
           <div class="pv-care-card">
             <div class="pv-care-icon"><i class="bi bi-layers-fill"></i></div>
@@ -248,7 +223,7 @@
             </ul>
           </div>
         </div>
-
+ 
         <div class="col-sm-6 col-lg-4">
           <div class="pv-care-card">
             <div class="pv-care-icon"><i class="bi bi-flower1"></i></div>
@@ -259,7 +234,7 @@
             </ul>
           </div>
         </div>
-
+ 
         <div class="col-sm-6 col-lg-4">
           <div class="pv-care-card">
             <div class="pv-care-icon"><i class="bi bi-scissors"></i></div>
@@ -270,16 +245,16 @@
             </ul>
           </div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- ── Benefits + Usage + Delivery ── -->
   <section class="pv-three-col-section">
     <div class="container">
       <div class="row g-4">
-
+ 
         <!-- Plant Benefits -->
         <div class="col-lg-4">
           <div class="pv-card h-100">
@@ -293,7 +268,7 @@
             </ul>
           </div>
         </div>
-
+ 
         <!-- Ideal Usage -->
         <div class="col-lg-4">
           <div class="pv-card h-100">
@@ -308,7 +283,7 @@
             </ul>
           </div>
         </div>
-
+ 
         <!-- Packaging & Delivery -->
         <div class="col-lg-4">
           <div class="pv-card h-100">
@@ -323,11 +298,11 @@
             </ul>
           </div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- ── Important Notes ── -->
   <section class="pv-notes-section">
     <div class="container">
@@ -350,22 +325,5 @@
       </div>
     </div>
   </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    function switchImg(btn, src) {
-      document.getElementById('mainProductImg').src = src;
-      document.querySelectorAll('.pv-thumb-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-    }
-    function changeQty(delta) {
-      const el = document.getElementById('qtyVal');
-      let val = parseInt(el.textContent) + delta;
-      if (val < 1) val = 1;
-      el.textContent = val;
-    }
-  </script>
-  <?php include '../common/footer.php'; ?>
-  <?php include '../common/footer-script.php'; ?>
 </body>
 </html>
