@@ -45,6 +45,7 @@ body {
  
 /* ── Product Hero ── */
 .pv-product-hero {
+  margin-top: 5rem;
   padding: 32px 0 28px;
   background: #fff;
 }
