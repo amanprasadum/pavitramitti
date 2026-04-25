@@ -6,6 +6,7 @@
   <title>Aloe Vera Live Plant</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="../assets/css/new-product-details.css"> 
   <?php include '../common/header-script.php'; ?>
 </head>
@@ -563,6 +564,7 @@
 <!-- ── End You May Also Like ── -->
   <?php include '../common/footer.php'; ?>
   <?php include '../common/footer-script.php'; ?>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
   /* ===========================
    You May Also Like – Infinite Loop Slider JS
