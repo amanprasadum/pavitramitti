@@ -311,7 +311,7 @@
       </div>
     </div>
   </section>
-
+ <?php include '../common/youmaylike.php'; ?>
   <?php include '../common/footer.php'; ?>
   <?php include '../common/footer-script.php'; ?>
   <script src="../assets/js/you-may-also-like.js"></script>

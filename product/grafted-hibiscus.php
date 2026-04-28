@@ -140,6 +140,7 @@
   </div>
 
 </div>
+ <?php include '../common/youmaylike.php'; ?>
  <?php include '../common/footer.php'; ?>
  <?php include '../common/footer-script.php'; ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
