@@ -22,7 +22,7 @@
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/fff3e0/e65100?text=Orange+Hibiscus"
+                   src="../assets/images/product/Orange-Hibiscus.png"
                    alt="Tropical Bright Orange Hibiscus Plant"
                    class="pv-main-img"/>
             </div>

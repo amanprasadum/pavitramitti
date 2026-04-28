@@ -22,7 +22,7 @@
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/e8f5e9/1b5e20?text=Jade+Plant"
+                   src="../assets/images/product/Jade-Plant.png"
                    alt="Jade Plant Crassula ovata"
                    class="pv-main-img"/>
             </div>

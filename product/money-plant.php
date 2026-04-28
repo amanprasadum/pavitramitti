@@ -22,7 +22,7 @@
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/fff8e1/ff6f00?text=Frangipani+Plant"
+                   src="../assets/images/product/Money-Plant.png"
                    alt="Frangipani Flower Plant Kath Golap"
                    class="pv-main-img"/>
             </div>

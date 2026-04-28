@@ -22,7 +22,7 @@
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/fce4ec/c62828?text=Hibiscus+Plant"
+                   src="../assets/images/product/Hot-Pink-Hibiscus.png"
                    alt="Classic Hot-Pink Hybrid Hibiscus Plant"
                    class="pv-main-img"/>
             </div>
