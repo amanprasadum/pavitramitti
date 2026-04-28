@@ -22,7 +22,7 @@
             <div class="pv-badge-bestseller">Best Seller</div>
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/e8f5e9/388e3c?text=Aloe+Vera+Plant"
+                   src="../assets/images/product/alloe-vera.png"
                    alt="Aloe Vera Live Plant"
                    class="pv-main-img"/>
             </div>
