@@ -41,7 +41,7 @@
           <div class="pv-rel-card">
             <a href="aglaonema.php" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
-                <img src="https://placehold.co/300x260/fce4ec/c62828?text=Aglaonema" alt="Aglaonema" class="pv-rel-img"/>
+                <img src="../assets/images/product/Aglaonema.png" alt="Aglaonema" class="pv-rel-img"/>
                 <span class="pv-rel-badge">Popular</span>
               </div>
               <div class="pv-rel-body">
@@ -62,7 +62,7 @@
           <div class="pv-rel-card">
             <a href="allamanda.php" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
-                <img src="https://placehold.co/300x260/fffde7/f57f17?text=Allamanda" alt="Allamanda" class="pv-rel-img"/>
+                <img src="../assets/images/product/Allamanda.png" alt="Allamanda" class="pv-rel-img"/>
                 <span class="pv-rel-badge pv-badge-yellow">Flowering</span>
               </div>
               <div class="pv-rel-body">

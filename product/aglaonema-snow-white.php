@@ -23,7 +23,7 @@
             <div class="pv-badge-bestseller">Premium</div>
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/e8f5e9/388e3c?text=Aglaonema+Snow+White"
+                   src="../assets/images/product/Aglaonema-Snow-White.png"
                    alt="Aglaonema Snow White Plant"
                    class="pv-main-img-off img-fluid"/>
             </div>
