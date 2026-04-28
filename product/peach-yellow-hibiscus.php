@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Premium Peach-Yellow Hybrid Hibiscus Plant (Live)</title>
+  <title>Premium Peach-Yellow  Hibiscus Plant</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"/>
   <link rel="stylesheet" href="../assets/css/new-product-details.css">
@@ -22,7 +22,7 @@
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/fff8e1/f57f17?text=Peach+Yellow+Hibiscus"
+                   src="../assets/images/product/Peach-Yellow-Hibiscus.png"
                    alt="Premium Peach-Yellow Hybrid Hibiscus Plant"
                    class="pv-main-img"/>
             </div>
