@@ -22,7 +22,7 @@
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/fffde7/f57f17?text=Allamanda+Plant"
+                   src="../assets/images/product/Allamanda.png"
                    alt="Allamanda Alokananda Live Flower Plant"
                    class="pv-main-img-off img-fluid"/>
             </div>
