@@ -22,7 +22,7 @@
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/e8eaf6/283593?text=Dragon+Mulberry+Plant"
+                   src="../assets/images/product/Dragon-Mulberry.png"
                    alt="Dragon Mulberry Live Fruit Plant"
                    class="pv-main-img"/>
             </div>
