@@ -17,7 +17,7 @@
         <div class="col-lg-5">
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
-              <img id="mainProductImg" src="https://placehold.co/540x480/e8f5e9/1b5e20?text=Philodendron+Birkin" alt="Philodendron Birkin Plant" class="pv-main-img"/>
+              <img id="mainProductImg" src="../assets/images/product/Philodendron-Birkin.png" alt="Philodendron Birkin Plant" class="pv-main-img"/>
             </div>
           </div>
         </div>

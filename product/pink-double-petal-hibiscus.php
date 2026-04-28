@@ -22,7 +22,7 @@
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/fce4ec/c62828?text=Pink+Hibiscus+Plant"
+                   src="../assets/images/product/Pink-Double-Petal-Hibiscus.png"
                    alt="Rare Pink Double-Petal Hibiscus Plant"
                    class="pv-main-img"/>
             </div>
