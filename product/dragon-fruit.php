@@ -22,7 +22,7 @@
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/f3e5f5/6a1b9a?text=Dragon+Fruit+Plant"
+                   src="../assets/images/product/dragon-fruit.png"
                    alt="Dragon Fruit Live Plant"
                    class="pv-main-img"/>
             </div>
