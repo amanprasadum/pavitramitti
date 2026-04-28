@@ -22,7 +22,7 @@
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/e9ecef/adb5bd?text=Aglaonema+Plant"
+                   src="../assets/images/product/Aglaonema.png"
                    alt="Aglaonema Plant Aglonima"
                    class="pv-main-img-off img-fluid"/>
             </div>
