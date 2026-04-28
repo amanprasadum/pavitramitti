@@ -20,7 +20,7 @@
           <div class="pv-rel-card">
             <a href="aloe-vera.php" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
-                <img src="https://placehold.co/300x260/e8f5e9/388e3c?text=Aloe+Vera" alt="Aloe Vera" class="pv-rel-img"/>
+                <img src="../assets/images/product/alloe-vera.png" alt="Aloe Vera" class="pv-rel-img"/>
                 <span class="pv-rel-badge">Best Seller</span>
               </div>
               <div class="pv-rel-body">
@@ -83,7 +83,7 @@
           <div class="pv-rel-card">
             <a href="bougainvillea.php" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
-                <img src="https://placehold.co/300x260/fce4ec/880e4f?text=Bougainvillea" alt="Bougainvillea" class="pv-rel-img"/>
+                <img src="../assets/images/product/Bougainvillea.png" alt="Bougainvillea" class="pv-rel-img"/>
                 <span class="pv-rel-badge pv-badge-pink">Best Seller</span>
               </div>
               <div class="pv-rel-body">
@@ -104,7 +104,7 @@
           <div class="pv-rel-card">
             <a href="dragon-fruit.php" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
-                <img src="https://placehold.co/300x260/f3e5f5/6a1b9a?text=Dragon+Fruit" alt="Dragon Fruit" class="pv-rel-img"/>
+                <img src="../assets/images/product/dragon-fruit.png" alt="Dragon Fruit" class="pv-rel-img"/>
                 <span class="pv-rel-badge pv-badge-purple">Exotic</span>
               </div>
               <div class="pv-rel-body">
@@ -125,7 +125,7 @@
           <div class="pv-rel-card">
             <a href="dragon-mulberry.php" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
-                <img src="https://placehold.co/300x260/e8eaf6/283593?text=Dragon+Mulberry" alt="Dragon Mulberry" class="pv-rel-img"/>
+                <img src="../assets/images/product/Dragon-Mulberry.png" alt="Dragon Mulberry" class="pv-rel-img"/>
                 <span class="pv-rel-badge pv-badge-purple">Exotic</span>
               </div>
               <div class="pv-rel-body">
@@ -146,7 +146,7 @@
           <div class="pv-rel-card">
             <a href="frangipani.php" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
-                <img src="https://placehold.co/300x260/fff8e1/ff6f00?text=Frangipani" alt="Frangipani" class="pv-rel-img"/>
+                <img src="../assets/images/product/Frangipani.png" alt="Frangipani" class="pv-rel-img"/>
                 <span class="pv-rel-badge pv-badge-yellow">Fragrant</span>
               </div>
               <div class="pv-rel-body">
@@ -167,7 +167,7 @@
           <div class="pv-rel-card">
             <a href="jade-plant.php" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
-                <img src="https://placehold.co/300x260/e8f5e9/1b5e20?text=Jade+Plant" alt="Jade Plant" class="pv-rel-img"/>
+                <img src="../assets/images/product/Jade-Plant.png" alt="Jade Plant" class="pv-rel-img"/>
                 <span class="pv-rel-badge">Lucky Plant</span>
               </div>
               <div class="pv-rel-body">
@@ -188,7 +188,7 @@
           <div class="pv-rel-card">
             <a href="money-plant.php" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
-                <img src="https://placehold.co/300x260/f1f8e9/33691e?text=Money+Plant" alt="Money Plant" class="pv-rel-img"/>
+                <img src="../assets/images/product/Money-Plant.png" alt="Money Plant" class="pv-rel-img"/>
                 <span class="pv-rel-badge">Best Seller</span>
               </div>
               <div class="pv-rel-body">
