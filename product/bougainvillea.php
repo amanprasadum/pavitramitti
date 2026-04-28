@@ -23,7 +23,7 @@
             <div class="pv-badge-bestseller">Best Seller</div>
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/fce4ec/880e4f?text=Bougainvillea+Plant"
+                   src="../assets/images/product/Bougainvillea.png"
                    alt="Bougainvillea Live Plant"
                    class="pv-main-img"/>
             </div>
