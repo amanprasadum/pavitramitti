@@ -24,7 +24,7 @@
               <img id="mainProductImg"
                    src="https://placehold.co/540x480/e8f5e9/388e3c?text=Aloe+Vera+Plant"
                    alt="Aloe Vera Live Plant"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

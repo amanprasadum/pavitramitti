@@ -24,7 +24,7 @@
               <img id="mainProductImg"
                    src="../assets/images/product/alloe-vera.png"
                    alt="Aloe Vera Live Plant"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

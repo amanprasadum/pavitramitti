@@ -24,7 +24,7 @@
               <img id="mainProductImg"
                    src="../assets/images/product/Jade-Plant.png"
                    alt="Jade Plant Crassula ovata"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

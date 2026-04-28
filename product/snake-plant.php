@@ -17,7 +17,7 @@
         <div class="col-lg-5">
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
-              <img id="mainProductImg" src="https://placehold.co/540x480/e0f2f1/004d40?text=Snake+Plant" alt="Snake Plant Nagfani" class="pv-main-img"/>
+              <img id="mainProductImg" src="https://placehold.co/540x480/e0f2f1/004d40?text=Snake+Plant" alt="Snake Plant Nagfani" class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

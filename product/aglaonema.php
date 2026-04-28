@@ -24,7 +24,7 @@
               <img id="mainProductImg"
                    src="https://placehold.co/540x480/e9ecef/adb5bd?text=Aglaonema+Plant"
                    alt="Aglaonema Plant Aglonima"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

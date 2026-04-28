@@ -25,7 +25,7 @@
               <img id="mainProductImg"
                    src="../assets/images/product/Bougainvillea.png"
                    alt="Bougainvillea Live Plant"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

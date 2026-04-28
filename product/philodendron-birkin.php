@@ -17,7 +17,7 @@
         <div class="col-lg-5">
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
-              <img id="mainProductImg" src="../assets/images/product/Philodendron-Birkin.png" alt="Philodendron Birkin Plant" class="pv-main-img"/>
+              <img id="mainProductImg" src="../assets/images/product/Philodendron-Birkin.png" alt="Philodendron Birkin Plant" class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

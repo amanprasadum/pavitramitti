@@ -24,7 +24,7 @@
               <img id="mainProductImg"
                    src="https://placehold.co/540x480/fff8e1/ff6f00?text=Hybrid+Hibiscus+Plant"
                    alt="Exotic Peach-Yellow Hybrid Hibiscus Plant"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

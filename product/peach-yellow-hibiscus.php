@@ -24,7 +24,7 @@
               <img id="mainProductImg"
                    src="../assets/images/product/Peach-Yellow-Hibiscus.png"
                    alt="Premium Peach-Yellow Hybrid Hibiscus Plant"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

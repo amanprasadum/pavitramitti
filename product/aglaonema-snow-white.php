@@ -25,7 +25,7 @@
               <img id="mainProductImg"
                    src="https://placehold.co/540x480/e8f5e9/388e3c?text=Aglaonema+Snow+White"
                    alt="Aglaonema Snow White Plant"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

@@ -24,7 +24,7 @@
               <img id="mainProductImg"
                    src="../assets/images/product/Orange-Hibiscus.png"
                    alt="Tropical Bright Orange Hibiscus Plant"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

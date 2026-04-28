@@ -24,7 +24,7 @@
               <img id="mainProductImg"
                    src="../assets/images/product/Hot-Pink-Hibiscus.png"
                    alt="Classic Hot-Pink Hybrid Hibiscus Plant"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

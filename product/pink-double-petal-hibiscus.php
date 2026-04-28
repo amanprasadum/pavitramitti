@@ -24,7 +24,7 @@
               <img id="mainProductImg"
                    src="../assets/images/product/Pink-Double-Petal-Hibiscus.png"
                    alt="Rare Pink Double-Petal Hibiscus Plant"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

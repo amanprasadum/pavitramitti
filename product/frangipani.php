@@ -24,7 +24,7 @@
               <img id="mainProductImg"
                    src="../assets/images/product/Frangipani.png"
                    alt="Frangipani Flower Plant Kath Golap"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>

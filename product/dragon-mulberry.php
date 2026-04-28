@@ -24,7 +24,7 @@
               <img id="mainProductImg"
                    src="../assets/images/product/Dragon-Mulberry.png"
                    alt="Dragon Mulberry Live Fruit Plant"
-                   class="pv-main-img"/>
+                   class="pv-main-img-off img-fluid"/>
             </div>
           </div>
         </div>
