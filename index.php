@@ -671,7 +671,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
                 <a href="#contact" class="codexaman-pm-cat__card">
                     <div class="codexaman-pm-cat__hero">
-                        <img src="https://picsum.photos/seed/foliage/600/600" alt="Foliage Plants">
+                        <img src="/assets/images/indoor-cat.png" alt="Foliage Plants">
                         <div class="codexaman-pm-cat__hero-overlay"></div>
                     </div>
                     <i class="fas fa-leaf codexaman-pm-cat__hero-icon"></i>
