@@ -19,6 +19,7 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://pavitramitti.co.in/">
     <?php include 'common/header-script.php'; ?>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <style>
         .codexaman-cat-section {
   background: var(--cream);
