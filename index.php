@@ -19,258 +19,6 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://pavitramitti.co.in/">
     <?php include 'common/header-script.php'; ?>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    <style>
-      .codexaman-cat-section {
-  background: var(--cream);
-  position: relative;
-}
- 
-.codexaman-cat-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle at 8% 18%, rgba(76,124,89,0.05) 0%, transparent 45%),
-    radial-gradient(circle at 92% 82%, rgba(156,204,101,0.06) 0%, transparent 45%);
-  pointer-events: none;
-}
- 
-/* ---- Header ---- */
-.codexaman-cat-eyebrow {
-  display: inline-block;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--g2);
-  background: rgba(74,124,89,0.1);
-  padding: 5px 18px;
-  border-radius: 4px;
-  margin-bottom: 14px;
-}
- 
-.codexaman-cat-title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(1.9rem, 4vw, 2.9rem);
-  font-weight: 600;
-  color: var(--g1);
-  line-height: 1.2;
-  margin-bottom: 10px;
-}
- 
-.codexaman-cat-subtitle {
-  font-family: 'DM Sans', sans-serif;
-  color: var(--text2);
-  font-size: 1rem;
-  font-weight: 300;
-  margin-bottom: 0;
-}
- 
-/* ---- Animated Border ---- */
-@property --border-angle {
-  syntax: '<angle>';
-  inherits: true;
-  initial-value: 0deg;
-}
- 
-@keyframes codexaman-border-spin {
-  to { --border-angle: 360deg; }
-}
- 
-.codexaman-cat-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 14px;
-  padding: 36px 20px 28px;
-  background: var(--card-bg);
-  border: none;
-  border-radius: 12px;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.28s cubic-bezier(.25,.8,.25,1),
-              box-shadow 0.28s cubic-bezier(.25,.8,.25,1);
-  height: 100%;
-  /* static border fallback */
-  outline: 1.5px solid color-mix(in srgb, var(--card-color) 18%, transparent);
-}
- 
-/* animated gradient border wrapper */
-.codexaman-cat-card::before {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  border-radius: 13px;
-  padding: 2px;
-  background: conic-gradient(
-    from var(--border-angle),
-    transparent 0%,
-    transparent 60%,
-    var(--card-color) 80%,
-    color-mix(in srgb, var(--card-color) 60%, #fff) 90%,
-    var(--card-color) 100%
-  );
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-  z-index: 0;
-}
- 
-.codexaman-cat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 36px color-mix(in srgb, var(--card-color) 20%, transparent);
-  outline-color: transparent;
-}
- 
-.codexaman-cat-card:hover::before {
-  opacity: 1;
-  animation: codexaman-border-spin 2.5s linear infinite;
-}
- 
-/* ---- Icon wrap ---- */
-.codexaman-cat-icon-wrap {
-  width: 72px;
-  height: 72px;
-  border-radius: 10px;
-  background: color-mix(in srgb, var(--card-color) 13%, white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  transition: background 0.28s, transform 0.28s;
-}
- 
-.codexaman-cat-icon-wrap i {
-  font-size: 1.9rem;
-  color: var(--card-color);
-  line-height: 1;
-  transition: transform 0.28s;
-}
- 
-.codexaman-cat-card:hover .codexaman-cat-icon-wrap {
-  background: color-mix(in srgb, var(--card-color) 20%, white);
-}
- 
-.codexaman-cat-card:hover .codexaman-cat-icon-wrap i {
-  transform: scale(1.12);
-}
- 
-/* ---- Text ---- */
-.codexaman-cat-info {
-  flex: 1;
-}
- 
-.codexaman-cat-name {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 5px;
-  line-height: 1.3;
-}
- 
-.codexaman-cat-count {
-  font-size: 0.78rem;
-  color: var(--text2);
-  margin: 0;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-}
- 
-.codexaman-cat-count i {
-  font-size: 0.72rem;
-  color: var(--card-color);
-}
- 
-.codexaman-cat-desc {
-  font-size: 0.72rem;
-  color: var(--text2);
-  margin: 6px 0 0;
-  line-height: 1.4;
-  font-weight: 300;
-}
- 
-/* 5-card equal columns on large screens */
-@media (min-width: 992px) {
-  .col-lg-2half {
-    width: 20%;
-  }
-}
- 
-/* ---- Hover Button ---- */
-.codexaman-cat-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--card-color);
-  background: color-mix(in srgb, var(--card-color) 10%, white);
-  border: 1.5px solid color-mix(in srgb, var(--card-color) 28%, transparent);
-  border-radius: 6px;
-  padding: 6px 14px;
-  text-decoration: none;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.22s ease, transform 0.22s ease,
-              background 0.2s, color 0.2s;
-  white-space: nowrap;
-  position: relative;
-  z-index: 1;
-}
- 
-.codexaman-cat-btn i {
-  font-size: 1.1rem;
-  line-height: 1;
-}
- 
-.codexaman-cat-card:hover .codexaman-cat-btn {
-  opacity: 1;
-  transform: translateY(0);
-}
- 
-.codexaman-cat-btn:hover {
-  background: var(--card-color);
-  color: #fff !important;
-  border-color: var(--card-color);
-  text-decoration: none;
-}
- 
- 
-/* ---- Mobile ---- */
-@media (max-width: 575px) {
-  .codexaman-cat-card {
-    padding: 26px 14px 20px;
-    gap: 10px;
-  }
-  .codexaman-cat-icon-wrap {
-    width: 58px;
-    height: 58px;
-  }
-  .codexaman-cat-icon-wrap i {
-    font-size: 1.55rem;
-  }
-  .codexaman-cat-name {
-    font-size: 0.9rem;
-  }
-  .codexaman-cat-btn {
-    font-size: 0.73rem;
-    padding: 5px 11px;
-  }
-}
-    </style>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -520,111 +268,107 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
-    <section class="codexaman-cat-section py-5">
-  <div class="container">
- 
-    <!-- Header -->
-    <div class="codexaman-cat-header text-center mb-5">
-      <span class="codexaman-cat-eyebrow">Explore Our Collection</span>
-      <h2 class="codexaman-cat-title">Shop by Category</h2>
-      <p class="codexaman-cat-subtitle">Handpicked plants for every space and soul</p>
-    </div>
- 
-    <!-- Grid -->
-    <div class="row g-4 justify-content-center">
- 
-      <!-- Card 1: Indoor Plants -->
-      <div class="col-6 col-md-4 col-lg-2half">
-        <div class="codexaman-cat-card" style="--card-color:#2e7d32; --card-bg:#f3faf3;">
-          <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-house-heart"></i>
-          </div>
-          <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">Indoor Plants</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 7 Plants</p>
-            <p class="codexaman-cat-desc">Aglaonema, Money Plant, Snake Plant, Jade & more</p>
-          </div>
-          <a href="index.php?cat=indoor" class="codexaman-cat-btn">
-            <i class="bi bi-arrow-right-short"></i> Explore
-          </a>
-        </div>
-      </div>
- 
-      <!-- Card 2: Outdoor / Garden -->
-      <div class="col-6 col-md-4 col-lg-2half">
-        <div class="codexaman-cat-card" style="--card-color:#4a7c59; --card-bg:#f2f8f4;">
-          <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-tree"></i>
-          </div>
-          <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">Outdoor Plants</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 3 Plants</p>
-            <p class="codexaman-cat-desc">Bougainvillea, Allamanda, Philodendron Birkin</p>
-          </div>
-          <a href="index.php?cat=outdoor" class="codexaman-cat-btn">
-            <i class="bi bi-arrow-right-short"></i> Explore
-          </a>
-        </div>
-      </div>
- 
-      <!-- Card 3: Flowering Plants -->
-      <div class="col-6 col-md-4 col-lg-2half">
-        <div class="codexaman-cat-card" style="--card-color:#c0392b; --card-bg:#fff6f6;">
-          <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-flower1"></i>
-          </div>
-          <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">Flowering Plants</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 9 Plants</p>
-            <p class="codexaman-cat-desc">Hibiscus, Frangipani, Grafted Hibiscus & more</p>
-          </div>
-          <a href="index.php?cat=flowering" class="codexaman-cat-btn">
-            <i class="bi bi-arrow-right-short"></i> Explore
-          </a>
-        </div>
-      </div>
- 
-      <!-- Card 4: Medicinal Plants -->
-      <div class="col-6 col-md-4 col-lg-2half">
-        <div class="codexaman-cat-card" style="--card-color:#00695c; --card-bg:#f0faf9;">
-          <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-capsule"></i>
-          </div>
-          <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">Medicinal Plants</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 3 Plants</p>
-            <p class="codexaman-cat-desc">Aloe Vera, New Aloe Vera, Aloe Vera Copy</p>
-          </div>
-          <a href="index.php?cat=medicinal" class="codexaman-cat-btn">
-            <i class="bi bi-arrow-right-short"></i> Explore
-          </a>
-        </div>
-      </div>
- 
-      <!-- Card 5: Exotic & Fruit -->
-      <div class="col-6 col-md-4 col-lg-2half">
-        <div class="codexaman-cat-card" style="--card-color:#e65100; --card-bg:#fff8f0;">
-          <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-stars"></i>
-          </div>
-          <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">Exotic &amp; Fruits</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 3 Plants</p>
-            <p class="codexaman-cat-desc">Dragon Fruit, Dragon Mulberry, Exotic Peach Hibiscus</p>
-          </div>
-          <a href="index.php?cat=exotic" class="codexaman-cat-btn">
-            <i class="bi bi-arrow-right-short"></i> Explore
-          </a>
-        </div>
-      </div>
- 
-    </div><!-- /row -->
-  </div><!-- /container -->
-</section>
- <!-- ===== END CATEGORY SECTION ===== --> 
+    <!-- ==================== CATEGORIES ==================== -->
+    <section class="categories-sec" id="categories">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <div class="sec-label">Our Collection</div>
+                <h2 class="sec-title">Plant <em>Categories</em></h2>
+                <p class="sec-sub">From fruit trees to medicinal herbs — we have everything for every green space</p>
+            </div>
 
-
-
+            <div class="cat-swiper-wrap" data-aos="fade-up" data-aos-delay="150">
+                <div class="swiper catSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#contact" class="cat-card">
+                                <div class="cat-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1571575173700-afb9492d6b9e?w=500&q=80"
+                                        alt="Fruit Plants" loading="lazy">
+                                    <div class="cat-overlay">
+                                        <span class="cat-enq">Enquire Now</span>
+                                    </div>
+                                </div>
+                                <div class="cat-body">
+                                    <div class="cat-tag">Fruit Plants</div>
+                                    <h4>Fruit Plants</h4>
+                                    <p>Mango · Guava · Lemon · Papaya · Banana</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#contact" class="cat-card">
+                                <div class="cat-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500&q=80"
+                                        alt="Flowering Plants" loading="lazy">
+                                    <div class="cat-overlay">
+                                        <span class="cat-enq">Enquire Now</span>
+                                    </div>
+                                </div>
+                                <div class="cat-body">
+                                    <div class="cat-tag">Flowering</div>
+                                    <h4>Flowering Plants</h4>
+                                    <p>Rose · Hibiscus · Marigold · Jasmine · Bougainvillea</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#contact" class="cat-card">
+                                <div class="cat-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?w=500&q=80"
+                                        alt="Ornamental Plants" loading="lazy">
+                                    <div class="cat-overlay">
+                                        <span class="cat-enq">Enquire Now</span>
+                                    </div>
+                                </div>
+                                <div class="cat-body">
+                                    <div class="cat-tag">Ornamental</div>
+                                    <h4>Ornamental Plants</h4>
+                                    <p>Areca Palm · Money Plant · Snake Plant · Bonsai</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#contact" class="cat-card">
+                                <div class="cat-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1558293842-c0fd3db86157?w=500&q=80"
+                                        alt="Medicinal Plants" loading="lazy">
+                                    <div class="cat-overlay">
+                                        <span class="cat-enq">Enquire Now</span>
+                                    </div>
+                                </div>
+                                <div class="cat-body">
+                                    <div class="cat-tag">Medicinal & Herbal</div>
+                                    <h4>Medicinal & Herbal</h4>
+                                    <p>Tulsi · Neem · Ashwagandha · Aloe Vera · Giloy</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#contact" class="cat-card">
+                                <div class="cat-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&q=80"
+                                        alt="Farm & Landscape" loading="lazy">
+                                    <div class="cat-overlay">
+                                        <span class="cat-enq">Enquire Now</span>
+                                    </div>
+                                </div>
+                                <div class="cat-body">
+                                    <div class="cat-tag">Farm & Landscape</div>
+                                    <h4>Farm & Landscape</h4>
+                                    <p>Coconut · Bamboo · Teak · Shade Trees · Hedges</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="sl-nav prev" id="catPrev" aria-label="Previous category"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="sl-nav next" id="catNext" aria-label="Next category"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
 
     <!-- ==================== POPULAR PLANTS ==================== -->
     <section class="products-sec" id="shop">
@@ -1590,14 +1334,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <i class="fas fa-arrow-up"></i>
     </button>
  <?php include 'common/footer-script.php'; ?>
-    <script>
-  (function () {
-    'use strict';
-    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(function (el) {
-      new bootstrap.Tooltip(el);
-    });
-  })();
-</script>
+    
 </body>
 
 </html>
