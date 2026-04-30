@@ -21,50 +21,47 @@
     <?php include 'common/header-script.php'; ?>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <style>
-        .codexaman-cat-section {
+       /* ===== CODEXAMAN CATEGORY SECTION ===== */
+
+.codexaman-cat-section {
   background: var(--cream);
   position: relative;
 }
- 
-/* subtle leaf-texture overlay using CSS */
+
 .codexaman-cat-section::before {
   content: '';
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle at 10% 20%, rgba(76,124,89,0.06) 0%, transparent 50%),
-    radial-gradient(circle at 90% 80%, rgba(156,204,101,0.07) 0%, transparent 50%);
+    radial-gradient(circle at 8% 18%, rgba(76,124,89,0.05) 0%, transparent 45%),
+    radial-gradient(circle at 92% 82%, rgba(156,204,101,0.06) 0%, transparent 45%);
   pointer-events: none;
 }
- 
+
 /* ---- Header ---- */
-.codexaman-cat-header {
-  position: relative;
-}
- 
 .codexaman-cat-eyebrow {
   display: inline-block;
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 500;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--g2);
   background: rgba(74,124,89,0.1);
-  padding: 5px 16px;
-  border-radius: 50px;
+  padding: 5px 18px;
+  border-radius: 4px;
   margin-bottom: 14px;
 }
- 
+
 .codexaman-cat-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  font-weight: 500;
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  font-weight: 600;
   color: var(--g1);
   line-height: 1.2;
   margin-bottom: 10px;
 }
- 
+
 .codexaman-cat-subtitle {
   font-family: 'DM Sans', sans-serif;
   color: var(--text2);
@@ -72,165 +69,210 @@
   font-weight: 300;
   margin-bottom: 0;
 }
- 
+
 /* ---- Card ---- */
 .codexaman-cat-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 12px;
-  padding: 28px 16px 22px;
+  gap: 14px;
+  padding: 36px 20px 28px;
   background: var(--card-bg);
   border: 1.5px solid color-mix(in srgb, var(--card-color) 18%, transparent);
-  border-radius: 20px;
-  text-decoration: none;
-  color: inherit;
+  border-radius: 12px;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s cubic-bezier(.25,.8,.25,1),
-              box-shadow 0.3s cubic-bezier(.25,.8,.25,1),
-              border-color 0.3s;
-  cursor: pointer;
+  transition: transform 0.28s cubic-bezier(.25,.8,.25,1),
+              box-shadow 0.28s cubic-bezier(.25,.8,.25,1),
+              border-color 0.28s;
+  height: 100%;
 }
- 
-.codexaman-cat-card::before {
+
+.codexaman-cat-card::after {
   content: '';
   position: absolute;
-  bottom: -40px;
-  right: -40px;
-  width: 100px;
-  height: 100px;
+  bottom: -30px;
+  right: -30px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  background: color-mix(in srgb, var(--card-color) 10%, transparent);
+  background: color-mix(in srgb, var(--card-color) 8%, transparent);
   transition: transform 0.4s ease;
+  pointer-events: none;
 }
- 
+
 .codexaman-cat-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px color-mix(in srgb, var(--card-color) 22%, transparent);
-  border-color: color-mix(in srgb, var(--card-color) 45%, transparent);
-  color: inherit;
-  text-decoration: none;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px color-mix(in srgb, var(--card-color) 20%, transparent);
+  border-color: color-mix(in srgb, var(--card-color) 40%, transparent);
 }
- 
-.codexaman-cat-card:hover::before {
-  transform: scale(2.2);
+
+.codexaman-cat-card:hover::after {
+  transform: scale(2.4);
 }
- 
-/* ---- Icon ---- */
+
+/* ---- Icon wrap ---- */
 .codexaman-cat-icon-wrap {
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--card-color) 12%, white);
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--card-color) 13%, white);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14px;
-  color: var(--card-color);
   flex-shrink: 0;
-  transition: background 0.3s, transform 0.3s;
+  transition: background 0.28s, transform 0.28s;
 }
- 
+
+.codexaman-cat-icon-wrap i {
+  font-size: 1.9rem;
+  color: var(--card-color);
+  line-height: 1;
+  transition: transform 0.28s;
+}
+
 .codexaman-cat-card:hover .codexaman-cat-icon-wrap {
   background: color-mix(in srgb, var(--card-color) 20%, white);
-  transform: scale(1.08) rotate(-4deg);
 }
- 
-.codexaman-cat-icon-wrap svg {
-  width: 100%;
-  height: 100%;
-  color: var(--card-color);
+
+.codexaman-cat-card:hover .codexaman-cat-icon-wrap i {
+  transform: scale(1.12);
 }
- 
+
 /* ---- Text ---- */
 .codexaman-cat-info {
   flex: 1;
 }
- 
+
 .codexaman-cat-name {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--text);
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   line-height: 1.3;
 }
- 
+
 .codexaman-cat-count {
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   color: var(--text2);
   margin: 0;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
- 
-/* ---- Arrow ---- */
-.codexaman-cat-arrow {
-  font-size: 1rem;
+
+.codexaman-cat-count i {
+  font-size: 0.72rem;
   color: var(--card-color);
+}
+
+/* ---- Hover Button ---- */
+.codexaman-cat-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--card-color);
+  background: color-mix(in srgb, var(--card-color) 10%, white);
+  border: 1.5px solid color-mix(in srgb, var(--card-color) 28%, transparent);
+  border-radius: 6px;
+  padding: 6px 14px;
+  text-decoration: none;
   opacity: 0;
-  transform: translateX(-6px);
-  transition: opacity 0.25s, transform 0.25s;
+  transform: translateY(6px);
+  transition: opacity 0.22s ease, transform 0.22s ease,
+              background 0.2s, color 0.2s;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+
+.codexaman-cat-btn i {
+  font-size: 1.1rem;
   line-height: 1;
 }
- 
-.codexaman-cat-card:hover .codexaman-cat-arrow {
+
+.codexaman-cat-card:hover .codexaman-cat-btn {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
- 
-/* ---- "All Plants" dark variant ---- */
+
+.codexaman-cat-btn:hover {
+  background: var(--card-color);
+  color: #fff !important;
+  border-color: var(--card-color);
+  text-decoration: none;
+}
+
+/* ---- Dark "All Plants" variant ---- */
 .codexaman-cat-card--all {
-  background: var(--g1);
-  border-color: var(--g1);
+  background: var(--g1) !important;
+  border-color: var(--g1) !important;
 }
- 
+
 .codexaman-cat-card--all .codexaman-cat-icon-wrap {
-  background: rgba(255,255,255,0.12);
-  color: #9ccc65;
+  background: rgba(255,255,255,0.1);
 }
- 
-.codexaman-cat-card--all .codexaman-cat-icon-wrap svg {
-  color: #9ccc65;
+
+.codexaman-cat-card--all .codexaman-cat-icon-wrap i {
+  color: var(--accent);
 }
- 
+
 .codexaman-cat-card--all .codexaman-cat-name {
   color: #fff;
 }
- 
+
 .codexaman-cat-card--all .codexaman-cat-count {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.55);
 }
- 
-.codexaman-cat-card--all .codexaman-cat-arrow {
-  color: #9ccc65;
+
+.codexaman-cat-card--all .codexaman-cat-count i {
+  color: var(--accent);
 }
- 
+
+.codexaman-cat-card--all .codexaman-cat-btn {
+  color: var(--accent);
+  background: rgba(156,204,101,0.12);
+  border-color: rgba(156,204,101,0.35);
+}
+
+.codexaman-cat-card--all .codexaman-cat-btn:hover {
+  background: var(--accent);
+  color: var(--g1) !important;
+  border-color: var(--accent);
+}
+
 .codexaman-cat-card--all:hover {
-  background: var(--g2);
-  border-color: var(--g2);
-  box-shadow: 0 16px 40px rgba(45,80,22,0.3);
-  color: #fff;
+  background: #3a6620 !important;
+  border-color: #3a6620 !important;
+  box-shadow: 0 12px 36px rgba(45,80,22,0.28);
 }
- 
-/* ---- Mobile tweaks ---- */
+
+/* ---- Mobile ---- */
 @media (max-width: 575px) {
   .codexaman-cat-card {
-    padding: 20px 12px 16px;
-    border-radius: 16px;
-    gap: 8px;
+    padding: 26px 14px 20px;
+    gap: 10px;
   }
   .codexaman-cat-icon-wrap {
-    width: 54px;
-    height: 54px;
-    padding: 11px;
+    width: 58px;
+    height: 58px;
+  }
+  .codexaman-cat-icon-wrap i {
+    font-size: 1.55rem;
   }
   .codexaman-cat-name {
-    font-size: 0.82rem;
+    font-size: 0.9rem;
   }
-  .codexaman-cat-count {
-    font-size: 0.68rem;
+  .codexaman-cat-btn {
+    font-size: 0.73rem;
+    padding: 5px 11px;
   }
 }
     </style>
@@ -418,182 +460,178 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <section class="codexaman-cat-section py-5">
- 
-  <!-- Section Header -->
   <div class="container">
+
+    <!-- Header -->
     <div class="codexaman-cat-header text-center mb-5">
       <span class="codexaman-cat-eyebrow">Explore Our Collection</span>
       <h2 class="codexaman-cat-title">Shop by Category</h2>
       <p class="codexaman-cat-subtitle">Handpicked plants for every space and soul</p>
     </div>
- 
-    <!-- Cards Grid -->
+
+    <!-- Grid -->
     <div class="row g-4 justify-content-center">
- 
+
       <!-- Card 1: Hibiscus -->
       <div class="col-6 col-md-4 col-lg-3">
-        <a href="#hibiscus" class="codexaman-cat-card" style="--card-color: #e57373; --card-bg: #fff5f5;">
+        <div class="codexaman-cat-card" style="--card-color:#c0392b; --card-bg:#fff6f6;">
           <div class="codexaman-cat-icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="32" cy="20" rx="10" ry="16" fill="currentColor" opacity="0.85" transform="rotate(0 32 32)"/>
-              <ellipse cx="32" cy="20" rx="10" ry="16" fill="currentColor" opacity="0.7" transform="rotate(72 32 32)"/>
-              <ellipse cx="32" cy="20" rx="10" ry="16" fill="currentColor" opacity="0.75" transform="rotate(144 32 32)"/>
-              <ellipse cx="32" cy="20" rx="10" ry="16" fill="currentColor" opacity="0.7" transform="rotate(216 32 32)"/>
-              <ellipse cx="32" cy="20" rx="10" ry="16" fill="currentColor" opacity="0.8" transform="rotate(288 32 32)"/>
-              <circle cx="32" cy="32" r="6" fill="#fff" opacity="0.95"/>
-              <circle cx="32" cy="32" r="3" fill="currentColor"/>
-            </svg>
+            <i class="bi bi-flower1"></i>
           </div>
           <div class="codexaman-cat-info">
             <h3 class="codexaman-cat-name">Hibiscus</h3>
-            <p class="codexaman-cat-count">6 varieties</p>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 6 Varieties</p>
           </div>
-          <span class="codexaman-cat-arrow">→</span>
-        </a>
+          <a href="hibiscus.php"
+             class="codexaman-cat-btn"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="Browse all Hibiscus plants">
+            <i class="bi bi-arrow-right-short"></i> View Category
+          </a>
+        </div>
       </div>
- 
+
       <!-- Card 2: Aloe Vera -->
       <div class="col-6 col-md-4 col-lg-3">
-        <a href="#aloe" class="codexaman-cat-card" style="--card-color: #66bb6a; --card-bg: #f1f8f1;">
+        <div class="codexaman-cat-card" style="--card-color:#2e7d32; --card-bg:#f3faf3;">
           <div class="codexaman-cat-icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M32 56 Q20 40 22 24 Q24 12 32 10 Q40 12 42 24 Q44 40 32 56Z" fill="currentColor" opacity="0.9"/>
-              <path d="M32 50 Q14 38 16 22 Q18 10 28 12" fill="currentColor" opacity="0.5"/>
-              <path d="M32 50 Q50 38 48 22 Q46 10 36 12" fill="currentColor" opacity="0.5"/>
-              <path d="M32 56 Q32 30 32 10" stroke="#fff" stroke-width="1.5" opacity="0.4"/>
-            </svg>
+            <i class="bi bi-moisture"></i>
           </div>
           <div class="codexaman-cat-info">
             <h3 class="codexaman-cat-name">Aloe Vera</h3>
-            <p class="codexaman-cat-count">3 varieties</p>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 3 Varieties</p>
           </div>
-          <span class="codexaman-cat-arrow">→</span>
-        </a>
+          <a href="aloe-vera.php"
+             class="codexaman-cat-btn"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="Browse all Aloe Vera plants">
+            <i class="bi bi-arrow-right-short"></i> View Category
+          </a>
+        </div>
       </div>
- 
+
       <!-- Card 3: Aglaonema -->
       <div class="col-6 col-md-4 col-lg-3">
-        <a href="#aglaonema" class="codexaman-cat-card" style="--card-color: #26a69a; --card-bg: #f0faf9;">
+        <div class="codexaman-cat-card" style="--card-color:#00695c; --card-bg:#f0faf9;">
           <div class="codexaman-cat-icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M32 55 Q32 35 32 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
-              <ellipse cx="22" cy="28" rx="14" ry="8" fill="currentColor" opacity="0.8" transform="rotate(-30 22 28)"/>
-              <ellipse cx="42" cy="26" rx="14" ry="8" fill="currentColor" opacity="0.7" transform="rotate(30 42 26)"/>
-              <ellipse cx="24" cy="40" rx="12" ry="7" fill="currentColor" opacity="0.6" transform="rotate(-20 24 40)"/>
-              <ellipse cx="40" cy="38" rx="12" ry="7" fill="currentColor" opacity="0.55" transform="rotate(20 40 38)"/>
-              <path d="M22 28 Q26 24 32 22" stroke="#fff" stroke-width="1" opacity="0.4"/>
-              <path d="M42 26 Q38 22 32 22" stroke="#fff" stroke-width="1" opacity="0.4"/>
-            </svg>
+            <i class="bi bi-peace"></i>
           </div>
           <div class="codexaman-cat-info">
             <h3 class="codexaman-cat-name">Aglaonema</h3>
-            <p class="codexaman-cat-count">2 varieties</p>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 2 Varieties</p>
           </div>
-          <span class="codexaman-cat-arrow">→</span>
-        </a>
+          <a href="aglaonema.php"
+             class="codexaman-cat-btn"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="Browse all Aglaonema plants">
+            <i class="bi bi-arrow-right-short"></i> View Category
+          </a>
+        </div>
       </div>
- 
+
       <!-- Card 4: Tropical Fruits -->
       <div class="col-6 col-md-4 col-lg-3">
-        <a href="#tropical" class="codexaman-cat-card" style="--card-color: #ffa726; --card-bg: #fff8ee;">
+        <div class="codexaman-cat-card" style="--card-color:#e65100; --card-bg:#fff8f0;">
           <div class="codexaman-cat-icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="32" cy="36" r="16" fill="currentColor" opacity="0.85"/>
-              <path d="M32 20 Q28 10 20 8 Q26 14 24 20" fill="currentColor" opacity="0.7"/>
-              <path d="M32 20 Q36 10 44 8 Q38 14 40 20" fill="currentColor" opacity="0.6"/>
-              <path d="M32 20 Q32 10 32 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-              <circle cx="32" cy="36" r="6" fill="#fff" opacity="0.25"/>
-            </svg>
+            <i class="bi bi-sun"></i>
           </div>
           <div class="codexaman-cat-info">
             <h3 class="codexaman-cat-name">Tropical Fruits</h3>
-            <p class="codexaman-cat-count">2 varieties</p>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 2 Varieties</p>
           </div>
-          <span class="codexaman-cat-arrow">→</span>
-        </a>
+          <a href="dragon-fruit.php"
+             class="codexaman-cat-btn"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="Browse all Tropical Fruit plants">
+            <i class="bi bi-arrow-right-short"></i> View Category
+          </a>
+        </div>
       </div>
- 
-      <!-- Card 5: Ornamental / Frangipani -->
+
+      <!-- Card 5: Ornamental -->
       <div class="col-6 col-md-4 col-lg-3">
-        <a href="#ornamental" class="codexaman-cat-card" style="--card-color: #ab47bc; --card-bg: #fdf4ff;">
+        <div class="codexaman-cat-card" style="--card-color:#6a1b9a; --card-bg:#fdf5ff;">
           <div class="codexaman-cat-icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="32" cy="22" rx="8" ry="13" fill="currentColor" opacity="0.8"/>
-              <ellipse cx="32" cy="22" rx="8" ry="13" fill="currentColor" opacity="0.7" transform="rotate(72 32 32)"/>
-              <ellipse cx="32" cy="22" rx="8" ry="13" fill="currentColor" opacity="0.75" transform="rotate(144 32 32)"/>
-              <ellipse cx="32" cy="22" rx="8" ry="13" fill="currentColor" opacity="0.65" transform="rotate(216 32 32)"/>
-              <ellipse cx="32" cy="22" rx="8" ry="13" fill="currentColor" opacity="0.72" transform="rotate(288 32 32)"/>
-              <circle cx="32" cy="32" r="5" fill="#fff" opacity="0.9"/>
-            </svg>
+            <i class="bi bi-flower3"></i>
           </div>
           <div class="codexaman-cat-info">
             <h3 class="codexaman-cat-name">Ornamental</h3>
-            <p class="codexaman-cat-count">4 varieties</p>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 4 Varieties</p>
           </div>
-          <span class="codexaman-cat-arrow">→</span>
-        </a>
+          <a href="frangipani.php"
+             class="codexaman-cat-btn"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="Browse all Ornamental plants">
+            <i class="bi bi-arrow-right-short"></i> View Category
+          </a>
+        </div>
       </div>
- 
-      <!-- Card 6: Indoor / Money Plant -->
+
+      <!-- Card 6: Indoor Plants -->
       <div class="col-6 col-md-4 col-lg-3">
-        <a href="#indoor" class="codexaman-cat-card" style="--card-color: #4a7c59; --card-bg: #f2f8f4;">
+        <div class="codexaman-cat-card" style="--card-color:#4a7c59; --card-bg:#f2f8f4;">
           <div class="codexaman-cat-icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M32 54 Q32 38 32 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
-              <circle cx="24" cy="30" r="10" fill="currentColor" opacity="0.8"/>
-              <circle cx="40" cy="26" r="10" fill="currentColor" opacity="0.7"/>
-              <circle cx="26" cy="44" r="9" fill="currentColor" opacity="0.65"/>
-              <circle cx="41" cy="42" r="8" fill="currentColor" opacity="0.6"/>
-              <path d="M24 30 Q28 28 32 28" stroke="#fff" stroke-width="1" opacity="0.35"/>
-            </svg>
+            <i class="bi bi-house-heart"></i>
           </div>
           <div class="codexaman-cat-info">
             <h3 class="codexaman-cat-name">Indoor Plants</h3>
-            <p class="codexaman-cat-count">5 varieties</p>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 5 Varieties</p>
           </div>
-          <span class="codexaman-cat-arrow">→</span>
-        </a>
+          <a href="money-plant.php"
+             class="codexaman-cat-btn"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="Browse all Indoor plants">
+            <i class="bi bi-arrow-right-short"></i> View Category
+          </a>
+        </div>
       </div>
- 
-      <!-- Card 7: Climbers / Bougainvillea -->
+
+      <!-- Card 7: Climbers -->
       <div class="col-6 col-md-4 col-lg-3">
-        <a href="#climbers" class="codexaman-cat-card" style="--card-color: #ef5350; --card-bg: #fff4f4;">
+        <div class="codexaman-cat-card" style="--card-color:#ad1457; --card-bg:#fff4f8;">
           <div class="codexaman-cat-icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 54 Q22 42 30 34 Q38 26 44 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
-              <ellipse cx="44" cy="16" rx="10" ry="7" fill="currentColor" opacity="0.8" transform="rotate(-30 44 16)"/>
-              <ellipse cx="34" cy="26" rx="9" ry="6" fill="currentColor" opacity="0.7" transform="rotate(-10 34 26)"/>
-              <ellipse cx="24" cy="38" rx="9" ry="6" fill="currentColor" opacity="0.65" transform="rotate(10 24 38)"/>
-            </svg>
+            <i class="bi bi-arrow-up-right-circle"></i>
           </div>
           <div class="codexaman-cat-info">
             <h3 class="codexaman-cat-name">Climbers</h3>
-            <p class="codexaman-cat-count">1 variety</p>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 1 Variety</p>
           </div>
-          <span class="codexaman-cat-arrow">→</span>
-        </a>
+          <a href="bougainvillea.php"
+             class="codexaman-cat-btn"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="Browse all Climber plants">
+            <i class="bi bi-arrow-right-short"></i> View Category
+          </a>
+        </div>
       </div>
- 
-      <!-- Card 8: All Plants CTA -->
+
+      <!-- Card 8: All Plants (dark CTA) -->
       <div class="col-6 col-md-4 col-lg-3">
-        <a href="#all" class="codexaman-cat-card codexaman-cat-card--all" style="--card-color: #2d5016; --card-bg: #2d5016;">
+        <div class="codexaman-cat-card codexaman-cat-card--all" style="--card-color:#9ccc65; --card-bg:#2d5016;">
           <div class="codexaman-cat-icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="20" r="10" fill="currentColor" opacity="0.7"/>
-              <circle cx="44" cy="20" r="10" fill="currentColor" opacity="0.65"/>
-              <circle cx="20" cy="44" r="10" fill="currentColor" opacity="0.6"/>
-              <circle cx="44" cy="44" r="10" fill="currentColor" opacity="0.7"/>
-              <circle cx="32" cy="32" r="8" fill="#fff" opacity="0.15"/>
-            </svg>
+            <i class="bi bi-grid-fill"></i>
           </div>
           <div class="codexaman-cat-info">
             <h3 class="codexaman-cat-name">All Plants</h3>
-            <p class="codexaman-cat-count">View full catalogue</p>
+            <p class="codexaman-cat-count"><i class="bi bi-collection"></i> Full Catalogue</p>
           </div>
-          <span class="codexaman-cat-arrow">→</span>
-        </a>
+          <a href="index.php"
+             class="codexaman-cat-btn"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="View our complete plant catalogue">
+            <i class="bi bi-arrow-right-short"></i> View All
+          </a>
+        </div>
       </div>
- 
+
     </div><!-- /row -->
   </div><!-- /container -->
 </section>
@@ -1732,7 +1770,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <i class="fas fa-arrow-up"></i>
     </button>
  <?php include 'common/footer-script.php'; ?>
-    
+    <script>
+  (function () {
+    'use strict';
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(function (el) {
+      new bootstrap.Tooltip(el);
+    });
+  })();
+</script>
 </body>
 
 </html>
