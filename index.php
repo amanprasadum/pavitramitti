@@ -268,10 +268,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
     <style>
-   /* ===================== CATEGORIES (codexaman-pm-cat) ===================== */
+  /* ===================== CATEGORIES (codexaman-pm-cat) ===================== */
 .codexaman-pm-cat {
     background: var(--cream2);
     padding: 5.5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.codexaman-pm-cat::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(156, 204, 101, 0.06) 0%, transparent 70%);
+    top: -200px;
+    right: -200px;
+    pointer-events: none;
 }
 
 .codexaman-pm-cat__label {
@@ -322,17 +336,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     display: flex;
     flex-direction: column;
     background: var(--white);
-    border-radius: 20px;
+    border-radius: 24px;
     overflow: hidden;
     text-decoration: none;
-    border: 1px solid rgba(0,0,0,0.05);
     height: 100%;
-    transition: box-shadow 0.35s ease, transform 0.35s ease;
+    border: 1.5px solid rgba(0, 0, 0, 0.04);
+    transition: transform 0.38s cubic-bezier(0.23, 1, 0.32, 1),
+                box-shadow 0.38s cubic-bezier(0.23, 1, 0.32, 1),
+                border-color 0.38s ease;
 }
 
 .codexaman-pm-cat__card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 48px rgba(45, 80, 22, 0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 32px 64px rgba(45, 80, 22, 0.13);
+    border-color: rgba(74, 124, 89, 0.2);
 }
 
 /* Image */
@@ -343,47 +360,75 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 .codexaman-pm-cat__img-wrap img {
     width: 100%;
-    height: 200px;
+    height: 210px;
     object-fit: cover;
     display: block;
-    transition: transform 0.55s ease;
-    filter: saturate(0.88);
+    transition: transform 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+    filter: saturate(0.82) brightness(0.97);
 }
 
 .codexaman-pm-cat__card:hover .codexaman-pm-cat__img-wrap img {
-    transform: scale(1.05);
-    filter: saturate(1);
+    transform: scale(1.07);
+    filter: saturate(1.05) brightness(0.95);
+}
+
+/* Category label on image */
+.codexaman-pm-cat__img-label {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: var(--white);
+    background: rgba(45, 80, 22, 0.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 0.38rem 0.9rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.codexaman-pm-cat__img-label i {
+    font-size: 0.6rem;
+    color: var(--g4);
 }
 
 /* Body */
 .codexaman-pm-cat__body {
-    padding: 1.3rem 1.4rem 0.8rem;
+    padding: 1.4rem 1.5rem 0.6rem;
     flex: 1;
-}
-
-.codexaman-pm-cat__tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 0.65rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--g3);
-    margin-bottom: 0.5rem;
-}
-
-.codexaman-pm-cat__tag i {
-    font-size: 0.62rem;
 }
 
 .codexaman-pm-cat__name {
     font-family: 'DM Serif Display', serif;
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     color: var(--g1);
     font-weight: 400;
-    margin-bottom: 0.9rem;
+    margin-bottom: 1rem;
     line-height: 1.2;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.codexaman-pm-cat__name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 32px;
+    height: 2px;
+    background: var(--g4);
+    border-radius: 2px;
+    transition: width 0.35s ease;
+}
+
+.codexaman-pm-cat__card:hover .codexaman-pm-cat__name::after {
+    width: 56px;
 }
 
 /* Product list */
@@ -391,32 +436,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
 }
 
 .codexaman-pm-cat__products li {
-    font-size: 0.82rem;
+    font-size: 0.83rem;
     color: var(--text2);
-    padding: 0.3rem 0;
-    border-bottom: 1px solid rgba(0,0,0,0.045);
+    padding: 0.38rem 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.07);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-}
-
-.codexaman-pm-cat__products li::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: var(--g4);
-    flex-shrink: 0;
+    gap: 0.6rem;
+    transition: color 0.2s ease, padding-left 0.2s ease;
 }
 
 .codexaman-pm-cat__products li:last-child {
     border-bottom: none;
+}
+
+.codexaman-pm-cat__products li::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--g4);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.codexaman-pm-cat__card:hover .codexaman-pm-cat__products li {
+    color: var(--text);
+    padding-left: 3px;
+}
+
+.codexaman-pm-cat__card:hover .codexaman-pm-cat__products li::before {
+    transform: scale(1.5);
 }
 
 /* Footer */
@@ -424,116 +477,147 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1.4rem;
-    border-top: 1px solid rgba(0,0,0,0.05);
-    margin-top: 0.8rem;
+    padding: 1rem 1.5rem 1.3rem;
+    margin-top: 0.6rem;
 }
 
 .codexaman-pm-cat__count {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     font-size: 0.72rem;
     font-weight: 700;
     color: var(--text2);
     letter-spacing: 0.03em;
 }
 
+.codexaman-pm-cat__count i {
+    color: var(--g4);
+    font-size: 0.68rem;
+}
+
 .codexaman-pm-cat__buy {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
     font-size: 0.78rem;
     font-weight: 700;
-    color: var(--white);
-    background: var(--g1);
-    padding: 0.45rem 1.1rem;
+    color: var(--g1);
+    background: rgba(156, 204, 101, 0.15);
+    padding: 0.48rem 1.15rem;
     border-radius: 50px;
     letter-spacing: 0.02em;
-    transition: background 0.25s ease;
+    border: 1.5px solid rgba(156, 204, 101, 0.3);
+    transition: background 0.28s ease,
+                color 0.28s ease,
+                border-color 0.28s ease,
+                transform 0.28s ease;
 }
 
 .codexaman-pm-cat__buy i {
     font-size: 0.62rem;
-    transition: transform 0.25s ease;
+    transition: transform 0.28s ease;
 }
 
 .codexaman-pm-cat__card:hover .codexaman-pm-cat__buy {
-    background: var(--g3);
+    background: var(--g1);
+    color: var(--white);
+    border-color: var(--g1);
 }
 
 .codexaman-pm-cat__card:hover .codexaman-pm-cat__buy i {
-    transform: translateX(3px);
+    transform: translateX(4px);
 }
 
 /* CTA Card */
 .codexaman-pm-cat__card--cta {
-    background: linear-gradient(150deg, var(--g1) 0%, #1c3d0c 100%);
+    background: var(--g1);
     border-color: transparent;
-    justify-content: center;
-    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.codexaman-pm-cat__card--cta::before {
+    content: '\f06c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    font-size: 14rem;
+    color: rgba(255, 255, 255, 0.03);
+    bottom: -3rem;
+    right: -3rem;
+    line-height: 1;
+    pointer-events: none;
 }
 
 .codexaman-pm-cat__card--cta:hover {
-    box-shadow: 0 20px 48px rgba(45, 80, 22, 0.25);
+    border-color: rgba(156, 204, 101, 0.25);
+    box-shadow: 0 32px 64px rgba(45, 80, 22, 0.28);
 }
 
 .codexaman-pm-cat__cta-inner {
-    padding: 2.8rem 2rem;
+    padding: 3rem 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .codexaman-pm-cat__cta-icon {
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    border: 1.5px solid rgba(156, 204, 101, 0.35);
+    border: 1.5px solid rgba(156, 204, 101, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--g4);
-    margin-bottom: 1.3rem;
-    transition: transform 0.35s ease;
+    margin-bottom: 1.4rem;
+    transition: transform 0.38s ease, border-color 0.38s ease;
 }
 
 .codexaman-pm-cat__card--cta:hover .codexaman-pm-cat__cta-icon {
-    transform: scale(1.1) rotate(-8deg);
+    transform: scale(1.12) rotate(-8deg);
+    border-color: rgba(156, 204, 101, 0.6);
 }
 
 .codexaman-pm-cat__cta-inner h4 {
     font-family: 'DM Serif Display', serif;
-    font-size: 1.5rem;
-    color: #fff;
+    font-size: 1.55rem;
+    color: var(--white);
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 0.8rem;
 }
 
 .codexaman-pm-cat__cta-inner p {
-    font-size: 0.82rem;
-    color: rgba(255,255,255,0.6);
+    font-size: 0.83rem;
+    color: rgba(255, 255, 255, 0.58);
     line-height: 1.8;
-    margin-bottom: 1.6rem;
-    max-width: 220px;
+    margin-bottom: 1.8rem;
+    max-width: 230px;
 }
 
 .codexaman-pm-cat__cta-wa {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 0.7rem 1.8rem;
+    padding: 0.72rem 1.8rem;
     background: var(--wa);
-    color: #fff;
+    color: var(--white);
     border-radius: 50px;
-    font-size: 0.83rem;
+    font-size: 0.84rem;
     font-weight: 700;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .codexaman-pm-cat__card--cta:hover .codexaman-pm-cat__cta-wa {
     background: #1da851;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(37, 211, 102, 0.35);
 }
 
 /* Responsive */
@@ -543,7 +627,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
 
     .codexaman-pm-cat__img-wrap img {
-        height: 180px;
+        height: 185px;
+    }
+
+    .codexaman-pm-cat__body {
+        padding: 1.2rem 1.2rem 0.5rem;
+    }
+
+    .codexaman-pm-cat__footer {
+        padding: 0.9rem 1.2rem 1.1rem;
     }
 }
     </style>
