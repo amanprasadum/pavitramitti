@@ -21,13 +21,11 @@
     <?php include 'common/header-script.php'; ?>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <style>
-    /* ===== CODEXAMAN CATEGORY SECTION ===== */
-
-.codexaman-cat-section {
+      .codexaman-cat-section {
   background: var(--cream);
   position: relative;
 }
-
+ 
 .codexaman-cat-section::before {
   content: '';
   position: absolute;
@@ -37,7 +35,7 @@
     radial-gradient(circle at 92% 82%, rgba(156,204,101,0.06) 0%, transparent 45%);
   pointer-events: none;
 }
-
+ 
 /* ---- Header ---- */
 .codexaman-cat-eyebrow {
   display: inline-block;
@@ -52,7 +50,7 @@
   border-radius: 4px;
   margin-bottom: 14px;
 }
-
+ 
 .codexaman-cat-title {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(1.9rem, 4vw, 2.9rem);
@@ -61,7 +59,7 @@
   line-height: 1.2;
   margin-bottom: 10px;
 }
-
+ 
 .codexaman-cat-subtitle {
   font-family: 'DM Sans', sans-serif;
   color: var(--text2);
@@ -69,8 +67,18 @@
   font-weight: 300;
   margin-bottom: 0;
 }
-
-/* ---- Card ---- */
+ 
+/* ---- Animated Border ---- */
+@property --border-angle {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+ 
+@keyframes codexaman-border-spin {
+  to { --border-angle: 360deg; }
+}
+ 
 .codexaman-cat-card {
   display: flex;
   flex-direction: column;
@@ -79,39 +87,54 @@
   gap: 14px;
   padding: 36px 20px 28px;
   background: var(--card-bg);
-  border: 1.5px solid color-mix(in srgb, var(--card-color) 18%, transparent);
+  border: none;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
   transition: transform 0.28s cubic-bezier(.25,.8,.25,1),
-              box-shadow 0.28s cubic-bezier(.25,.8,.25,1),
-              border-color 0.28s;
+              box-shadow 0.28s cubic-bezier(.25,.8,.25,1);
   height: 100%;
+  /* static border fallback */
+  outline: 1.5px solid color-mix(in srgb, var(--card-color) 18%, transparent);
 }
-
-.codexaman-cat-card::after {
+ 
+/* animated gradient border wrapper */
+.codexaman-cat-card::before {
   content: '';
   position: absolute;
-  bottom: -30px;
-  right: -30px;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--card-color) 8%, transparent);
-  transition: transform 0.4s ease;
+  inset: -2px;
+  border-radius: 13px;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--border-angle),
+    transparent 0%,
+    transparent 60%,
+    var(--card-color) 80%,
+    color-mix(in srgb, var(--card-color) 60%, #fff) 90%,
+    var(--card-color) 100%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
   pointer-events: none;
+  z-index: 0;
 }
-
+ 
 .codexaman-cat-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 36px color-mix(in srgb, var(--card-color) 20%, transparent);
-  border-color: color-mix(in srgb, var(--card-color) 40%, transparent);
+  outline-color: transparent;
 }
-
-.codexaman-cat-card:hover::after {
-  transform: scale(2.4);
+ 
+.codexaman-cat-card:hover::before {
+  opacity: 1;
+  animation: codexaman-border-spin 2.5s linear infinite;
 }
-
+ 
 /* ---- Icon wrap ---- */
 .codexaman-cat-icon-wrap {
   width: 72px;
@@ -124,27 +147,27 @@
   flex-shrink: 0;
   transition: background 0.28s, transform 0.28s;
 }
-
+ 
 .codexaman-cat-icon-wrap i {
   font-size: 1.9rem;
   color: var(--card-color);
   line-height: 1;
   transition: transform 0.28s;
 }
-
+ 
 .codexaman-cat-card:hover .codexaman-cat-icon-wrap {
   background: color-mix(in srgb, var(--card-color) 20%, white);
 }
-
+ 
 .codexaman-cat-card:hover .codexaman-cat-icon-wrap i {
   transform: scale(1.12);
 }
-
+ 
 /* ---- Text ---- */
 .codexaman-cat-info {
   flex: 1;
 }
-
+ 
 .codexaman-cat-name {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.05rem;
@@ -153,7 +176,7 @@
   margin-bottom: 5px;
   line-height: 1.3;
 }
-
+ 
 .codexaman-cat-count {
   font-size: 0.78rem;
   color: var(--text2);
@@ -164,12 +187,12 @@
   justify-content: center;
   gap: 4px;
 }
-
+ 
 .codexaman-cat-count i {
   font-size: 0.72rem;
   color: var(--card-color);
 }
-
+ 
 .codexaman-cat-desc {
   font-size: 0.72rem;
   color: var(--text2);
@@ -177,14 +200,14 @@
   line-height: 1.4;
   font-weight: 300;
 }
-
+ 
 /* 5-card equal columns on large screens */
 @media (min-width: 992px) {
   .col-lg-2half {
     width: 20%;
   }
 }
-
+ 
 /* ---- Hover Button ---- */
 .codexaman-cat-btn {
   display: inline-flex;
@@ -207,25 +230,25 @@
   position: relative;
   z-index: 1;
 }
-
+ 
 .codexaman-cat-btn i {
   font-size: 1.1rem;
   line-height: 1;
 }
-
+ 
 .codexaman-cat-card:hover .codexaman-cat-btn {
   opacity: 1;
   transform: translateY(0);
 }
-
+ 
 .codexaman-cat-btn:hover {
   background: var(--card-color);
   color: #fff !important;
   border-color: var(--card-color);
   text-decoration: none;
 }
-
-
+ 
+ 
 /* ---- Mobile ---- */
 @media (max-width: 575px) {
   .codexaman-cat-card {
@@ -247,7 +270,6 @@
     padding: 5px 11px;
   }
 }
-/* ===== END CODEXAMAN CATEGORY SECTION ===== */
     </style>
 </head>
 <body>
@@ -432,20 +454,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    
-<section class="codexaman-cat-section py-5">
+    <section class="codexaman-cat-section py-5">
   <div class="container">
-
+ 
     <!-- Header -->
     <div class="codexaman-cat-header text-center mb-5">
       <span class="codexaman-cat-eyebrow">Explore Our Collection</span>
       <h2 class="codexaman-cat-title">Shop by Category</h2>
       <p class="codexaman-cat-subtitle">Handpicked plants for every space and soul</p>
     </div>
-
+ 
     <!-- Grid -->
     <div class="row g-4 justify-content-center">
-
+ 
       <!-- Card 1: Indoor Plants -->
       <div class="col-6 col-md-4 col-lg-2half">
         <div class="codexaman-cat-card" style="--card-color:#2e7d32; --card-bg:#f3faf3;">
@@ -457,16 +478,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 7 Plants</p>
             <p class="codexaman-cat-desc">Aglaonema, Money Plant, Snake Plant, Jade & more</p>
           </div>
-          <a href="index.php?cat=indoor"
-             class="codexaman-cat-btn"
-             data-bs-toggle="tooltip"
-             data-bs-placement="top"
-             title="Aglaonema, Money Plant, Snake Plant, Jade Plant">
+          <a href="index.php?cat=indoor" class="codexaman-cat-btn">
             <i class="bi bi-arrow-right-short"></i> Explore
           </a>
         </div>
       </div>
-
+ 
       <!-- Card 2: Outdoor / Garden -->
       <div class="col-6 col-md-4 col-lg-2half">
         <div class="codexaman-cat-card" style="--card-color:#4a7c59; --card-bg:#f2f8f4;">
@@ -478,16 +495,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 3 Plants</p>
             <p class="codexaman-cat-desc">Bougainvillea, Allamanda, Philodendron Birkin</p>
           </div>
-          <a href="index.php?cat=outdoor"
-             class="codexaman-cat-btn"
-             data-bs-toggle="tooltip"
-             data-bs-placement="top"
-             title="Bougainvillea, Allamanda, Philodendron Birkin">
+          <a href="index.php?cat=outdoor" class="codexaman-cat-btn">
             <i class="bi bi-arrow-right-short"></i> Explore
           </a>
         </div>
       </div>
-
+ 
       <!-- Card 3: Flowering Plants -->
       <div class="col-6 col-md-4 col-lg-2half">
         <div class="codexaman-cat-card" style="--card-color:#c0392b; --card-bg:#fff6f6;">
@@ -499,16 +512,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 9 Plants</p>
             <p class="codexaman-cat-desc">Hibiscus, Frangipani, Grafted Hibiscus & more</p>
           </div>
-          <a href="index.php?cat=flowering"
-             class="codexaman-cat-btn"
-             data-bs-toggle="tooltip"
-             data-bs-placement="top"
-             title="Hibiscus varieties, Frangipani, Grafted Hibiscus">
+          <a href="index.php?cat=flowering" class="codexaman-cat-btn">
             <i class="bi bi-arrow-right-short"></i> Explore
           </a>
         </div>
       </div>
-
+ 
       <!-- Card 4: Medicinal Plants -->
       <div class="col-6 col-md-4 col-lg-2half">
         <div class="codexaman-cat-card" style="--card-color:#00695c; --card-bg:#f0faf9;">
@@ -520,16 +529,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 3 Plants</p>
             <p class="codexaman-cat-desc">Aloe Vera, New Aloe Vera, Aloe Vera Copy</p>
           </div>
-          <a href="index.php?cat=medicinal"
-             class="codexaman-cat-btn"
-             data-bs-toggle="tooltip"
-             data-bs-placement="top"
-             title="Aloe Vera & medicinal varieties">
+          <a href="index.php?cat=medicinal" class="codexaman-cat-btn">
             <i class="bi bi-arrow-right-short"></i> Explore
           </a>
         </div>
       </div>
-
+ 
       <!-- Card 5: Exotic & Fruit -->
       <div class="col-6 col-md-4 col-lg-2half">
         <div class="codexaman-cat-card" style="--card-color:#e65100; --card-bg:#fff8f0;">
@@ -541,20 +546,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 3 Plants</p>
             <p class="codexaman-cat-desc">Dragon Fruit, Dragon Mulberry, Exotic Peach Hibiscus</p>
           </div>
-          <a href="index.php?cat=exotic"
-             class="codexaman-cat-btn"
-             data-bs-toggle="tooltip"
-             data-bs-placement="top"
-             title="Dragon Fruit, Dragon Mulberry, Exotic varieties">
+          <a href="index.php?cat=exotic" class="codexaman-cat-btn">
             <i class="bi bi-arrow-right-short"></i> Explore
           </a>
         </div>
       </div>
-
+ 
     </div><!-- /row -->
   </div><!-- /container -->
 </section>
-<!-- ===== END CATEGORY SECTION ===== -->
+/* <!-- ===== END CATEGORY SECTION ===== --> */
 
     <!-- ==================== ABOUT US ==================== -->
     <section class="about-sec" id="about">
