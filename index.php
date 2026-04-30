@@ -453,7 +453,73 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
+    <!-- ==================== ABOUT US ==================== -->
+    <section class="about-sec" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
 
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80"
+                            alt="Pavitra Mitti Nursery" class="about-main-img">
+                        <div class="about-badge-box">
+                            <span class="about-badge-num">10+</span>
+                            <span class="about-badge-label">Years of Trust</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="sec-label">About Us</div>
+                    <h2 class="sec-title">Pavitra Mitti —<br><em>More Than a Nursery</em></h2>
+                    <p class="about-para">
+                        Pavitra Mitti is a leading plant nursery located in <strong>Basirhat, near Barasat and
+                            Kolkata</strong>. Recognized as one of the <strong>best nurseries in West Bengal</strong>,
+                        we provide a wide variety of plants nurtured with care and expertise.
+                    </p>
+                    <p class="about-para">
+                        Whether you are a <strong>home gardener, landscaper, or farmer</strong>, our nursery offers
+                        everything you need to bring greenery and life to your space.
+                    </p>
+
+                    <div class="about-points">
+                        <div class="about-point">
+                            <div class="about-point-icon"><i class="fas fa-seedling"></i></div>
+                            <div>
+                                <strong>200+ Plant Varieties</strong>
+                                <span>Fruit, Flowering, Ornamental, Medicinal & Landscape</span>
+                            </div>
+                        </div>
+                        <div class="about-point">
+                            <div class="about-point-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong>Basirhat, West Bengal</strong>
+                                <span>Easily accessible from Barasat & Kolkata</span>
+                            </div>
+                        </div>
+                        <div class="about-point">
+                            <div class="about-point-icon"><i class="fas fa-users"></i></div>
+                            <div>
+                                <strong>5,000+ Happy Customers</strong>
+                                <span>Trusted by gardeners, farmers & landscapers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-ctas">
+                        <a href="tel:+918250158613" class="hbtn hbtn-green">
+                            <i class="fas fa-phone-alt"></i> Call Us Now
+                        </a>
+                        <a href="https://wa.me/918250158613" target="_blank" class="hbtn hbtn-wa">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+/* category section start */
     <section class="codexaman-cat-section py-5">
   <div class="container">
  
@@ -557,174 +623,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
  <!-- ===== END CATEGORY SECTION ===== --> 
 
-    <!-- ==================== ABOUT US ==================== -->
-    <section class="about-sec" id="about">
-        <div class="container">
-            <div class="row align-items-center g-5">
 
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="about-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80"
-                            alt="Pavitra Mitti Nursery" class="about-main-img">
-                        <div class="about-badge-box">
-                            <span class="about-badge-num">10+</span>
-                            <span class="about-badge-label">Years of Trust</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="sec-label">About Us</div>
-                    <h2 class="sec-title">Pavitra Mitti —<br><em>More Than a Nursery</em></h2>
-                    <p class="about-para">
-                        Pavitra Mitti is a leading plant nursery located in <strong>Basirhat, near Barasat and
-                            Kolkata</strong>. Recognized as one of the <strong>best nurseries in West Bengal</strong>,
-                        we provide a wide variety of plants nurtured with care and expertise.
-                    </p>
-                    <p class="about-para">
-                        Whether you are a <strong>home gardener, landscaper, or farmer</strong>, our nursery offers
-                        everything you need to bring greenery and life to your space.
-                    </p>
-
-                    <div class="about-points">
-                        <div class="about-point">
-                            <div class="about-point-icon"><i class="fas fa-seedling"></i></div>
-                            <div>
-                                <strong>200+ Plant Varieties</strong>
-                                <span>Fruit, Flowering, Ornamental, Medicinal & Landscape</span>
-                            </div>
-                        </div>
-                        <div class="about-point">
-                            <div class="about-point-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <strong>Basirhat, West Bengal</strong>
-                                <span>Easily accessible from Barasat & Kolkata</span>
-                            </div>
-                        </div>
-                        <div class="about-point">
-                            <div class="about-point-icon"><i class="fas fa-users"></i></div>
-                            <div>
-                                <strong>5,000+ Happy Customers</strong>
-                                <span>Trusted by gardeners, farmers & landscapers</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about-ctas">
-                        <a href="tel:+918250158613" class="hbtn hbtn-green">
-                            <i class="fas fa-phone-alt"></i> Call Us Now
-                        </a>
-                        <a href="https://wa.me/918250158613" target="_blank" class="hbtn hbtn-wa">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== CATEGORIES ==================== -->
-    <section class="categories-sec" id="categories">
-        <div class="container">
-            <div class="section-header text-center mb-5" data-aos="fade-up">
-                <div class="sec-label">Our Collection</div>
-                <h2 class="sec-title">Plant <em>Categories</em></h2>
-                <p class="sec-sub">From fruit trees to medicinal herbs — we have everything for every green space</p>
-            </div>
-
-            <div class="cat-swiper-wrap" data-aos="fade-up" data-aos-delay="150">
-                <div class="swiper catSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#contact" class="cat-card">
-                                <div class="cat-img-wrap">
-                                    <img src="https://images.unsplash.com/photo-1571575173700-afb9492d6b9e?w=500&q=80"
-                                        alt="Fruit Plants" loading="lazy">
-                                    <div class="cat-overlay">
-                                        <span class="cat-enq">Enquire Now</span>
-                                    </div>
-                                </div>
-                                <div class="cat-body">
-                                    <div class="cat-tag">Fruit Plants</div>
-                                    <h4>Fruit Plants</h4>
-                                    <p>Mango · Guava · Lemon · Papaya · Banana</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#contact" class="cat-card">
-                                <div class="cat-img-wrap">
-                                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500&q=80"
-                                        alt="Flowering Plants" loading="lazy">
-                                    <div class="cat-overlay">
-                                        <span class="cat-enq">Enquire Now</span>
-                                    </div>
-                                </div>
-                                <div class="cat-body">
-                                    <div class="cat-tag">Flowering</div>
-                                    <h4>Flowering Plants</h4>
-                                    <p>Rose · Hibiscus · Marigold · Jasmine · Bougainvillea</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#contact" class="cat-card">
-                                <div class="cat-img-wrap">
-                                    <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?w=500&q=80"
-                                        alt="Ornamental Plants" loading="lazy">
-                                    <div class="cat-overlay">
-                                        <span class="cat-enq">Enquire Now</span>
-                                    </div>
-                                </div>
-                                <div class="cat-body">
-                                    <div class="cat-tag">Ornamental</div>
-                                    <h4>Ornamental Plants</h4>
-                                    <p>Areca Palm · Money Plant · Snake Plant · Bonsai</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#contact" class="cat-card">
-                                <div class="cat-img-wrap">
-                                    <img src="https://images.unsplash.com/photo-1558293842-c0fd3db86157?w=500&q=80"
-                                        alt="Medicinal Plants" loading="lazy">
-                                    <div class="cat-overlay">
-                                        <span class="cat-enq">Enquire Now</span>
-                                    </div>
-                                </div>
-                                <div class="cat-body">
-                                    <div class="cat-tag">Medicinal & Herbal</div>
-                                    <h4>Medicinal & Herbal</h4>
-                                    <p>Tulsi · Neem · Ashwagandha · Aloe Vera · Giloy</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#contact" class="cat-card">
-                                <div class="cat-img-wrap">
-                                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&q=80"
-                                        alt="Farm & Landscape" loading="lazy">
-                                    <div class="cat-overlay">
-                                        <span class="cat-enq">Enquire Now</span>
-                                    </div>
-                                </div>
-                                <div class="cat-body">
-                                    <div class="cat-tag">Farm & Landscape</div>
-                                    <h4>Farm & Landscape</h4>
-                                    <p>Coconut · Bamboo · Teak · Shade Trees · Hedges</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <button class="sl-nav prev" id="catPrev" aria-label="Previous category"><i
-                        class="fas fa-chevron-left"></i></button>
-                <button class="sl-nav next" id="catNext" aria-label="Next category"><i
-                        class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
 
     <!-- ==================== POPULAR PLANTS ==================== -->
     <section class="products-sec" id="shop">
