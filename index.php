@@ -267,6 +267,552 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </section>
+    <style>
+        /* ===================== CATEGORIES (codexaman-pm-cat) ===================== */
+.codexaman-pm-cat {
+    background: var(--cream2);
+    padding: 5.5rem 0;
+}
+
+.codexaman-pm-cat__label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--g3);
+    margin-bottom: 0.8rem;
+}
+
+.codexaman-pm-cat__label::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--g3);
+    border-radius: 2px;
+}
+
+.codexaman-pm-cat__title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    color: var(--g1);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+.codexaman-pm-cat__title em {
+    font-style: italic;
+    color: var(--g3);
+}
+
+.codexaman-pm-cat__sub {
+    font-size: 0.97rem;
+    color: var(--text2);
+    line-height: 1.8;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+}
+
+/* Layout Rows */
+.codexaman-pm-cat__row {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.codexaman-pm-cat__row:last-child {
+    margin-bottom: 0;
+}
+
+.codexaman-pm-cat__stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Cards base */
+.codexaman-pm-cat__card {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    background: var(--cream);
+}
+
+/* Featured (big) card */
+.codexaman-pm-cat__card--featured {
+    flex: 1.45;
+    min-width: 0;
+    min-height: 480px;
+}
+
+/* Half (small) card */
+.codexaman-pm-cat__card--half {
+    min-height: 220px;
+}
+
+/* Image fills entire card */
+.codexaman-pm-cat__img-wrap {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.codexaman-pm-cat__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: saturate(0.85) brightness(0.95);
+}
+
+.codexaman-pm-cat__card:hover .codexaman-pm-cat__img-wrap img {
+    transform: scale(1.07);
+    filter: saturate(1) brightness(0.9);
+}
+
+/* Dark gradient overlay from bottom */
+.codexaman-pm-cat__img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(20, 40, 10, 0.88) 0%,
+        rgba(20, 40, 10, 0.4) 45%,
+        rgba(20, 40, 10, 0.05) 100%
+    );
+    transition: opacity 0.4s ease;
+}
+
+.codexaman-pm-cat__card:hover .codexaman-pm-cat__img-overlay {
+    opacity: 0.85;
+}
+
+/* Floating text body sits on top of image */
+.codexaman-pm-cat__floating-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.8rem 1.8rem 1.6rem;
+    z-index: 2;
+    transform: translateY(4px);
+    transition: transform 0.35s ease;
+}
+
+.codexaman-pm-cat__card:hover .codexaman-pm-cat__floating-body {
+    transform: translateY(0);
+}
+
+.codexaman-pm-cat__tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--g4);
+    margin-bottom: 0.45rem;
+}
+
+.codexaman-pm-cat__tag i {
+    font-size: 0.62rem;
+}
+
+.codexaman-pm-cat__name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.55rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 0.4rem;
+}
+
+.codexaman-pm-cat__card--half .codexaman-pm-cat__name {
+    font-size: 1.25rem;
+}
+
+.codexaman-pm-cat__desc {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    max-width: 360px;
+}
+
+.codexaman-pm-cat__card--half .codexaman-pm-cat__desc {
+    display: none;
+}
+
+.codexaman-pm-cat__card--half:hover .codexaman-pm-cat__desc {
+    display: block;
+}
+
+/* Pill button */
+.codexaman-pm-cat__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--g1);
+    background: var(--g4);
+    padding: 0.45rem 1.1rem;
+    border-radius: 50px;
+    letter-spacing: 0.02em;
+    transition: background 0.25s ease, gap 0.25s ease;
+}
+
+.codexaman-pm-cat__pill i {
+    font-size: 0.65rem;
+    transition: transform 0.25s ease;
+}
+
+.codexaman-pm-cat__card:hover .codexaman-pm-cat__pill {
+    background: #fff;
+}
+
+.codexaman-pm-cat__card:hover .codexaman-pm-cat__pill i {
+    transform: translateX(3px);
+}
+
+/* CTA Card */
+.codexaman-pm-cat__card--cta {
+    background: var(--g1);
+    cursor: pointer;
+}
+
+.codexaman-pm-cat__cta-inner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Decorative lines background */
+.codexaman-pm-cat__cta-lines {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.codexaman-pm-cat__cta-lines span {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid rgba(156, 204, 101, 0.08);
+}
+
+.codexaman-pm-cat__cta-lines span:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    top: -80px;
+    right: -80px;
+}
+
+.codexaman-pm-cat__cta-lines span:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    top: -30px;
+    right: -30px;
+}
+
+.codexaman-pm-cat__cta-lines span:nth-child(3) {
+    width: 180px;
+    height: 180px;
+    bottom: -60px;
+    left: -60px;
+}
+
+.codexaman-pm-cat__cta-icon {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(156, 204, 101, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--g4);
+    margin-bottom: 1.4rem;
+    transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.codexaman-pm-cat__card--cta:hover .codexaman-pm-cat__cta-icon {
+    transform: scale(1.1) rotate(-6deg);
+    border-color: rgba(156, 204, 101, 0.6);
+}
+
+.codexaman-pm-cat__cta-inner h4 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+}
+
+.codexaman-pm-cat__cta-inner p {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    max-width: 240px;
+}
+
+.codexaman-pm-cat__cta-wa {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.7rem 1.8rem;
+    background: var(--wa);
+    color: #fff;
+    border-radius: 50px;
+    font-size: 0.83rem;
+    font-weight: 700;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.codexaman-pm-cat__card--cta:hover .codexaman-pm-cat__cta-wa {
+    background: #1da851;
+    transform: translateY(-2px);
+}
+
+.codexaman-pm-cat__cta-or {
+    display: block;
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.35);
+    margin: 0.65rem 0;
+    letter-spacing: 1px;
+}
+
+.codexaman-pm-cat__cta-call {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.65);
+    transition: color 0.3s ease;
+}
+
+.codexaman-pm-cat__card--cta:hover .codexaman-pm-cat__cta-call {
+    color: #fff;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991px) {
+    .codexaman-pm-cat__row {
+        gap: 1rem;
+    }
+
+    .codexaman-pm-cat__card--featured {
+        min-height: 380px;
+        flex: 1.2;
+    }
+
+    .codexaman-pm-cat__card--half {
+        min-height: 185px;
+    }
+
+    .codexaman-pm-cat__name {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .codexaman-pm-cat {
+        padding: 3.5rem 0;
+    }
+
+    .codexaman-pm-cat__row {
+        flex-direction: column;
+    }
+
+    .codexaman-pm-cat__row--b {
+        flex-direction: column-reverse;
+    }
+
+    .codexaman-pm-cat__card--featured {
+        min-height: 320px;
+        flex: unset;
+    }
+
+    .codexaman-pm-cat__card--half {
+        min-height: 200px;
+    }
+
+    .codexaman-pm-cat__stack {
+        flex-direction: row;
+    }
+
+    .codexaman-pm-cat__card--half .codexaman-pm-cat__desc {
+        display: none !important;
+    }
+
+    .codexaman-pm-cat__floating-body {
+        padding: 1.2rem;
+    }
+
+    .codexaman-pm-cat__cta-inner h4 {
+        font-size: 1.3rem;
+    }
+
+    .codexaman-pm-cat__cta-inner {
+        padding: 1.8rem 1.4rem;
+    }
+
+    .codexaman-pm-cat__title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .codexaman-pm-cat__stack {
+        flex-direction: column;
+    }
+}
+    </style>
+
+    <!-- ==================== CATEGORIES ==================== -->
+<section class="codexaman-pm-cat" id="categories">
+    <div class="container">
+
+        <div class="row align-items-end mb-5" data-aos="fade-up">
+            <div class="col-lg-7">
+                <div class="codexaman-pm-cat__label">Our Collection</div>
+                <h2 class="codexaman-pm-cat__title">Every Plant<br><em>Has a Story.</em></h2>
+            </div>
+            <div class="col-lg-5">
+                <p class="codexaman-pm-cat__sub">From exotic hibiscus to healing aloe — explore our curated categories grown with care at Basirhat.</p>
+            </div>
+        </div>
+
+        <!-- ROW 1: 1 big + 2 small -->
+        <div class="codexaman-pm-cat__row codexaman-pm-cat__row--a" data-aos="fade-up" data-aos-delay="80">
+
+            <!-- Featured Big Card -->
+            <a href="#contact" class="codexaman-pm-cat__card codexaman-pm-cat__card--featured">
+                <div class="codexaman-pm-cat__img-wrap">
+                    <img src="https://placehold.co/800x600/dce8d0/1a3a0a?text=Hibiscus" alt="Hibiscus" loading="lazy">
+                    <div class="codexaman-pm-cat__img-overlay"></div>
+                </div>
+                <div class="codexaman-pm-cat__floating-body">
+                    <span class="codexaman-pm-cat__tag"><i class="fas fa-spa"></i> Flowering</span>
+                    <h4 class="codexaman-pm-cat__name">Hibiscus</h4>
+                    <p class="codexaman-pm-cat__desc">7 stunning varieties — grafted, hot pink, orange, peach, double petal & exotic</p>
+                    <span class="codexaman-pm-cat__pill">7 Varieties <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- Small Cards Stack -->
+            <div class="codexaman-pm-cat__stack">
+
+                <a href="#contact" class="codexaman-pm-cat__card codexaman-pm-cat__card--half">
+                    <div class="codexaman-pm-cat__img-wrap">
+                        <img src="https://placehold.co/600x400/c5ddc5/1a3a0a?text=Foliage+Plants" alt="Foliage Plants" loading="lazy">
+                        <div class="codexaman-pm-cat__img-overlay"></div>
+                    </div>
+                    <div class="codexaman-pm-cat__floating-body">
+                        <span class="codexaman-pm-cat__tag"><i class="fas fa-leaf"></i> Indoor</span>
+                        <h4 class="codexaman-pm-cat__name">Foliage Plants</h4>
+                        <p class="codexaman-pm-cat__desc">Aglaonema · Philodendron · Snake Plant · Jade · Money Plant</p>
+                        <span class="codexaman-pm-cat__pill">6 Varieties <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="#contact" class="codexaman-pm-cat__card codexaman-pm-cat__card--half">
+                    <div class="codexaman-pm-cat__img-wrap">
+                        <img src="https://placehold.co/600x400/e8d8c0/3e2723?text=Fruit+Plants" alt="Fruit Plants" loading="lazy">
+                        <div class="codexaman-pm-cat__img-overlay"></div>
+                    </div>
+                    <div class="codexaman-pm-cat__floating-body">
+                        <span class="codexaman-pm-cat__tag"><i class="fas fa-apple-alt"></i> Fruit</span>
+                        <h4 class="codexaman-pm-cat__name">Fruit Plants</h4>
+                        <p class="codexaman-pm-cat__desc">Dragon Fruit · Dragon Mulberry</p>
+                        <span class="codexaman-pm-cat__pill">2 Varieties <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- ROW 2: 2 small + 1 big -->
+        <div class="codexaman-pm-cat__row codexaman-pm-cat__row--b" data-aos="fade-up" data-aos-delay="160">
+
+            <!-- Small Cards Stack -->
+            <div class="codexaman-pm-cat__stack">
+
+                <a href="#contact" class="codexaman-pm-cat__card codexaman-pm-cat__card--half">
+                    <div class="codexaman-pm-cat__img-wrap">
+                        <img src="https://placehold.co/600x400/f2e0ec/5c1a3a?text=Flowering+Plants" alt="Flowering Plants" loading="lazy">
+                        <div class="codexaman-pm-cat__img-overlay"></div>
+                    </div>
+                    <div class="codexaman-pm-cat__floating-body">
+                        <span class="codexaman-pm-cat__tag"><i class="fas fa-fan"></i> Flowering</span>
+                        <h4 class="codexaman-pm-cat__name">Flowering Plants</h4>
+                        <p class="codexaman-pm-cat__desc">Allamanda · Bougainvillea · Frangipani</p>
+                        <span class="codexaman-pm-cat__pill">3 Varieties <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="#contact" class="codexaman-pm-cat__card codexaman-pm-cat__card--half">
+                    <div class="codexaman-pm-cat__img-wrap">
+                        <img src="https://placehold.co/600x400/d0e8d8/0d3320?text=Medicinal+Plants" alt="Medicinal Plants" loading="lazy">
+                        <div class="codexaman-pm-cat__img-overlay"></div>
+                    </div>
+                    <div class="codexaman-pm-cat__floating-body">
+                        <span class="codexaman-pm-cat__tag"><i class="fas fa-mortar-pestle"></i> Medicinal</span>
+                        <h4 class="codexaman-pm-cat__name">Medicinal Plants</h4>
+                        <p class="codexaman-pm-cat__desc">Aloe Vera · New Aloe Vera</p>
+                        <span class="codexaman-pm-cat__pill">2 Varieties <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- CTA Big Card -->
+            <a href="https://wa.me/918250158613" target="_blank" class="codexaman-pm-cat__card codexaman-pm-cat__card--featured codexaman-pm-cat__card--cta">
+                <div class="codexaman-pm-cat__cta-inner">
+                    <div class="codexaman-pm-cat__cta-lines">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="codexaman-pm-cat__cta-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h4>200+ Varieties<br>Available</h4>
+                    <p>Can't find what you're looking for? WhatsApp us — we'll find the perfect plant for you.</p>
+                    <span class="codexaman-pm-cat__cta-wa">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </span>
+                    <span class="codexaman-pm-cat__cta-or">or</span>
+                    <span class="codexaman-pm-cat__cta-call">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </span>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
 
     <!-- ==================== CATEGORIES ==================== -->
     <section class="categories-sec" id="categories">
