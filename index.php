@@ -643,7 +643,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <a href="#contact" class="codexaman-pm-cat__card">
                     <div class="codexaman-pm-cat__hero">
-                        <img src="https://picsum.photos/seed/hibiscus/600/600" alt="Hibiscus">
+                        <img src="/assets/images/flower-cat.png" alt="Hibiscus">
                         <div class="codexaman-pm-cat__hero-overlay"></div>
                     </div>
                     <i class="fas fa-spa codexaman-pm-cat__hero-icon"></i>
