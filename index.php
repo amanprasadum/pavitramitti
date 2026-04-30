@@ -21,7 +21,7 @@
     <?php include 'common/header-script.php'; ?>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <style>
-       /* ===== CODEXAMAN CATEGORY SECTION ===== */
+    /* ===== CODEXAMAN CATEGORY SECTION ===== */
 
 .codexaman-cat-section {
   background: var(--cream);
@@ -170,6 +170,21 @@
   color: var(--card-color);
 }
 
+.codexaman-cat-desc {
+  font-size: 0.72rem;
+  color: var(--text2);
+  margin: 6px 0 0;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+/* 5-card equal columns on large screens */
+@media (min-width: 992px) {
+  .col-lg-2half {
+    width: 20%;
+  }
+}
+
 /* ---- Hover Button ---- */
 .codexaman-cat-btn {
   display: inline-flex;
@@ -210,49 +225,6 @@
   text-decoration: none;
 }
 
-/* ---- Dark "All Plants" variant ---- */
-.codexaman-cat-card--all {
-  background: var(--g1) !important;
-  border-color: var(--g1) !important;
-}
-
-.codexaman-cat-card--all .codexaman-cat-icon-wrap {
-  background: rgba(255,255,255,0.1);
-}
-
-.codexaman-cat-card--all .codexaman-cat-icon-wrap i {
-  color: var(--accent);
-}
-
-.codexaman-cat-card--all .codexaman-cat-name {
-  color: #fff;
-}
-
-.codexaman-cat-card--all .codexaman-cat-count {
-  color: rgba(255,255,255,0.55);
-}
-
-.codexaman-cat-card--all .codexaman-cat-count i {
-  color: var(--accent);
-}
-
-.codexaman-cat-card--all .codexaman-cat-btn {
-  color: var(--accent);
-  background: rgba(156,204,101,0.12);
-  border-color: rgba(156,204,101,0.35);
-}
-
-.codexaman-cat-card--all .codexaman-cat-btn:hover {
-  background: var(--accent);
-  color: var(--g1) !important;
-  border-color: var(--accent);
-}
-
-.codexaman-cat-card--all:hover {
-  background: #3a6620 !important;
-  border-color: #3a6620 !important;
-  box-shadow: 0 12px 36px rgba(45,80,22,0.28);
-}
 
 /* ---- Mobile ---- */
 @media (max-width: 575px) {
@@ -275,6 +247,7 @@
     padding: 5px 11px;
   }
 }
+/* ===== END CODEXAMAN CATEGORY SECTION ===== */
     </style>
 </head>
 <body>
@@ -459,7 +432,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <section class="codexaman-cat-section py-5">
+    
+<section class="codexaman-cat-section py-5">
   <div class="container">
 
     <!-- Header -->
@@ -472,162 +446,107 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Grid -->
     <div class="row g-4 justify-content-center">
 
-      <!-- Card 1: Hibiscus -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="codexaman-cat-card" style="--card-color:#c0392b; --card-bg:#fff6f6;">
-          <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-flower1"></i>
-          </div>
-          <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">Hibiscus</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 6 Varieties</p>
-          </div>
-          <a href="hibiscus.php"
-             class="codexaman-cat-btn"
-             data-bs-toggle="tooltip"
-             data-bs-placement="top"
-             title="Browse all Hibiscus plants">
-            <i class="bi bi-arrow-right-short"></i> View Category
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 2: Aloe Vera -->
-      <div class="col-6 col-md-4 col-lg-3">
+      <!-- Card 1: Indoor Plants -->
+      <div class="col-6 col-md-4 col-lg-2half">
         <div class="codexaman-cat-card" style="--card-color:#2e7d32; --card-bg:#f3faf3;">
-          <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-moisture"></i>
-          </div>
-          <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">Aloe Vera</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 3 Varieties</p>
-          </div>
-          <a href="aloe-vera.php"
-             class="codexaman-cat-btn"
-             data-bs-toggle="tooltip"
-             data-bs-placement="top"
-             title="Browse all Aloe Vera plants">
-            <i class="bi bi-arrow-right-short"></i> View Category
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 3: Aglaonema -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="codexaman-cat-card" style="--card-color:#00695c; --card-bg:#f0faf9;">
-          <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-peace"></i>
-          </div>
-          <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">Aglaonema</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 2 Varieties</p>
-          </div>
-          <a href="aglaonema.php"
-             class="codexaman-cat-btn"
-             data-bs-toggle="tooltip"
-             data-bs-placement="top"
-             title="Browse all Aglaonema plants">
-            <i class="bi bi-arrow-right-short"></i> View Category
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 4: Tropical Fruits -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="codexaman-cat-card" style="--card-color:#e65100; --card-bg:#fff8f0;">
-          <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-sun"></i>
-          </div>
-          <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">Tropical Fruits</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 2 Varieties</p>
-          </div>
-          <a href="dragon-fruit.php"
-             class="codexaman-cat-btn"
-             data-bs-toggle="tooltip"
-             data-bs-placement="top"
-             title="Browse all Tropical Fruit plants">
-            <i class="bi bi-arrow-right-short"></i> View Category
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 5: Ornamental -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="codexaman-cat-card" style="--card-color:#6a1b9a; --card-bg:#fdf5ff;">
-          <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-flower3"></i>
-          </div>
-          <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">Ornamental</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 4 Varieties</p>
-          </div>
-          <a href="frangipani.php"
-             class="codexaman-cat-btn"
-             data-bs-toggle="tooltip"
-             data-bs-placement="top"
-             title="Browse all Ornamental plants">
-            <i class="bi bi-arrow-right-short"></i> View Category
-          </a>
-        </div>
-      </div>
-
-      <!-- Card 6: Indoor Plants -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="codexaman-cat-card" style="--card-color:#4a7c59; --card-bg:#f2f8f4;">
           <div class="codexaman-cat-icon-wrap">
             <i class="bi bi-house-heart"></i>
           </div>
           <div class="codexaman-cat-info">
             <h3 class="codexaman-cat-name">Indoor Plants</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 5 Varieties</p>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 7 Plants</p>
+            <p class="codexaman-cat-desc">Aglaonema, Money Plant, Snake Plant, Jade & more</p>
           </div>
-          <a href="money-plant.php"
+          <a href="index.php?cat=indoor"
              class="codexaman-cat-btn"
              data-bs-toggle="tooltip"
              data-bs-placement="top"
-             title="Browse all Indoor plants">
-            <i class="bi bi-arrow-right-short"></i> View Category
+             title="Aglaonema, Money Plant, Snake Plant, Jade Plant">
+            <i class="bi bi-arrow-right-short"></i> Explore
           </a>
         </div>
       </div>
 
-      <!-- Card 7: Climbers -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="codexaman-cat-card" style="--card-color:#ad1457; --card-bg:#fff4f8;">
+      <!-- Card 2: Outdoor / Garden -->
+      <div class="col-6 col-md-4 col-lg-2half">
+        <div class="codexaman-cat-card" style="--card-color:#4a7c59; --card-bg:#f2f8f4;">
           <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-arrow-up-right-circle"></i>
+            <i class="bi bi-tree"></i>
           </div>
           <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">Climbers</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 1 Variety</p>
+            <h3 class="codexaman-cat-name">Outdoor Plants</h3>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 3 Plants</p>
+            <p class="codexaman-cat-desc">Bougainvillea, Allamanda, Philodendron Birkin</p>
           </div>
-          <a href="bougainvillea.php"
+          <a href="index.php?cat=outdoor"
              class="codexaman-cat-btn"
              data-bs-toggle="tooltip"
              data-bs-placement="top"
-             title="Browse all Climber plants">
-            <i class="bi bi-arrow-right-short"></i> View Category
+             title="Bougainvillea, Allamanda, Philodendron Birkin">
+            <i class="bi bi-arrow-right-short"></i> Explore
           </a>
         </div>
       </div>
 
-      <!-- Card 8: All Plants (dark CTA) -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="codexaman-cat-card codexaman-cat-card--all" style="--card-color:#9ccc65; --card-bg:#2d5016;">
+      <!-- Card 3: Flowering Plants -->
+      <div class="col-6 col-md-4 col-lg-2half">
+        <div class="codexaman-cat-card" style="--card-color:#c0392b; --card-bg:#fff6f6;">
           <div class="codexaman-cat-icon-wrap">
-            <i class="bi bi-grid-fill"></i>
+            <i class="bi bi-flower1"></i>
           </div>
           <div class="codexaman-cat-info">
-            <h3 class="codexaman-cat-name">All Plants</h3>
-            <p class="codexaman-cat-count"><i class="bi bi-collection"></i> Full Catalogue</p>
+            <h3 class="codexaman-cat-name">Flowering Plants</h3>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 9 Plants</p>
+            <p class="codexaman-cat-desc">Hibiscus, Frangipani, Grafted Hibiscus & more</p>
           </div>
-          <a href="index.php"
+          <a href="index.php?cat=flowering"
              class="codexaman-cat-btn"
              data-bs-toggle="tooltip"
              data-bs-placement="top"
-             title="View our complete plant catalogue">
-            <i class="bi bi-arrow-right-short"></i> View All
+             title="Hibiscus varieties, Frangipani, Grafted Hibiscus">
+            <i class="bi bi-arrow-right-short"></i> Explore
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4: Medicinal Plants -->
+      <div class="col-6 col-md-4 col-lg-2half">
+        <div class="codexaman-cat-card" style="--card-color:#00695c; --card-bg:#f0faf9;">
+          <div class="codexaman-cat-icon-wrap">
+            <i class="bi bi-capsule"></i>
+          </div>
+          <div class="codexaman-cat-info">
+            <h3 class="codexaman-cat-name">Medicinal Plants</h3>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 3 Plants</p>
+            <p class="codexaman-cat-desc">Aloe Vera, New Aloe Vera, Aloe Vera Copy</p>
+          </div>
+          <a href="index.php?cat=medicinal"
+             class="codexaman-cat-btn"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="Aloe Vera & medicinal varieties">
+            <i class="bi bi-arrow-right-short"></i> Explore
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 5: Exotic & Fruit -->
+      <div class="col-6 col-md-4 col-lg-2half">
+        <div class="codexaman-cat-card" style="--card-color:#e65100; --card-bg:#fff8f0;">
+          <div class="codexaman-cat-icon-wrap">
+            <i class="bi bi-stars"></i>
+          </div>
+          <div class="codexaman-cat-info">
+            <h3 class="codexaman-cat-name">Exotic &amp; Fruits</h3>
+            <p class="codexaman-cat-count"><i class="bi bi-tag"></i> 3 Plants</p>
+            <p class="codexaman-cat-desc">Dragon Fruit, Dragon Mulberry, Exotic Peach Hibiscus</p>
+          </div>
+          <a href="index.php?cat=exotic"
+             class="codexaman-cat-btn"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="Dragon Fruit, Dragon Mulberry, Exotic varieties">
+            <i class="bi bi-arrow-right-short"></i> Explore
           </a>
         </div>
       </div>
