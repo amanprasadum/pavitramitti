@@ -524,7 +524,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
     <!-- ==================== CATEGORIES ==================== -->
-    <section class="categories-sec" id="categories">
+    <!-- <section class="categories-sec" id="categories">
         <div class="container">
             <div class="section-header text-center mb-5" data-aos="fade-up">
                 <div class="sec-label">Our Collection</div>
@@ -623,7 +623,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         class="fas fa-chevron-right"></i></button>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- new cat -->
      <section class="codexaman-pm-cat" id="categories">
