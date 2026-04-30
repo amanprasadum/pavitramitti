@@ -555,7 +555,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div><!-- /row -->
   </div><!-- /container -->
 </section>
-/* <!-- ===== END CATEGORY SECTION ===== --> */
+ <!-- ===== END CATEGORY SECTION ===== --> 
 
     <!-- ==================== ABOUT US ==================== -->
     <section class="about-sec" id="about">
