@@ -829,7 +829,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 </section>
-    <section class="products-sec" id="shop">
+    <!-- <section class="products-sec" id="shop">
         <div class="container">
             <div class="section-header text-center mb-5" data-aos="fade-up">
                 <div class="sec-label">Handpicked</div>
@@ -1014,7 +1014,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ==================== WHY US ==================== -->
     <section class="why-sec" id="about">
