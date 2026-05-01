@@ -23,7 +23,7 @@
                 <div>
                     <strong>Email Us</strong>
                     <span>info@pavitramitti.com
-</span>
+                    </span>
                     <!-- <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
                             data-cfemail="1e777078715e6e7f68776a6c7f73776a6a77307770">[email&#160;protected]</a></span> -->
                 </div>
@@ -41,26 +41,31 @@
             <!-- Brand -->
             <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
                 <div class="foot-brand-name">
-                    <img src="../assets/images/logo.png" alt="Pavitra Mitti Logo" class="brand-logo-" style="width: 107px;">
+                    <img src="../assets/images/logo.png" alt="Pavitra Mitti Logo" class="brand-logo-"
+                        style="width: 107px;">
                 </div>
                 <p class="foot-desc">A leading plant nursery in Basirhat, West Bengal — serving home gardeners,
                     landscapers and farmers with 200+ plant varieties, expert guidance and affordable pricing for
                     over a decade.</p>
 
                 <div class="social-row">
-                    <a href="https://www.facebook.com/PavitraMitti/" target="_blank" class="soc-icon" aria-label="Facebook">
+                    <a href="https://www.facebook.com/PavitraMitti/" target="_blank" class="soc-icon"
+                        aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                     <a href="https://x.com/PavitraMitti" target="_blank" class="soc-icon" aria-label="Twitter">
                         <i class="fab fa-x-twitter"></i>
                     </a>
-                    <a href="https://in.pinterest.com/pavitramitti/" target="_blank" class="soc-icon" aria-label="Pinterest">
+                    <a href="https://in.pinterest.com/pavitramitti/" target="_blank" class="soc-icon"
+                        aria-label="Pinterest">
                         <i class="fab fa-pinterest"></i>
                     </a>
-                    <a href="https://www.youtube.com/@PavitraMitti" target="_blank" class="soc-icon" aria-label="YouTube">
+                    <a href="https://www.youtube.com/@PavitraMitti" target="_blank" class="soc-icon"
+                        aria-label="YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
-                    <a href="https://in.linkedin.com/company/pavitramitti" target="_blank" class="soc-icon" aria-label="LinkedIn">
+                    <a href="https://in.linkedin.com/company/pavitramitti" target="_blank" class="soc-icon"
+                        aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="https://wa.me/918250158613" target="_blank" class="soc-icon" aria-label="WhatsApp">
@@ -96,10 +101,28 @@
             <!-- Contact Form -->
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                 <h5 class="foot-h">Get In Touch</h5>
-                <form class="foot-form" id="footerForm">
+                <!-- <form class="foot-form" id="footerForm">
                     <input type="text" class="fc" placeholder="Your Name" required>
                     <input type="email" class="fc" placeholder="Your Email" required>
                     <textarea class="fc" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="foot-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form> -->
+                <form class="foot-form" id="footerForm" action="https://api.web3forms.com/submit" method="POST">
+
+                    <!-- Web3Forms Key -->
+                    <input type="hidden" name="access_key" value="cf185d87-1b86-4377-88d6-6ff2e0fce031">
+
+                    <!-- Optional -->
+                    <input type="hidden" name="subject" value="New Footer Contact Message">
+
+                    <input type="text" name="name" class="fc" placeholder="Your Name" required>
+
+                    <input type="email" name="email" class="fc" placeholder="Your Email" required>
+
+                    <textarea name="message" class="fc" placeholder="Your Message" required></textarea>
+
                     <button type="submit" class="foot-submit">
                         <i class="fas fa-paper-plane"></i> Send Message
                     </button>
@@ -152,7 +175,7 @@
                 <p class="foot-copy mb-0">
                     &copy; 2026 Pavitra Mitti Nursery, All Rights Reserved.
                 </p>
-               <!--  <p class="foot-design mb-0">
+                <!--  <p class="foot-design mb-0">
                     Designed & Maintained by <a href="https://webeasyexperts.com" target="_blank">Web Easy Experts</a>
                 </p> -->
                 <div class="foot-bottom-links">
