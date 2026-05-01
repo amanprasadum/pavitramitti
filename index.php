@@ -598,6 +598,237 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
     <!-- ==================== POPULAR PLANTS ==================== -->
+     <section class="products-sec" id="shop">
+    <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+            <div class="sec-label">Handpicked</div>
+            <h2 class="sec-title">Popular <em>Plants</em></h2>
+            <p class="sec-sub">Some of our most loved plants — call or WhatsApp to enquire about availability</p>
+        </div>
+
+        <div class="prod-swiper-wrap" data-aos="fade-up" data-aos-delay="150">
+            <div class="swiper prodSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Aglaonema Snow White -->
+                    <div class="swiper-slide">
+                        <div class="prod-card">
+                            <div class="prod-badge">Most Popular</div>
+                            <div class="prod-img">
+                                <img src="../assets/images/product/Aglaonema-Snow-White.png" alt="Aglaonema Snow White" loading="lazy">
+                                <div class="prod-actions">
+                                    <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="tel:+918250158613" class="prod-action-btn" title="Call"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="prod-body">
+                                <h4>Aglaonema Snow White</h4>
+                                <div class="prod-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span>5.0 · Indoor</span>
+                                </div>
+                                <p class="prod-desc">Elegant white-patterned foliage — a stunning low-maintenance indoor plant.</p>
+                                <div class="prod-foot">
+                                    <span class="prod-cat"><i class="fas fa-tag"></i> Indoor / Foliage</span>
+                                    <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bougainvillea -->
+                    <div class="swiper-slide">
+                        <div class="prod-card">
+                            <div class="prod-badge new">Trending</div>
+                            <div class="prod-img">
+                                <img src="../assets/images/product/Bougainvillea.png" alt="Bougainvillea" loading="lazy">
+                                <div class="prod-actions">
+                                    <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="tel:+918250158613" class="prod-action-btn"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="prod-body">
+                                <h4>Bougainvillea</h4>
+                                <div class="prod-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span>5.0 · Flowering</span>
+                                </div>
+                                <p class="prod-desc">Vibrant hardy climber — perfect for walls, fences & outdoor spaces.</p>
+                                <div class="prod-foot">
+                                    <span class="prod-cat"><i class="fas fa-tag"></i> Flowering</span>
+                                    <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dragon Fruit -->
+                    <div class="swiper-slide">
+                        <div class="prod-card">
+                            <div class="prod-badge fruit">Fruit Tree</div>
+                            <div class="prod-img">
+                                <img src="../assets/images/product/dragon-fruit.png" alt="Dragon Fruit" loading="lazy">
+                                <div class="prod-actions">
+                                    <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="tel:+918250158613" class="prod-action-btn"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="prod-body">
+                                <h4>Dragon Fruit</h4>
+                                <div class="prod-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    <span>4.5 · Fruit</span>
+                                </div>
+                                <p class="prod-desc">Exotic tropical fruit plant — ideal for home farms & gardens.</p>
+                                <div class="prod-foot">
+                                    <span class="prod-cat"><i class="fas fa-tag"></i> Fruit</span>
+                                    <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grafted Hibiscus -->
+                    <div class="swiper-slide">
+                        <div class="prod-card">
+                            <div class="prod-badge">Fan Favourite</div>
+                            <div class="prod-img">
+                                <img src="../assets/images/product/Grafted-Hibiscus.png" alt="Grafted Hibiscus" loading="lazy">
+                                <div class="prod-actions">
+                                    <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="tel:+918250158613" class="prod-action-btn"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="prod-body">
+                                <h4>Grafted Hibiscus</h4>
+                                <div class="prod-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span>5.0 · Hibiscus</span>
+                                </div>
+                                <p class="prod-desc">Multi-colour grafted blooms — a true showstopper for any garden.</p>
+                                <div class="prod-foot">
+                                    <span class="prod-cat"><i class="fas fa-tag"></i> Hibiscus</span>
+                                    <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Philodendron Birkin -->
+                    <div class="swiper-slide">
+                        <div class="prod-card">
+                            <div class="prod-badge new">Premium</div>
+                            <div class="prod-img">
+                                <img src="../assets/images/product/Philodendron-Birkin.png" alt="Philodendron Birkin" loading="lazy">
+                                <div class="prod-actions">
+                                    <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="tel:+918250158613" class="prod-action-btn"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="prod-body">
+                                <h4>Philodendron Birkin</h4>
+                                <div class="prod-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    <span>4.5 · Indoor</span>
+                                </div>
+                                <p class="prod-desc">Striking white-striped leaves — a premium statement plant for indoors.</p>
+                                <div class="prod-foot">
+                                    <span class="prod-cat"><i class="fas fa-tag"></i> Indoor / Foliage</span>
+                                    <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Snake Plant -->
+                    <div class="swiper-slide">
+                        <div class="prod-card">
+                            <div class="prod-img">
+                                <img src="../assets/images/product/snake-plant.png" alt="Snake Plant" loading="lazy">
+                                <div class="prod-actions">
+                                    <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="tel:+918250158613" class="prod-action-btn"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="prod-body">
+                                <h4>Snake Plant</h4>
+                                <div class="prod-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span>5.0 · Indoor</span>
+                                </div>
+                                <p class="prod-desc">Air-purifying & virtually indestructible — perfect for any room.</p>
+                                <div class="prod-foot">
+                                    <span class="prod-cat"><i class="fas fa-tag"></i> Indoor / Foliage</span>
+                                    <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frangipani -->
+                    <div class="swiper-slide">
+                        <div class="prod-card">
+                            <div class="prod-badge sale">Seasonal</div>
+                            <div class="prod-img">
+                                <img src="../assets/images/product/Frangipani.png" alt="Frangipani" loading="lazy">
+                                <div class="prod-actions">
+                                    <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="tel:+918250158613" class="prod-action-btn"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="prod-body">
+                                <h4>Frangipani</h4>
+                                <div class="prod-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    <span>4.5 · Flowering</span>
+                                </div>
+                                <p class="prod-desc">Fragrant tropical blooms — timeless classic beauty for any garden.</p>
+                                <div class="prod-foot">
+                                    <span class="prod-cat"><i class="fas fa-tag"></i> Flowering</span>
+                                    <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jade Plant -->
+                    <div class="swiper-slide">
+                        <div class="prod-card">
+                            <div class="prod-img">
+                                <img src="../assets/images/product/Jade-Plant.png" alt="Jade Plant" loading="lazy">
+                                <div class="prod-actions">
+                                    <a href="https://wa.me/918250158613" target="_blank" class="prod-action-btn"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="tel:+918250158613" class="prod-action-btn"><i class="fas fa-phone-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="prod-body">
+                                <h4>Jade Plant</h4>
+                                <div class="prod-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                    <span>4.0 · Indoor</span>
+                                </div>
+                                <p class="prod-desc">Lucky succulent — low maintenance & long lasting indoor plant.</p>
+                                <div class="prod-foot">
+                                    <span class="prod-cat"><i class="fas fa-tag"></i> Indoor / Foliage</span>
+                                    <a href="https://wa.me/918250158613" target="_blank" class="enq-btn"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="sl-nav prev" id="prodPrev" aria-label="Previous product"><i class="fas fa-chevron-left"></i></button>
+            <button class="sl-nav next" id="prodNext" aria-label="Next product"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="https://wa.me/918250158613" target="_blank" class="view-all">
+                <i class="fab fa-whatsapp"></i> WhatsApp for Full Plant List
+            </a>
+        </div>
+    </div>
+</section>
     <section class="products-sec" id="shop">
         <div class="container">
             <div class="section-header text-center mb-5" data-aos="fade-up">
