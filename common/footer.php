@@ -124,7 +124,7 @@
                     <textarea name="message" class="fc" placeholder="Your Message" required></textarea>
 
                     <button type="submit" class="foot-submit">
-                        <i class="fas fa-paper-plane"></i> Send Message
+                        <i class="fas fa-paper-plane"></i> Send Message cx
                     </button>
                 </form>
             </div>
