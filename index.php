@@ -369,6 +369,349 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </section>
+    <section class="categories-sec" id="categories">
+    <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+            <div class="sec-label">Explore Our Plants</div>
+            <h2 class="sec-title">Handpicked <em>Plants</em> for Every Space</h2>
+            <p class="sec-sub">From exotic hibiscus to healing aloe — explore our wide variety of plants grown with love at Basirhat</p>
+        </div>
+
+        <div class="cat-swiper-wrap" data-aos="fade-up" data-aos-delay="150">
+            <div class="swiper catSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Aglaonema Snow White -->
+                    <div class="swiper-slide">
+                        <a href="/product/aglaonema-snow-white" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/aglaonema-snow/500/260" alt="Aglaonema Snow White" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Indoor / Foliage</div>
+                                <h4>Aglaonema Snow White</h4>
+                                <p>Elegant white-patterned foliage — perfect for indoor spaces</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Aglaonema -->
+                    <div class="swiper-slide">
+                        <a href="/product/aglaonema" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/aglaonema/500/260" alt="Aglaonema" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Indoor / Foliage</div>
+                                <h4>Aglaonema</h4>
+                                <p>Low-maintenance tropical foliage plant for homes & offices</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Allamanda -->
+                    <div class="swiper-slide">
+                        <a href="/product/allamanda" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/allamanda/500/260" alt="Allamanda" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Flowering</div>
+                                <h4>Allamanda</h4>
+                                <p>Bright yellow trumpet flowers — great for fences & gardens</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Aloe Vera -->
+                    <div class="swiper-slide">
+                        <a href="/product/aloe-vera" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/aloevera/500/260" alt="Aloe Vera" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Medicinal</div>
+                                <h4>Aloe Vera</h4>
+                                <p>Nature's healing plant — ideal for every home garden</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Bougainvillea -->
+                    <div class="swiper-slide">
+                        <a href="/product/bougainvillea" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/bougainvillea/500/260" alt="Bougainvillea" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Flowering</div>
+                                <h4>Bougainvillea</h4>
+                                <p>Vibrant & hardy climber — stunning for walls and fences</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Dragon Fruit -->
+                    <div class="swiper-slide">
+                        <a href="/product/dragon-fruit" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/dragonfruit/500/260" alt="Dragon Fruit" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Fruit</div>
+                                <h4>Dragon Fruit</h4>
+                                <p>Exotic tropical fruit plant — great for home farms & gardens</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Dragon Mulberry -->
+                    <div class="swiper-slide">
+                        <a href="/product/dragon-mulberry" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/mulberry/500/260" alt="Dragon Mulberry" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Fruit</div>
+                                <h4>Dragon Mulberry</h4>
+                                <p>Rare & nutritious mulberry variety — fast growing & fruitful</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Exotic Peach Yellow Hibiscus -->
+                    <div class="swiper-slide">
+                        <a href="/product/exotic-peach-yellow-hibiscus" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/exotichibiscus/500/260" alt="Exotic Peach Yellow Hibiscus" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Hibiscus</div>
+                                <h4>Exotic Peach Yellow Hibiscus</h4>
+                                <p>Rare peach-yellow blooms — a stunning garden centerpiece</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Frangipani -->
+                    <div class="swiper-slide">
+                        <a href="/product/frangipani" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/frangipani/500/260" alt="Frangipani" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Flowering</div>
+                                <h4>Frangipani</h4>
+                                <p>Fragrant tropical blooms — classic beauty for any garden</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Grafted Hibiscus -->
+                    <div class="swiper-slide">
+                        <a href="/product/grafted-hibiscus" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/graftedhibiscus/500/260" alt="Grafted Hibiscus" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Hibiscus</div>
+                                <h4>Grafted Hibiscus</h4>
+                                <p>Multi-colour grafted hibiscus — a showstopper for any space</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Hot Pink Hibiscus -->
+                    <div class="swiper-slide">
+                        <a href="/product/hot-pink-hibiscus" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/pinkhibiscus/500/260" alt="Hot Pink Hibiscus" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Hibiscus</div>
+                                <h4>Hot Pink Hibiscus</h4>
+                                <p>Bold & vibrant hot pink blooms — full of tropical energy</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Jade Plant -->
+                    <div class="swiper-slide">
+                        <a href="/product/jade-plant" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/jadeplant/500/260" alt="Jade Plant" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Indoor / Foliage</div>
+                                <h4>Jade Plant</h4>
+                                <p>Lucky succulent — low maintenance & long lasting indoor plant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Light Peach Hibiscus -->
+                    <div class="swiper-slide">
+                        <a href="/product/light-peach-hibiscus" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/peachhibiscus/500/260" alt="Light Peach Hibiscus" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Hibiscus</div>
+                                <h4>Light Peach Hibiscus</h4>
+                                <p>Soft pastel peach flowers — delicate & elegant for gardens</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Money Plant -->
+                    <div class="swiper-slide">
+                        <a href="/product/money-plant" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/moneyplant/500/260" alt="Money Plant" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Indoor / Foliage</div>
+                                <h4>Money Plant</h4>
+                                <p>Brings luck & positivity — easiest plant for any beginner</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Orange Hibiscus -->
+                    <div class="swiper-slide">
+                        <a href="/product/orange-hibiscus" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/orangehibiscus/500/260" alt="Orange Hibiscus" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Hibiscus</div>
+                                <h4>Orange Hibiscus</h4>
+                                <p>Warm orange blooms — bright & cheerful for any garden</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Peach Yellow Hibiscus -->
+                    <div class="swiper-slide">
+                        <a href="/product/peach-yellow-hibiscus" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/peachyellow/500/260" alt="Peach Yellow Hibiscus" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Hibiscus</div>
+                                <h4>Peach Yellow Hibiscus</h4>
+                                <p>Dual-tone peach & yellow blooms — unique & eye-catching</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Philodendron Birkin -->
+                    <div class="swiper-slide">
+                        <a href="/product/philodendron-birkin" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/philodendron/500/260" alt="Philodendron Birkin" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Indoor / Foliage</div>
+                                <h4>Philodendron Birkin</h4>
+                                <p>Striking white-striped leaves — a premium indoor statement plant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Pink Double Petal Hibiscus -->
+                    <div class="swiper-slide">
+                        <a href="/product/pink-double-petal-hibiscus" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/doublepetal/500/260" alt="Pink Double Petal Hibiscus" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Hibiscus</div>
+                                <h4>Pink Double Petal Hibiscus</h4>
+                                <p>Lush double-layered pink blooms — full & gorgeous</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Snake Plant -->
+                    <div class="swiper-slide">
+                        <a href="/product/snake-plant" class="cat-card">
+                            <div class="cat-img-wrap">
+                                <img src="https://picsum.photos/seed/snakeplant/500/260" alt="Snake Plant" loading="lazy">
+                                <div class="cat-overlay">
+                                    <span class="cat-enq">Enquire Now</span>
+                                </div>
+                            </div>
+                            <div class="cat-body">
+                                <div class="cat-tag">Indoor / Foliage</div>
+                                <h4>Snake Plant</h4>
+                                <p>Air-purifying & virtually indestructible — perfect for any room</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <button class="sl-nav prev" id="catPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <button class="sl-nav next" id="catNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+    </div>
+</section>
 
     <!-- ==================== POPULAR PLANTS ==================== -->
     <section class="products-sec" id="shop">
@@ -1334,7 +1677,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <i class="fas fa-arrow-up"></i>
     </button>
  <?php include 'common/footer-script.php'; ?>
-    
+    <script>
+        const catSw = new Swiper('.catSwiper', {
+    slidesPerView: 1.15,
+    spaceBetween: 16,
+    loop: true,
+    autoplay: {
+        delay: 2800,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    breakpoints: {
+        480: { slidesPerView: 1.6, spaceBetween: 18 },
+        640: { slidesPerView: 2.2, spaceBetween: 18 },
+        768: { slidesPerView: 2.6, spaceBetween: 20 },
+        992: { slidesPerView: 3.2, spaceBetween: 22 },
+        1200: { slidesPerView: 4, spaceBetween: 24 }
+    }
+});
+
+document.getElementById('catPrev').addEventListener('click', () => catSw.slidePrev());
+document.getElementById('catNext').addEventListener('click', () => catSw.slideNext());
+    </script>
 </body>
 
 </html>
