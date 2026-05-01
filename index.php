@@ -286,7 +286,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/aglaonema-snow-white" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/aglaonema-snow/500/260" alt="Aglaonema Snow White" loading="lazy">
+                                <img src="../assets/images/product/Aglaonema-Snow-White.png" alt="Aglaonema Snow White" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -303,7 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/aglaonema" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/aglaonema/500/260" alt="Aglaonema" loading="lazy">
+                                <img src="../assets/images/product/Aglaonema.png" alt="Aglaonema" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -320,7 +320,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/allamanda" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/allamanda/500/260" alt="Allamanda" loading="lazy">
+                                <img src="../assets/images/product/Allamanda.png" alt="Allamanda" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -337,7 +337,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/aloe-vera" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/aloevera/500/260" alt="Aloe Vera" loading="lazy">
+                                <img src="../assets/images/product/alloe-vera.png" alt="Aloe Vera" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -354,7 +354,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/bougainvillea" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/bougainvillea/500/260" alt="Bougainvillea" loading="lazy">
+                                <img src="../assets/images/product/Bougainvillea.png" alt="Bougainvillea" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -371,7 +371,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/dragon-fruit" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/dragonfruit/500/260" alt="Dragon Fruit" loading="lazy">
+                                <img src="../assets/images/product/dragon-fruit.png" alt="Dragon Fruit" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -388,7 +388,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/dragon-mulberry" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/mulberry/500/260" alt="Dragon Mulberry" loading="lazy">
+                                <img src="../assets/images/product/Dragon-Mulberry.png" alt="Dragon Mulberry" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -401,28 +401,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </a>
                     </div>
 
-                    <!-- Exotic Peach Yellow Hibiscus -->
-                    <div class="swiper-slide">
-                        <a href="/product/exotic-peach-yellow-hibiscus" class="cat-card">
-                            <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/exotichibiscus/500/260" alt="Exotic Peach Yellow Hibiscus" loading="lazy">
-                                <div class="cat-overlay">
-                                    <span class="cat-enq">Enquire Now</span>
-                                </div>
-                            </div>
-                            <div class="cat-body">
-                                <div class="cat-tag">Hibiscus</div>
-                                <h4>Exotic Peach Yellow Hibiscus</h4>
-                                <p>Rare peach-yellow blooms — a stunning garden centerpiece</p>
-                            </div>
-                        </a>
-                    </div>
-
                     <!-- Frangipani -->
                     <div class="swiper-slide">
                         <a href="/product/frangipani" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/frangipani/500/260" alt="Frangipani" loading="lazy">
+                                <img src="../assets/images/product/Frangipani.png" alt="Frangipani" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -439,7 +422,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/grafted-hibiscus" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/graftedhibiscus/500/260" alt="Grafted Hibiscus" loading="lazy">
+                                <img src="../assets/images/product/Grafted-Hibiscus.png" alt="Grafted Hibiscus" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -456,7 +439,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/hot-pink-hibiscus" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/pinkhibiscus/500/260" alt="Hot Pink Hibiscus" loading="lazy">
+                                <img src="../assets/images/product/Hot-Pink-Hibiscus.png" alt="Hot Pink Hibiscus" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -473,7 +456,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/jade-plant" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/jadeplant/500/260" alt="Jade Plant" loading="lazy">
+                                <img src="../assets/images/product/Jade-Plant.png" alt="Jade Plant" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -490,7 +473,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/light-peach-hibiscus" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/peachhibiscus/500/260" alt="Light Peach Hibiscus" loading="lazy">
+                                <img src="../assets/images/product/Light-Peach-Hibiscus.png" alt="Light Peach Hibiscus" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -507,7 +490,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/money-plant" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/moneyplant/500/260" alt="Money Plant" loading="lazy">
+                                <img src="../assets/images/product/Money-Plant.png" alt="Money Plant" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -524,7 +507,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/orange-hibiscus" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/orangehibiscus/500/260" alt="Orange Hibiscus" loading="lazy">
+                                <img src="../assets/images/product/Orange-Hibiscus.png" alt="Orange Hibiscus" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -541,7 +524,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/peach-yellow-hibiscus" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/peachyellow/500/260" alt="Peach Yellow Hibiscus" loading="lazy">
+                                <img src="../assets/images/product/Peach-Yellow-Hibiscus.png" alt="Peach Yellow Hibiscus" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -558,7 +541,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/philodendron-birkin" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/philodendron/500/260" alt="Philodendron Birkin" loading="lazy">
+                                <img src="../assets/images/product/Philodendron-Birkin.png" alt="Philodendron Birkin" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -575,7 +558,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/pink-double-petal-hibiscus" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/doublepetal/500/260" alt="Pink Double Petal Hibiscus" loading="lazy">
+                                <img src="../assets/images/product/Pink-Double-Petal-Hibiscus.png" alt="Pink Double Petal Hibiscus" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
@@ -592,7 +575,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide">
                         <a href="/product/snake-plant" class="cat-card">
                             <div class="cat-img-wrap">
-                                <img src="https://picsum.photos/seed/snakeplant/500/260" alt="Snake Plant" loading="lazy">
+                                <img src="../assets/images/product/snake-plant.png" alt="Snake Plant" loading="lazy">
                                 <div class="cat-overlay">
                                     <span class="cat-enq">Enquire Now</span>
                                 </div>
