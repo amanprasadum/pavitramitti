@@ -209,7 +209,7 @@
           <div class="pv-rel-card">
             <a href="snake-plant.php" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
-                <img src="https://placehold.co/300x260/e0f2f1/004d40?text=Snake+Plant" alt="Snake Plant" class="pv-rel-img"/>
+                <img src="../assets/images/product/snake-plant.png" alt="Snake Plant" class="pv-rel-img"/>
                 <span class="pv-rel-badge">Air Purifier</span>
               </div>
               <div class="pv-rel-body">
