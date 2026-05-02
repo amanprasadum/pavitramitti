@@ -79,8 +79,7 @@
                 <i class="bi bi-whatsapp"></i> WhatsApp Enquiry
               </button>
             </a>
-
-            <a href="tel:918250158613">
+            <a href="tel:918250158613" class="text-decoration-none">
               <button class="pv-btn-call">
                 <i class="bi bi-telephone-fill"></i> Call Now
               </button>
