@@ -74,7 +74,7 @@
           </div> -->
           <div class="pv-action-btns">
 
-            <a href="https://wa.me/918250158613" target="_blank">
+            <a href="https://wa.me/918250158613" target="_blank" class="text-decoration-none">
               <button class="pv-btn-whatsapp">
                 <i class="bi bi-whatsapp"></i> WhatsApp Enquiry
               </button>
