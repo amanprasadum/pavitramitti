@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aglaonema Snow White Plant</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"/>
-  <link rel="stylesheet" href="../assets/css/new-product-details.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../assets/css/new-product-details.css">
   <?php include '../common/header-script.php'; ?>
 </head>
+
 <body>
   <?php include '../common/header.php'; ?>
 
@@ -22,10 +24,8 @@
           <div class="pv-gallery-wrap">
             <div class="pv-badge-bestseller">Premium</div>
             <div class="pv-main-img-wrap">
-              <img id="mainProductImg"
-                   src="../assets/images/product/Aglaonema-Snow-White.png"
-                   alt="Aglaonema Snow White Plant"
-                   class="pv-main-img-off img-fluid"/>
+              <img id="mainProductImg" src="../assets/images/product/Aglaonema-Snow-White.png"
+                alt="Aglaonema Snow White Plant" class="pv-main-img-off img-fluid" />
             </div>
           </div>
         </div>
@@ -33,17 +33,22 @@
         <!-- Right: Info -->
         <div class="col-lg-7">
           <span class="pv-category-badge">FOLIAGE PLANT</span>
-          <h1 class="pv-product-title">Aglaonema Snow White Plant – Premium Chinese Evergreen Indoor Decorative Plant for Home, Office &amp; Balcony</h1>
+          <h1 class="pv-product-title">Aglaonema Snow White Plant – Premium Chinese Evergreen Indoor Decorative Plant
+            for Home, Office &amp; Balcony</h1>
 
           <div class="pv-rating-row">
             <span class="pv-stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
             </span>
             <span class="pv-rating-val">4.5</span>
             <span class="pv-rating-count">(98 Reviews)</span>
           </div>
 
-          <p class="pv-short-desc">Brighten your indoor space with our Aglaonema Snow White Plant, a premium variety of Chinese Evergreen known for its elegant white and green patterned leaves. This stylish indoor plant is highly valued for its modern appearance, compact growth, and low-maintenance care requirements, making it a popular choice for homes and offices.</p>
+          <p class="pv-short-desc">Brighten your indoor space with our Aglaonema Snow White Plant, a premium variety of
+            Chinese Evergreen known for its elegant white and green patterned leaves. This stylish indoor plant is
+            highly valued for its modern appearance, compact growth, and low-maintenance care requirements, making it a
+            popular choice for homes and offices.</p>
 
           <div class="pv-price-row">
             <span class="pv-price">₹299</span>
@@ -63,9 +68,24 @@
           </div>
 
           <!-- Enquiry Buttons -->
-          <div class="pv-action-btns">
+          <!-- <div class="pv-action-btns">
             <button class="pv-btn-whatsapp"><i class="bi bi-whatsapp"></i> WhatsApp Enquiry</button>
             <button class="pv-btn-call"><i class="bi bi-telephone-fill"></i> Call Now</button>
+          </div> -->
+          <div class="pv-action-btns">
+
+            <a href="https://wa.me/918250158613" target="_blank">
+              <button class="pv-btn-whatsapp">
+                <i class="bi bi-whatsapp"></i> WhatsApp Enquiry
+              </button>
+            </a>
+
+            <a href="tel:918250158613">
+              <button class="pv-btn-call">
+                <i class="bi bi-telephone-fill"></i> Call Now
+              </button>
+            </a>
+
           </div>
         </div>
       </div>
@@ -131,18 +151,27 @@
         <div class="col-lg-6">
           <div class="pv-card h-100">
             <h2 class="pv-section-heading">About This Plant</h2>
-            <p>Aglaonema Snow White is a premium variety of Chinese Evergreen known for its elegant white and green patterned leaves. This stylish indoor plant thrives in indoor environments and is highly valued for its modern appearance and compact growth.</p>
-            <p>Aglaonema Snow White is perfect for enhancing interior décor with its attractive foliage. Its strong adaptability and long-lasting beauty make it an excellent option for beginners, plant enthusiasts, and anyone looking to add sophistication to their living or working space.</p>
+            <p>Aglaonema Snow White is a premium variety of Chinese Evergreen known for its elegant white and green
+              patterned leaves. This stylish indoor plant thrives in indoor environments and is highly valued for its
+              modern appearance and compact growth.</p>
+            <p>Aglaonema Snow White is perfect for enhancing interior décor with its attractive foliage. Its strong
+              adaptability and long-lasting beauty make it an excellent option for beginners, plant enthusiasts, and
+              anyone looking to add sophistication to their living or working space.</p>
 
             <h3 class="pv-sub-heading mt-4">Why This Plant is Special</h3>
             <ul class="pv-check-list">
-              <li><i class="bi bi-check-circle-fill"></i> Beautiful White-Patterned Leaves – Elegant foliage enhances indoor décor</li>
+              <li><i class="bi bi-check-circle-fill"></i> Beautiful White-Patterned Leaves – Elegant foliage enhances
+                indoor décor</li>
               <li><i class="bi bi-check-circle-fill"></i> Premium Indoor Plant – Popular modern decorative plant</li>
               <li><i class="bi bi-check-circle-fill"></i> Low Maintenance – Easy to grow with minimal care</li>
-              <li><i class="bi bi-check-circle-fill"></i> Thrives in Indoor Conditions – Suitable for low to moderate light areas</li>
-              <li><i class="bi bi-check-circle-fill"></i> Air-Refreshing Plant – Helps create a pleasant indoor environment</li>
-              <li><i class="bi bi-check-circle-fill"></i> Compact &amp; Stylish – Ideal for desks, tables, and shelves</li>
-              <li><i class="bi bi-check-circle-fill"></i> Perfect for Home &amp; Office – Great for decoration and gifting</li>
+              <li><i class="bi bi-check-circle-fill"></i> Thrives in Indoor Conditions – Suitable for low to moderate
+                light areas</li>
+              <li><i class="bi bi-check-circle-fill"></i> Air-Refreshing Plant – Helps create a pleasant indoor
+                environment</li>
+              <li><i class="bi bi-check-circle-fill"></i> Compact &amp; Stylish – Ideal for desks, tables, and shelves
+              </li>
+              <li><i class="bi bi-check-circle-fill"></i> Perfect for Home &amp; Office – Great for decoration and
+                gifting</li>
             </ul>
           </div>
         </div>
@@ -153,15 +182,42 @@
             <h2 class="pv-section-heading">Product Specifications</h2>
             <table class="pv-spec-table w-100">
               <tbody>
-                <tr><td class="pv-spec-label">Botanical Name</td><td>Aglaonema commutatum 'Snow White'</td></tr>
-                <tr><td class="pv-spec-label">Common Name</td><td>Aglaonema Snow White / Chinese Evergreen Snow White</td></tr>
-                <tr><td class="pv-spec-label">Plant Type</td><td>Indoor Foliage Plant</td></tr>
-                <tr><td class="pv-spec-label">Leaf Color</td><td>White and Green Variegated Leaves</td></tr>
-                <tr><td class="pv-spec-label">Plant Height</td><td>Approx. 6–12 inches (may vary naturally)</td></tr>
-                <tr><td class="pv-spec-label">Pot Size</td><td>4–6 inch nursery pot (if included)</td></tr>
-                <tr><td class="pv-spec-label">Fragrance</td><td>None</td></tr>
-                <tr><td class="pv-spec-label">Growth Speed</td><td>Slow to Moderate</td></tr>
-                <tr><td class="pv-spec-label">Lifespan</td><td>Long-lasting perennial plant</td></tr>
+                <tr>
+                  <td class="pv-spec-label">Botanical Name</td>
+                  <td>Aglaonema commutatum 'Snow White'</td>
+                </tr>
+                <tr>
+                  <td class="pv-spec-label">Common Name</td>
+                  <td>Aglaonema Snow White / Chinese Evergreen Snow White</td>
+                </tr>
+                <tr>
+                  <td class="pv-spec-label">Plant Type</td>
+                  <td>Indoor Foliage Plant</td>
+                </tr>
+                <tr>
+                  <td class="pv-spec-label">Leaf Color</td>
+                  <td>White and Green Variegated Leaves</td>
+                </tr>
+                <tr>
+                  <td class="pv-spec-label">Plant Height</td>
+                  <td>Approx. 6–12 inches (may vary naturally)</td>
+                </tr>
+                <tr>
+                  <td class="pv-spec-label">Pot Size</td>
+                  <td>4–6 inch nursery pot (if included)</td>
+                </tr>
+                <tr>
+                  <td class="pv-spec-label">Fragrance</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td class="pv-spec-label">Growth Speed</td>
+                  <td>Slow to Moderate</td>
+                </tr>
+                <tr>
+                  <td class="pv-spec-label">Lifespan</td>
+                  <td>Long-lasting perennial plant</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -294,7 +350,8 @@
   <section class="pv-notes-section">
     <div class="container">
       <div class="pv-note-box">
-        <h2 class="pv-section-heading mb-3"><i class="bi bi-exclamation-circle-fill me-2 text-warning"></i>Important Notes</h2>
+        <h2 class="pv-section-heading mb-3"><i class="bi bi-exclamation-circle-fill me-2 text-warning"></i>Important
+          Notes</h2>
         <div class="row">
           <div class="col-sm-6">
             <ul class="pv-note-list">
@@ -321,4 +378,5 @@
   <script src="../assets/js/you-may-also-like.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
+
 </html>
