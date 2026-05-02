@@ -896,7 +896,7 @@ section {
 
 .cat-card:hover {
     transform: translateY(-12px);
-    box-shadow: 0 20px 48px rgba(27, 67, 50, 0.15);
+    /* box-shadow: 0 20px 48px rgba(27, 67, 50, 0.15); */
 }
 
 .cat-img-wrap {
