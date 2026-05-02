@@ -68,11 +68,7 @@
           </div>
 
           <!-- Enquiry Buttons -->
-          <!-- <div class="pv-action-btns">
-            <button class="pv-btn-whatsapp"><i class="bi bi-whatsapp"></i> WhatsApp Enquiry</button>
-            <button class="pv-btn-call"><i class="bi bi-telephone-fill"></i> Call Now</button>
-          </div> -->
-          <div class="pv-action-btns">
+         <div class="pv-action-btns">
 
             <a href="https://wa.me/918250158613" target="_blank" class="text-decoration-none">
               <button class="pv-btn-whatsapp">
@@ -86,6 +82,7 @@
             </a>
 
           </div>
+         
         </div>
       </div>
     </div>
