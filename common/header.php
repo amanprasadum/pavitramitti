@@ -46,11 +46,11 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">Services</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/services/nursery-consultation"><i class="fas fa-seedling"></i> Nursery Consultation</a></li>
+                        <li><a class="dropdown-item" href="/services/nursery-Consult"><i class="fas fa-seedling"></i> Nursery Consult</a></li>
                         <li><a class="dropdown-item" href="/services/bulk-orders"><i class="fas fa-truck"></i> Bulk Orders & Delivery</a></li>
                         <li><a class="dropdown-item" href="/services/landscaping"><i class="fas fa-drafting-compass"></i> Landscaping Support</a></li>
                         <li><a class="dropdown-item" href="/services/plant-care-guidance"><i class="fas fa-hand-holding-heart"></i> Plant Care Guidance</a></li>
-                        <li><a class="dropdown-item" href="/services/soil-fertility-consultation"><i class="fas fa-hand-holding-heart"></i> Soil Fertility Consultation</a></li>
+                        <li><a class="dropdown-item" href="/services/soil-fertility-Consult"><i class="fas fa-hand-holding-heart"></i> Soil Fertility Consult</a></li>
                     </ul>
                 </li>
                 <!-- <li class="nav-item"><a class="nav-link" href="../contact-us">Contact</a></li> -->

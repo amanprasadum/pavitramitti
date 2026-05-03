@@ -92,9 +92,9 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Services</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/services/nursery-consultation.html"><i
+                            <li><a class="dropdown-item" href="/services/nursery-Consult.html"><i
                                         class="fas fa-seedling"></i> Nursery
-                                    Consultation</a></li>
+                                    Consult</a></li>
                             <li><a class="dropdown-item" href="/services/bulk-orders.html"><i class="fas fa-truck"></i>
                                     Bulk Orders &
                                     Delivery</a></li>
@@ -104,8 +104,8 @@
                             <li><a class="dropdown-item" href="/services/plant-care-guidance.html"><i
                                         class="fas fa-hand-holding-heart"></i> Plant
                                     Care Guidance</a></li>
-                            <li><a class="dropdown-item" href="/services/soil-fertility-consultation.html"><i
-                                        class="fas fa-hand-holding-heart"></i> Soil Fertility Consultation</a></li>
+                            <li><a class="dropdown-item" href="/services/soil-fertility-Consult.html"><i
+                                        class="fas fa-hand-holding-heart"></i> Soil Fertility Consult</a></li>
                         </ul>
                     </li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
