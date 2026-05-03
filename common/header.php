@@ -51,7 +51,7 @@
                         <li><a class="dropdown-item" href="/services/bulk-orders"><i class="fas fa-truck"></i> Bulk Orders & Delivery</a></li>
                         <li><a class="dropdown-item" href="/services/landscaping"><i class="fas fa-drafting-compass"></i> Landscaping Support</a></li>
                         <li><a class="dropdown-item" href="/services/plant-care-guidance"><i class="fas fa-hand-holding-heart"></i> Plant Care Guidance</a></li>
-                        <li><a class="dropdown-item" href="/services/soil-fertility-consultation"><i class="fas fa-hand-holding-heart"></i> Soil Fertility Consult</a></li>
+                        <li><a class="dropdown-item" href="/services/soil-fertility-consultent"><i class="fas fa-hand-holding-heart"></i> Soil Fertility Consult</a></li>
                     </ul>
                 </li>
                 <!-- <li class="nav-item"><a class="nav-link" href="../contact-us">Contact</a></li> -->
