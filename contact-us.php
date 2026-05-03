@@ -95,7 +95,7 @@
                         <div class="info-icon"><i class="fas fa-envelope"></i></div>
                         <h4>Email Us</h4>
                         <p>For formal enquiries, bulk order requests or business proposals — email us anytime.</p>
-                        <a href="mailto:info@pavitramitti.com" class="info-link">info@pavitramitti.com <i
+                        <a href="mailto:pavitramitti.official@gmail.com" class="info-link">pavitramitti.official@gmail.com <i
                                 class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -217,7 +217,7 @@
                             <div class="sd-icon"><i class="fas fa-envelope"></i></div>
                             <div>
                                 <div class="sd-label">Email</div>
-                                <div class="sd-val"><a href="mailto:info@pavitramitti.com">info@pavitramitti.com</a>
+                                <div class="sd-val"><a href="mailto:pavitramitti.official@gmail.com">pavitramitti.official@gmail.com</a>
                                 </div>
                             </div>
                         </div>

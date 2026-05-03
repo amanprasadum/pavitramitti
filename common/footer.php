@@ -22,7 +22,7 @@
                 <i class="fas fa-envelope"></i>
                 <div>
                     <strong>Email Us</strong>
-                    <span>info@pavitramitti.com</span>
+                    <span>pavitramitti.official@gmail.com</span>
                 </div>
             </div>
             <div class="ftb-item">
