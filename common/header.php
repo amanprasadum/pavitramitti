@@ -47,7 +47,7 @@
                         aria-expanded="false">Services</a>
                         
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/services/nursery-consultent"><i class="fas fa-seedling"></i> Nursery Consult</a></li>
+                        <li><a class="dropdown-item" href="/services/nursery-consultent"><i class="fas fa-seedling"></i> Nursery Consultent</a></li>
                         <li><a class="dropdown-item" href="/services/bulk-orders"><i class="fas fa-truck"></i> Bulk Orders & Delivery</a></li>
                         <li><a class="dropdown-item" href="/services/landscaping"><i class="fas fa-drafting-compass"></i> Landscaping Support</a></li>
                         <li><a class="dropdown-item" href="/services/plant-care-guidance"><i class="fas fa-hand-holding-heart"></i> Plant Care Guidance</a></li>
