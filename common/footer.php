@@ -99,7 +99,8 @@
             <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                 <h5 class="foot-h">Get In Touch</h5>
                 <form class="foot-form" id="footerForm" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="cf185d87-1b86-4377-88d6-6ff2e0fce031">
+                    <input type="hidden" name="access_key" value="74a88f09-6c23-4b4b-8a53-5e4625110bc6">
+                    <!-- <input type="hidden" name="access_key" value="cf185d87-1b86-4377-88d6-6ff2e0fce031"> -->
                     <input type="hidden" name="subject" value="New Footer Contact Message">
                     <input type="text" name="name" class="fc" placeholder="Your Name" required>
                     <input type="email" name="email" class="fc" placeholder="Your Email" required>
