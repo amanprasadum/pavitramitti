@@ -43,11 +43,11 @@
                             <span class="sep">/</span>
                             <a href="#">Services</a>
                             <span class="sep">/</span>
-                            Nursery Consultentent
+                            Nursery Consultent
                         </div>
 
                         <h1 class="sp-hero-title">
-                            Expert Nursery <em>Consultentent</em><br>
+                            Expert Nursery <em>Consultent</em><br>
                             for Sustainable Gardens
                         </h1>
                         <p class="sp-hero-desc">
