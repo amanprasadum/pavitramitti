@@ -43,11 +43,11 @@
                             <span class="sep">/</span>
                             <a href="#">Services</a>
                             <span class="sep">/</span>
-                            Nursery Consult
+                            Nursery Consultentent
                         </div>
 
                         <h1 class="sp-hero-title">
-                            Expert Nursery <em>Consult</em><br>
+                            Expert Nursery <em>Consultentent</em><br>
                             for Sustainable Gardens
                         </h1>
                         <p class="sp-hero-desc">
@@ -76,12 +76,12 @@
                     <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left">
                         <div class="sp-img-feature">
                             <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=700&q=80"
-                                alt="Nursery Consult">
+                                alt="Nursery Consultent">
                             <div class="sp-img-feature-badge">
                                 <i class="fas fa-seedling"></i>
                                 <div>
                                     <strong>Expert Guidance</strong>
-                                    <span>Free with every Consult</span>
+                                    <span>Free with every Consultent</span>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                 <div class="sp-intro-block" data-aos="fade-up">
                     <p>
                         Since 2026, we have helped numerous property owners transform their gardens with practical
-                        guidance, local expertise, and sustainable solutions. As a trusted nursery consultant, our
+                        guidance, local expertise, and sustainable solutions. As a trusted nursery Consultentant, our
                         approach is not limited to basic advice — we provide a complete roadmap for developing a garden
                         that is visually appealing, environmentally balanced, and easy to maintain over time.
                     </p>
@@ -104,12 +104,12 @@
             </div>
         </section>
 
-        <!-- ── Consult PROCESS ── -->
+        <!-- ── Consultent PROCESS ── -->
         <section class="sp-section sp-section-alt">
             <div class="container">
                 <div class="text-center mb-5" data-aos="fade-up">
                     <div class="sp-label">How We Work</div>
-                    <h2 class="sp-title">Our Step-by-Step <em>Consult Process</em></h2>
+                    <h2 class="sp-title">Our Step-by-Step <em>Consultent Process</em></h2>
                     <p class="sp-sub">A complete roadmap — from first site visit to a thriving garden</p>
                 </div>
 
@@ -167,7 +167,7 @@
                         <div class="sp-step-card">
                             <div class="sp-step-num">5</div>
                             <h4>Long-Term Garden Strategy</h4>
-                            <p>Our Consult doesn't stop at setup. We help you plan watering schedules, fertiliser
+                            <p>Our Consultent doesn't stop at setup. We help you plan watering schedules, fertiliser
                                 cycles, seasonal maintenance routines, and pest prevention methods — ensuring your
                                 garden thrives year after year without stress.</p>
                         </div>
@@ -238,7 +238,7 @@
                             <div class="sp-why-item-icon"><i class="fas fa-user-check"></i></div>
                             <div class="sp-why-item-body">
                                 <h5>Personalised Service</h5>
-                                <p>Every Consult is tailored specifically to your space, needs and goals.</p>
+                                <p>Every Consultent is tailored specifically to your space, needs and goals.</p>
                             </div>
                         </div>
                     </div>
