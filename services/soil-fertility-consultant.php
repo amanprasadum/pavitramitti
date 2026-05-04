@@ -42,7 +42,7 @@
                             <span class="sep">/</span>
                             <a href="#">Services</a>
                             <span class="sep">/</span>
-                            Soil &amp; Fertility Consultent
+                            Soil &amp; Fertility Consultant
                         </div>
 
                         <h1 class="sp-hero-title">
@@ -73,7 +73,7 @@
                     <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left">
                         <div class="sp-img-feature">
                             <img src="https://images.unsplash.com/photo-1466781783364-36c955e42a7f?w=700&q=80"
-                                alt="Soil Fertility Consultent">
+                                alt="Soil Fertility consultant">
                             <div class="sp-img-feature-badge">
                                 <i class="fas fa-flask"></i>
                                 <div>
@@ -93,7 +93,7 @@
                 <div class="sp-intro-block" data-aos="fade-up">
                     <p>
                         Since 2026, we have been helping homeowners, businesses, and developers improve their soil
-                        health through our professional Soil &amp; Fertility Consultent Services. Our goal is to
+                        health through our professional Soil &amp; Fertility consultant Services. Our goal is to
                         ensure that your garden has the right foundation to support strong, sustainable, and
                         long-lasting plant growth.
                     </p>
@@ -111,7 +111,7 @@
                         <p class="mb-4" style="color:var(--text2);line-height:1.85;">
                             Soil is more than just dirt — it is a living system that provides nutrients, water, and
                             support to plants. Poor soil conditions can lead to serious problems that affect your
-                            garden's health and productivity. Our expert Consultent helps you identify and fix these
+                            garden's health and productivity. Our expert consultant helps you identify and fix these
                             issues effectively.
                         </p>
                         <div class="row g-2">
@@ -169,7 +169,7 @@
 
                     <div class="col-lg-6" data-aos="fade-left">
                         <div class="sp-label">Our Approach</div>
-                        <h2 class="sp-title mb-4">Our Soil &amp; Fertility <em>Consultent Process</em></h2>
+                        <h2 class="sp-title mb-4">Our Soil &amp; Fertility <em>Consultant Process</em></h2>
 
                         <div class="row g-3">
                             <div class="col-12">
@@ -248,7 +248,7 @@
             <div class="container">
                 <div class="text-center mb-5" data-aos="fade-up">
                     <div class="sp-label">What You Gain</div>
-                    <h2 class="sp-title">Benefits of Soil &amp; <em>Fertility Consultent</em></h2>
+                    <h2 class="sp-title">Benefits of Soil &amp; <em>Fertility Consultant</em></h2>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
@@ -350,7 +350,7 @@
                             <div class="sp-why-item-icon"><i class="fas fa-user-check"></i></div>
                             <div class="sp-why-item-body">
                                 <h5>Personalised for Every Project</h5>
-                                <p>Every Consultent and recommendation is customised to your specific site.</p>
+                                <p>Every Consultant and recommendation is customised to your specific site.</p>
                             </div>
                         </div>
                     </div>
@@ -364,7 +364,7 @@
                 <h2 class="sp-cta-title">Turn Your Soil into a Powerful <em>Growing Medium</em></h2>
                 <p class="sp-cta-sub">A strong garden starts from the ground up. With expert guidance from Pavitra
                     Mitti, you can transform poor soil into a nutrient-rich foundation that supports healthy and vibrant
-                    plants. Contact us today for professional Soil &amp; Fertility Consultent Services.</p>
+                    plants. Contact us today for professional Soil &amp; Fertility Consultant Services.</p>
                 <div class="sp-cta-btns">
                     <a href="tel:+919876543210" class="sp-btn sp-btn-primary"><i class="fas fa-phone-alt"></i> Call
                         Now</a>
