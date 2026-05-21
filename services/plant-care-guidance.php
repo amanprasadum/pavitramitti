@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Plant Care Guidance for Healthy Growth | Pavitra Mitti</title>
+    <meta name="description" content="Get professional plant care guidance from Pavitra Mitti for healthy plant growth, organic gardening, rooftop gardens and sustainable plant maintenance in Kolkata, Barasat and Basirhat.">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +21,6 @@
     <link rel="stylesheet" href="../style.css">
       <?php include '../common/header-script.php'; ?>
 
-    <title>Services — Pavitra Mitti Nursery</title>
 </head>
 
 <body>
