@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Trusted Bulk Plant Supplier in Basirhat, Barasat & Kolkata | Pavitra Mitti</title>
+     <meta name="description" content="Pavitra Mitti is a trusted bulk plant supplier in Basirhat, Barasat and Kolkata offering healthy nursery plants, flowering plants, fruit plants and eco-friendly gardening solutions for homes and commercial projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -18,7 +20,7 @@
     <link rel="stylesheet" href="../service.css">
       <?php include '../common/header-script.php'; ?>
 
-    <title>Services — Pavitra Mitti Nursery</title>
+   
 </head>
 
 <body>
