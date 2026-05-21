@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
      <meta name="description" content="Looking for an expert nursery consultant for sustainable gardens? Pavitra Mitti provides organic gardening solutions, rooftop garden setup, healthy plants and eco-friendly gardening support in Kolkata, Barasat and Basirhat.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Nursery Consultant for Sustainable Gardens | Pavitra Mitti</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +21,6 @@
     <link rel="stylesheet" href="../style.css">
       <?php include '../common/header-script.php'; ?>
 
-    <title>Expert Nursery Consultant for Sustainable Gardens | Pavitra Mitti</title>
 </head>
 
 <body>
