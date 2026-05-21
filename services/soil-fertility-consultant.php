@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Soil & Fertility Guidance for Healthy Gardens | Pavitra Mitti</title>
+    <meta name="description" content="Build strong and sustainable gardens with expert soil and fertility guidance from Pavitra Mitti. Get organic soil solutions, plant nutrition support and gardening expertise in Kolkata, Barasat and Basirhat.">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
