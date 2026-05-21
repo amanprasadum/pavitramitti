@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Landscaping Services in Kolkata & Basirhat | Pavitra Mitti</title>
+     <meta name="description" content="Transform your space with professional landscaping services by Pavitra Mitti. We create beautiful sustainable gardens, rooftop gardens and green outdoor spaces in Kolkata, Barasat and Basirhat.">
+
+
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
