@@ -102,7 +102,7 @@
 
           <!-- Card 5 -->
           <div class="pv-rel-card">
-            <a href="dragon-fruit.php" class="pv-rel-link">
+            <a href="dragon-fruit" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
                 <img src="../assets/images/product/dragon-fruit.png" alt="Dragon Fruit" class="pv-rel-img"/>
                 <span class="pv-rel-badge pv-badge-purple">Exotic</span>

@@ -846,7 +846,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="cxp-body">
             <h3 class="cxp-name">Dragon Fruit</h3>
             <p class="cxp-cat-tag"><i class="bi bi-stars"></i> Exotic &amp; Fruit</p>
-            <a href="dragon-fruit.php" class="cxp-btn">View Plant <i class="bi bi-arrow-right"></i></a>
+            <a href="dragon-fruit" class="cxp-btn">View Plant <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </div>

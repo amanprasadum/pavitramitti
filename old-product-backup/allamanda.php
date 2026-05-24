@@ -427,7 +427,7 @@
 
           <!-- Card 5 -->
           <div class="pv-rel-card">
-            <a href="dragon-fruit.php" class="pv-rel-link">
+            <a href="dragon-fruit" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
                 <img src="https://placehold.co/300x260/f3e5f5/6a1b9a?text=Dragon+Fruit" alt="Dragon Fruit" class="pv-rel-img"/>
                 <span class="pv-rel-badge pv-badge-purple">Exotic</span>
