@@ -81,7 +81,7 @@
 
           <!-- Card 4 -->
           <div class="pv-rel-card">
-            <a href="bougainvillea.php" class="pv-rel-link">
+            <a href="bougainvillea" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
                 <img src="../assets/images/product/Bougainvillea.png" alt="Bougainvillea" class="pv-rel-img"/>
                 <span class="pv-rel-badge pv-badge-pink">Best Seller</span>
