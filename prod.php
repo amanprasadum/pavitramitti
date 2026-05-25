@@ -632,7 +632,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="cxp-body">
             <h3 class="cxp-name">Allamanda</h3>
             <p class="cxp-cat-tag"><i class="bi bi-tree"></i> Outdoor Plant</p>
-            <a href="allamanda.php" class="cxp-btn">View Plant <i class="bi bi-arrow-right"></i></a>
+            <a href="allamanda" class="cxp-btn">View Plant <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -796,7 +796,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="cxp-body">
             <h3 class="cxp-name">Aloe Vera</h3>
             <p class="cxp-cat-tag"><i class="bi bi-capsule"></i> Medicinal Plant</p>
-            <a href="aloe-vera.php" class="cxp-btn">View Plant <i class="bi bi-arrow-right"></i></a>
+            <a href="aloe-vera" class="cxp-btn">View Plant <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -828,7 +828,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="cxp-body">
             <h3 class="cxp-name">New Aloe Vera</h3>
             <p class="cxp-cat-tag"><i class="bi bi-capsule"></i> Medicinal Plant</p>
-            <a href="new-aloe-vera.php" class="cxp-btn">View Plant <i class="bi bi-arrow-right"></i></a>
+            <a href="new-aloe-vera" class="cxp-btn">View Plant <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </div>

@@ -25,8 +25,8 @@
                         <ul class="dropdown-menu plants-menu">
                             <li><a class="dropdown-item" href="/product/aglaonema-snow-white.php"><i class="fas fa-leaf"></i> Aglaonema Snow White</a></li>
                             <li><a class="dropdown-item" href="/product/aglaonema.php"><i class="fas fa-leaf"></i> Aglaonema</a></li>
-                            <li><a class="dropdown-item" href="/product/allamanda.php"><i class="fas fa-sun"></i> Allamanda</a></li>
-                            <li><a class="dropdown-item" href="/product/aloe-vera.php"><i class="fas fa-mortar-pestle"></i> Aloe Vera</a></li>
+                            <li><a class="dropdown-item" href="/product/allamanda"><i class="fas fa-sun"></i> Allamanda</a></li>
+                            <li><a class="dropdown-item" href="/product/aloe-vera"><i class="fas fa-mortar-pestle"></i> Aloe Vera</a></li>
                             <li><a class="dropdown-item" href="/product/bougainvillea"><i class="fas fa-spa"></i> Bougainvillea</a></li>
                             <li><a class="dropdown-item" href="/product/dragon-fruit"><i class="fas fa-apple-alt"></i> Dragon Fruit</a></li>
                             <li><a class="dropdown-item" href="/product/dragon-mulberry.php"><i class="fas fa-apple-alt"></i> Dragon Mulberry</a></li>

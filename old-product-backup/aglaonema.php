@@ -384,7 +384,7 @@
 
           <!-- Card 3 -->
           <div class="pv-rel-card">
-            <a href="allamanda.php" class="pv-rel-link">
+            <a href="allamanda" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
                 <img src="https://placehold.co/300x260/fffde7/f57f17?text=Allamanda" alt="Allamanda" class="pv-rel-img"/>
                 <span class="pv-rel-badge pv-badge-yellow">Flowering</span>
