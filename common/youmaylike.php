@@ -39,7 +39,7 @@
 
           <!-- Card 2 -->
           <div class="pv-rel-card">
-            <a href="aglaonema.php" class="pv-rel-link">
+            <a href="aglaonema" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
                 <img src="../assets/images/product/Aglaonema.png" alt="Aglaonema" class="pv-rel-img"/>
                 <span class="pv-rel-badge">Popular</span>
@@ -123,7 +123,7 @@
 
           <!-- Card 6 -->
           <div class="pv-rel-card">
-            <a href="dragon-mulberry.php" class="pv-rel-link">
+            <a href="dragon-mulberry" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
                 <img src="../assets/images/product/Dragon-Mulberry.png" alt="Dragon Mulberry" class="pv-rel-img"/>
                 <span class="pv-rel-badge pv-badge-purple">Exotic</span>
@@ -144,7 +144,7 @@
 
           <!-- Card 7 -->
           <div class="pv-rel-card">
-            <a href="frangipani.php" class="pv-rel-link">
+            <a href="frangipani" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
                 <img src="../assets/images/product/Frangipani.png" alt="Frangipani" class="pv-rel-img"/>
                 <span class="pv-rel-badge pv-badge-yellow">Fragrant</span>
@@ -165,7 +165,7 @@
 
           <!-- Card 8 -->
           <div class="pv-rel-card">
-            <a href="jade-plant.php" class="pv-rel-link">
+            <a href="jade-plant" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
                 <img src="../assets/images/product/Jade-Plant.png" alt="Jade Plant" class="pv-rel-img"/>
                 <span class="pv-rel-badge">Lucky Plant</span>
@@ -186,7 +186,7 @@
 
           <!-- Card 9 -->
           <div class="pv-rel-card">
-            <a href="money-plant.php" class="pv-rel-link">
+            <a href="money-plant" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
                 <img src="../assets/images/product/Money-Plant.png" alt="Money Plant" class="pv-rel-img"/>
                 <span class="pv-rel-badge">Best Seller</span>
@@ -207,7 +207,7 @@
 
           <!-- Card 10 -->
           <div class="pv-rel-card">
-            <a href="snake-plant.php" class="pv-rel-link">
+            <a href="snake-plant" class="pv-rel-link">
               <div class="pv-rel-img-wrap">
                 <img src="../assets/images/product/snake-plant.png" alt="Snake Plant" class="pv-rel-img"/>
                 <span class="pv-rel-badge">Air Purifier</span>
