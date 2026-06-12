@@ -22,7 +22,7 @@
           <div class="pv-gallery-wrap">
             <div class="pv-main-img-wrap">
               <img id="mainProductImg"
-                   src="https://placehold.co/540x480/fce4ec/e91e63?text=Peach+Hibiscus"
+                   src="../assets/images/product/Light-Peach-Hibiscus.png"
                    alt="Elegant Light Peach Hybrid Hibiscus Plant"
                    class="pv-main-img-off img-fluid"/>
             </div>
