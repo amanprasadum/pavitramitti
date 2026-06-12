@@ -518,7 +518,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="cxp-body">
             <h3 class="cxp-name">Aglaonema</h3>
             <p class="cxp-cat-tag"><i class="bi bi-house-heart"></i> Indoor Plant</p>
-            <a href="product/aglaonema.php" class="cxp-btn">View Plant <i class="bi bi-arrow-right"></i></a>
+            <a href="product/aglaonema" class="cxp-btn">View Plant <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </div>
